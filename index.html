@@ -4,40 +4,75 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Carpathians</title>
+		<!-- Modern-normalize styles -->
+		<!-- <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+		/> -->
+		<!-- My stylesheets -->
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!-- HEADER -->
-		<header>
-			<a href="./index.html">Logotype</a>
-			<nav>
-				<ul>
-					<li><a href="">About us</a></li>
-					<li><a href="">Tours</a></li>
-					<li><a href="">Reviews</a></li>
-					<li><a href="">Gallery</a></li>
-					<li><a href="">Contacts</a></li>
+		<header class="main-header">
+			<!-- Logotype -->
+			<a href="./index.html" class="logotype link">Logotype</a>
+			<!-- Navigation -->
+			<nav class="main-navigation">
+				<ul class="menu list">
+					<li class="menu-item">
+						<a href="#about-us" class="menu-link link">About us</a>
+					</li>
+					<li class="menu-item">
+						<a href="#tours" class="menu-link link">Tours</a>
+					</li>
+					<li class="menu-item">
+						<a href="#reviews" class="menu-link link">Reviews</a>
+					</li>
+					<li class="menu-item">
+						<a href="#gallery" class="menu-link link">Gallery</a>
+					</li>
+					<li class="menu">
+						<a href="#contacts" class="menu-link link">Contacts</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
 		<main>
 			<!-- SECTION HERO -->
-			<section>
-				<h1>tours to the carpathians from lviv</h1>
-				<p>
+			<section class="sec-hero">
+				<!-- Title & description -->
+				<h1 class="hero-title">tours to the carpathians from lviv</h1>
+				<p class="hero-description">
 					Journeys to the very heart of the Carpathians for those who want a
 					real reboot
 				</p>
-				<a href="">book a tour</a>
-				<ul>
-					<li><a href="https://t.me">Telegram icon</a></li>
-					<li><a href="https://www.instagram.com">Instagram icon</a></li>
-					<li><a href="https://www.facebook.com">Facebook icon</a></li>
+				<!-- Button BOOK A TOUR -->
+				<a href="#tours" class="hero-button link">book a tour</a>
+				<!-- Social networks -->
+				<ul class="hero-soc-net list">
+					<li class="hero-soc-net-item">
+						<a href="https://t.me" class="hero-soc-net-link link"
+							>Telegram icon</a
+						>
+					</li>
+					<li class="hero-soc-net-item">
+						<a href="https://www.instagram.com" class="hero-soc-net-link link"
+							>Instagram icon</a
+						>
+					</li>
+					<li class="hero-soc-net-item">
+						<a href="https://www.facebook.com" class="hero-soc-net-link link"
+							>Facebook icon</a
+						>
+					</li>
 				</ul>
 			</section>
 			<!-- SECTION ABOUT US -->
-			<section>
-				<h2>About us</h2>
-				<p>
+			<section id="about-us" class="sec-about-us">
+				<!-- Title & description -->
+				<h2 class="about-us-title">About us</h2>
+				<p class="about-us-description">
 					Travel is our life. We have been organizing tours to the Carpathians
 					since 2007 and have never been bored for a single day. The Carpathians
 					are many interesting and unexplored places that are worth visiting and
@@ -51,71 +86,88 @@
 				</p>
 			</section>
 			<!-- SECTION OUR ADVANTAGES -->
-			<section>
-				<h2>Our advantages</h2>
-				<ul>
-					<li>author's tours</li>
-					<li>individual approach</li>
-					<li>affordable prices</li>
-					<li>comfortable transfer</li>
-					<li>professional guides</li>
-					<li>accommodation in hotels from 3+ *</li>
+			<section class="sec-advantages">
+				<!-- Title -->
+				<h2 class="advantages-title">Our advantages</h2>
+				<!-- List of advantages -->
+				<ul class="advantages-list list">
+					<li class="advantages-list-item">author's tours</li>
+					<li class="advantages-list-item">individual approach</li>
+					<li class="advantages-list-item">affordable prices</li>
+					<li class="advantages-list-item">comfortable transfer</li>
+					<li class="advantages-list-item">professional guides</li>
+					<li class="advantages-list-item">
+						accommodation in hotels from 3+ *
+					</li>
 				</ul>
 			</section>
 			<!-- SECTION UPCOMING TOURS -->
-			<section>
-				<h2>Upcoming tours</h2>
-				<ul>
-					<li>
-						<img src="" alt="" width="" height="" />
-						<h3></h3>
-						<p></p>
-						<button>more details</button>
+			<section id="tours" class="sec-tours">
+				<!-- Title -->
+				<h2 class="tours-title">Upcoming tours</h2>
+				<!-- Tour cards -->
+				<ul class="tours-list list">
+					<li class="tours-list-item">
+						<img src="" alt="Hoverla" width="377" height="438" />
+						<h3 class="tours-card-title">Ascent to Hoverla</h3>
+						<p class="tours-card-price">From UAH 4,499/person</p>
+						<!-- Button MORE DETAILS -->
+						<button type="button" class="tours-btn-details">
+							more details
+						</button>
 					</li>
-					<li>
-						<img src="" alt="" width="" height="" />
-						<h3></h3>
-						<p></p>
-						<button>more details</button>
+					<li class="tours-list-item">
+						<img src="" alt="Bukovel" width="377" height="438" />
+						<h3 class="tours-card-title">Ski tour to Bukovel</h3>
+						<p class="tours-card-price">From UAH 7,499/person</p>
+						<!-- Button MORE DETAILS  -->
+						<button type="button" class="tours-btn-details">
+							more details
+						</button>
 					</li>
-					<li>
-						<img src="" alt="" width="" height="" />
-						<h3></h3>
-						<p></p>
-						<button>more details</button>
+					<li class="tours-list-item">
+						<img src="" alt="Carpathians" width="377" height="438" />
+						<h3 class="tours-card-title">Week in Carpathians</h3>
+						<p class="tours-card-price">From UAH 9,999/person</p>
+						<!-- Button MORE DETAILS  -->
+						<button type="button" class="tours-btn-details">
+							more details
+						</button>
 					</li>
 				</ul>
 			</section>
 			<!-- SECTION REVIEWS -->
-			<section>
-				<h2>Reviews</h2>
-				<ul>
-					<li>
+			<section id="reviews" class="sec-reviews">
+				<!-- Title -->
+				<h2 class="reviews-title">Reviews</h2>
+				<!-- Reviews cards -->
+				<ul class="reviews-list list">
+					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="" width="" height="" />
-						<h3>Maria</h3>
-						<p>
+						<img src="" alt="Maria" width="125" height="125" />
+						<h3 class="reviews-card-title">Maria</h3>
+						<p class="reviews-card-description">
 							It was really cool! We saw everything - sun, snow, rain, fog! It's
 							very exciting and interesting, you won't regret it - it's worth
 							going and seeing everything with your own eyes. Everything is
 							organized at the highest level.
 						</p>
 					</li>
-					<li>
+					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="" width="" height="" />
-						<h3>Ostap</h3>
-						<p>
+						<img src="" alt="Ostap" width="125" height="125" />
+						<h3 class="reviews-card-title">Ostap</h3>
+						<p class="reviews-card-description">
 							Good organization, everything went smoothly. Friendly guide Taras
 							told interesting facts about the area and customs throughout the
 							tour.
 						</p>
 					</li>
-					<li>
+					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="" width="" height="" />
-						<h3>Anita</h3>
-						<p>
+						<img src="" alt="Anita" width="125" height="125" />
+						<h3 class="reviews-card-title">Anita</h3>
+						<p class="reviews-card-description">
 							Who is going to the mountains for the first time - this is exactly
 							the tour and the people who organize everything. Guide Makar is
 							interesting stories, selection of a route for a comfortable
@@ -125,39 +177,74 @@
 				</ul>
 			</section>
 			<!-- SECTION GALLERY -->
-			<section>
-				<h2>Gallery</h2>
+			<section id="gallery" class="sec-gallery">
+				<!-- Title -->
+				<h2 class="gallery-title">Gallery</h2>
 			</section>
 			<!-- SECTION QUESTIONS -->
-			<section>
-				<h2>Questions</h2>
+			<section class="sec-questions">
+				<!-- Title -->
+				<h2 class="questions-title">Questions</h2>
+				<!-- Question form -->
 				<form action=""></form>
-				<h3>Do you have any questions?</h3>
-				<p>
+				<h3 class="questions-form-title">Do you have any questions?</h3>
+				<p class="questions-form-description">
 					You can leave your questions here and our manager will call you back
 					within 10 minutes
 				</p>
-				<button>call me</button>
+				<!-- Button CALL ME  -->
+				<button type="button" class="questions-btn-call">call me</button>
 			</section>
 		</main>
 		<!-- FOOTER -->
-		<footer>
-			<h2>Contacts</h2>
-			<address>
-				<ul>
-					<li>Lviv, st. Doroshenko, 44 k</li>
-					<li><a href="tel:+380971626790">+38 (097) 162 -67-90</a></li>
-					<li>
-						<a href="mailto:mandrykarpaty@gmail.com">mandrykarpaty@gmail.com</a>
+		<footer class="main-footer">
+			<!-- Title -->
+			<h2 class="footer-title">Contacts</h2>
+			<!-- Company contacts -->
+			<address id="contacts" class="footer-address">
+				<!-- Contact details -->
+				<ul class="contacts-menu list">
+					<li class="contacts-menu-item">
+						<a
+							href="https://www.google.com.ua/maps/place/%D1%83%D0%BB.+%D0%9F%D0%B5%D1%82%D1%80%D0%B0+%D0%94%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%BD%D0%BA%D0%BE,+44,+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2,+%D0%9B%D1%8C%D0%B2%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+79000/@49.8375772,24.0196501,17z/data=!3m1!4b1!4m6!3m5!1s0x473add701560834d:0x404791f70e3e2d2!8m2!3d49.8375738!4d24.022225!16s%2Fg%2F1tfycbny?hl=ru&entry=ttu&g_ep=EgoyMDI1MDIxMi4wIKXMDSoASAFQAw%3D%3D"
+							target="_blank"
+							class="contacts-menu-link link"
+							>Lviv, st. Doroshenko, 44 k</a
+						>
+					</li>
+					<li class="contacts-menu-item">
+						<a href="tel:+380971626790" class="contacts-menu-link link"
+							>+38 (097) 162 -67-90</a
+						>
+					</li>
+					<li class="contacts-menu-item">
+						<a
+							href="mailto:mandrykarpaty@gmail.com"
+							class="contacts-menu-link link"
+							>mandrykarpaty@gmail.com</a
+						>
 					</li>
 				</ul>
-				<ul>
-					<li><a href="https://t.me">Telegram icon</a></li>
-					<li><a href="https://www.instagram.com">Instagram icon</a></li>
-					<li><a href="https://www.facebook.com">Facebook icon</a></li>
-				</ul>
 			</address>
-			<p>Сreated by LelekaSoft</p>
+			<!-- Social networks -->
+			<ul class="footer-soc-net list">
+				<li class="footer-soc-net-item">
+					<a href="https://t.me" class="footer-soc-net-link link"
+						>Telegram icon</a
+					>
+				</li>
+				<li class="footer-soc-net-item">
+					<a href="https://www.instagram.com" class="footer-soc-net-link link"
+						>Instagram icon</a
+					>
+				</li>
+				<li class="footer-soc-net-item">
+					<a href="https://www.facebook.com" class="footer-soc-net-link link"
+						>Facebook icon</a
+					>
+				</li>
+			</ul>
+			<p class="footer-description">Сreated by LelekaSoft</p>
 		</footer>
 	</body>
 </html>
