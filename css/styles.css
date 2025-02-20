@@ -1,40 +1,10 @@
 /* ===== COMMON STYLES ===== */
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/montserrat-regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Manrope';
-	src: url('../fonts/manrope-regular.woff2') format('woff2');
-	font-weight: 400;
-	font-style: normal;
-}
-
-/* 
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/MontserratMedium.ttf') format('ttf');
-	font-weight: 500;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Montserrat';
-	src: url('../fonts/MontserratSemiBold.ttf') format('ttf');
-	font-weight: 600;
-	font-style: normal;
-} */
-
 address {
 	font-style: normal;
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', 'Manrope', sans-serif;
 	color: #1b1d1b;
 	background-color: #f7fbfb;
 }
@@ -263,10 +233,24 @@ ol {
 	background: #202321;
 }
 
+.main-footer-container {
+	display: flex;
+	justify-content: center;
+	gap: 128px;
+	margin-bottom: 64px;
+	padding-top: 60px;
+}
+
 .footer-title {
 	font-size: 60px;
 	text-align: center;
 	color: #f7fbfb;
+}
+
+.contacts-container {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
 }
 
 .contacts-menu-item a {
@@ -274,8 +258,19 @@ ol {
 	color: #f7fbfb;
 }
 
+.contacts-menu-item:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+.footer-soc-net {
+	display: flex;
+	gap: 32px;
+}
+
 .footer-description {
 	font-family: 'Manrope', sans-serif;
 	font-size: 16px;
+	text-align: center;
+	padding-bottom: 48px;
 	color: #a3a5a3;
 }
