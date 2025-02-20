@@ -1,6 +1,72 @@
 /* ===== COMMON STYLES ===== */
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/manrope-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+/* 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/MontserratMedium.ttf') format('ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/MontserratSemiBold.ttf') format('ttf');
+	font-weight: 600;
+	font-style: normal;
+} */
+
+address {
+	font-style: normal;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	color: #1b1d1b;
+	background-color: #f7fbfb;
+}
+
 button {
+	background: none;
+	border: none;
 	cursor: pointer;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+img {
+	display: block;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
 }
 
 .list {
@@ -11,20 +77,205 @@ button {
 	text-decoration: none;
 }
 
+.section {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
 /* ===== HEADER STYLES ===== */
+.main-header {
+	padding-bottom: 40px;
+}
 
 /* ===== SECTION HERO STYLES ===== */
+.hero-title {
+	margin-bottom: 40px;
+	/* width: 1170px;
+	height: 214px; */
+	font-size: 88px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.hero-description {
+	margin-bottom: 60px;
+	font-weight: 500;
+	font-size: 28px;
+	text-align: center;
+}
+
+.book-a-tour-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 575px;
+	height: 69px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 24px;
+	color: #f7fbfb;
+	background: #5b86a1;
+}
 
 /* ===== SECTION ABOUT US STYLES ===== */
+.about-us-title {
+	margin-bottom: 60px;
+	text-align: center;
+	font-size: 68px;
+}
+
+.about-us-description {
+	font-size: 24px;
+	color: #202321;
+}
 
 /* ===== SECTION OUR ADVANTAGES STYLES ===== */
+.advantages-title {
+	margin-bottom: 140px;
+	font-size: 68px;
+	text-align: center;
+}
+
+.advantages-list {
+	display: flex;
+	justify-content: center;
+}
+
+.advantages-container {
+	display: flex;
+	width: 630px;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.advantages-container-list {
+	display: flex;
+	align-items: center;
+	height: 64px;
+	padding-left: 178px;
+	background: #5b86a1;
+}
+
+.advantages-container-list:nth-child(3) {
+	margin-bottom: 4px;
+}
+
+.advantages-list-item {
+	font-weight: 400;
+	font-size: 24px;
+	color: #f7fbfb;
+}
 
 /* ===== SECTION UPCOMING TOURS STYLES ===== */
+.tours-title {
+	margin-bottom: 60px;
+	font-size: 68px;
+	text-align: center;
+}
+
+.tours-card-title {
+	font-weight: 600;
+	font-size: 28px;
+}
+
+.tours-card-price {
+	font-weight: 600;
+	font-size: 24px;
+	color: #202321;
+}
+
+.tours-btn-details {
+	padding: 10px;
+	width: 337px;
+	height: 69px;
+	font-weight: 500;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #f7fbfb;
+	background: #5b86a1;
+}
 
 /* ===== SECTION REVIEWS STYLES ===== */
+.reviews-title {
+	margin-bottom: 70px;
+	font-size: 68px;
+	text-align: center;
+}
+
+.reviews-card-title {
+	font-weight: 600;
+	font-size: 28px;
+	text-align: center;
+	color: #5b86a1;
+}
+
+.reviews-card-description {
+	font-size: 20px;
+	color: #202321;
+}
 
 /* ===== SECTION GALLERY STYLES ===== */
+.gallery-title {
+	margin-bottom: 59px;
+	font-size: 68px;
+	text-align: center;
+}
 
 /* ===== SECTION QUESTIONS STYLES ===== */
 
+.sec-questions {
+	padding-top: 40px;
+}
+
+.questions-form-title {
+	font-weight: 500;
+	font-size: 48px;
+	text-align: center;
+}
+
+.questions-form-description {
+	font-size: 20px;
+	text-align: center;
+	color: #202321;
+}
+
+.questions-btn-call {
+	padding: 10px;
+	width: 575px;
+	height: 69px;
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #f7fbfb;
+	background: #5b86a1;
+}
+
 /* ===== FOOTER STYLES ===== */
+.main-footer {
+	background: #202321;
+}
+
+.footer-title {
+	font-size: 60px;
+	text-align: center;
+	color: #f7fbfb;
+}
+
+.contacts-menu-item a {
+	font-size: 24px;
+	color: #f7fbfb;
+}
+
+.footer-description {
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	color: #a3a5a3;
+}

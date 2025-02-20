@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Carpathians</title>
+		<link rel="icon" type="images/x-icon" href="images/favicon/mountains.ico" />
 		<!-- Modern-normalize styles -->
 		<!-- <link
 			rel="stylesheet"
@@ -40,7 +41,7 @@
 		</header>
 		<main>
 			<!-- SECTION HERO -->
-			<section class="sec-hero">
+			<section class="sec-hero section">
 				<!-- Title & description -->
 				<h1 class="hero-title">tours to the carpathians from lviv</h1>
 				<p class="hero-description">
@@ -48,10 +49,12 @@
 					real reboot
 				</p>
 				<!-- Button BOOK A TOUR -->
-				<a href="#tours" class="hero-button link">book a tour</a>
+				<div class="book-a-tour-container">
+					<a href="#tours" class="hero-button link">book a tour</a>
+				</div>
 				<!-- Social networks -->
 				<ul class="hero-soc-net list">
-					<li class="hero-soc-net-item">
+					<li class="hero-soc-net-item hero-soc-net-item-first">
 						<a href="https://t.me" class="hero-soc-net-link link"
 							>Telegram icon</a
 						>
@@ -69,7 +72,7 @@
 				</ul>
 			</section>
 			<!-- SECTION ABOUT US -->
-			<section id="about-us" class="sec-about-us">
+			<section id="about-us" class="sec-about-us section">
 				<!-- Title & description -->
 				<h2 class="about-us-title">About us</h2>
 				<p class="about-us-description">
@@ -86,29 +89,48 @@
 				</p>
 			</section>
 			<!-- SECTION OUR ADVANTAGES -->
-			<section class="sec-advantages">
+			<section class="sec-advantages section">
 				<!-- Title -->
 				<h2 class="advantages-title">Our advantages</h2>
 				<!-- List of advantages -->
 				<ul class="advantages-list list">
-					<li class="advantages-list-item">author's tours</li>
-					<li class="advantages-list-item">individual approach</li>
-					<li class="advantages-list-item">affordable prices</li>
-					<li class="advantages-list-item">comfortable transfer</li>
-					<li class="advantages-list-item">professional guides</li>
-					<li class="advantages-list-item">
-						accommodation in hotels from 3+ *
-					</li>
+					<div class="advantages-container">
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">author's tours</li>
+						</div>
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">individual approach</li>
+						</div>
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">affordable prices</li>
+						</div>
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">comfortable transfer</li>
+						</div>
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">professional guides</li>
+						</div>
+						<div class="advantages-container-list">
+							<li class="advantages-list-item">
+								accommodation in hotels from 3+ *
+							</li>
+						</div>
+					</div>
 				</ul>
 			</section>
 			<!-- SECTION UPCOMING TOURS -->
-			<section id="tours" class="sec-tours">
+			<section id="tours" class="sec-tours section">
 				<!-- Title -->
 				<h2 class="tours-title">Upcoming tours</h2>
 				<!-- Tour cards -->
 				<ul class="tours-list list">
 					<li class="tours-list-item">
-						<img src="" alt="Hoverla" width="377" height="438" />
+						<img
+							src="./images/tours/hoverla-desk.jpg"
+							alt="Hoverla"
+							width="377"
+							height="438"
+						/>
 						<h3 class="tours-card-title">Ascent to Hoverla</h3>
 						<p class="tours-card-price">From UAH 4,499/person</p>
 						<!-- Button MORE DETAILS -->
@@ -117,7 +139,12 @@
 						</button>
 					</li>
 					<li class="tours-list-item">
-						<img src="" alt="Bukovel" width="377" height="438" />
+						<img
+							src="./images/tours/bukovel-desk.jpg"
+							alt="Bukovel"
+							width="377"
+							height="438"
+						/>
 						<h3 class="tours-card-title">Ski tour to Bukovel</h3>
 						<p class="tours-card-price">From UAH 7,499/person</p>
 						<!-- Button MORE DETAILS  -->
@@ -126,7 +153,12 @@
 						</button>
 					</li>
 					<li class="tours-list-item">
-						<img src="" alt="Carpathians" width="377" height="438" />
+						<img
+							src="./images/tours/carpathians-desk.jpg"
+							alt="Carpathians"
+							width="377"
+							height="438"
+						/>
 						<h3 class="tours-card-title">Week in Carpathians</h3>
 						<p class="tours-card-price">From UAH 9,999/person</p>
 						<!-- Button MORE DETAILS  -->
@@ -137,14 +169,23 @@
 				</ul>
 			</section>
 			<!-- SECTION REVIEWS -->
-			<section id="reviews" class="sec-reviews">
+			<section id="reviews" class="sec-reviews section">
 				<!-- Title -->
 				<h2 class="reviews-title">Reviews</h2>
 				<!-- Reviews cards -->
 				<ul class="reviews-list list">
 					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="Maria" width="125" height="125" />
+						<img
+							src="./images/reviews/maria-desk.png"
+							srcset="
+								./images/RETINA/reviews/maria@2x-desk.png 2x,
+								./images/RETINA/reviews/maria@3x-desk.png 3x
+							"
+							alt="Maria"
+							width="125"
+							height="125"
+						/>
 						<h3 class="reviews-card-title">Maria</h3>
 						<p class="reviews-card-description">
 							It was really cool! We saw everything - sun, snow, rain, fog! It's
@@ -155,7 +196,16 @@
 					</li>
 					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="Ostap" width="125" height="125" />
+						<img
+							src="./images/reviews/ostap-desk.png"
+							srcset="
+								./images/RETINA/reviews/ostap@2x-desk.png 2x,
+								./images/RETINA/reviews/ostap@3x-desk.png 3x
+							"
+							alt="Ostap"
+							width="125"
+							height="125"
+						/>
 						<h3 class="reviews-card-title">Ostap</h3>
 						<p class="reviews-card-description">
 							Good organization, everything went smoothly. Friendly guide Taras
@@ -165,7 +215,16 @@
 					</li>
 					<li class="reviews-list-item">
 						<div></div>
-						<img src="" alt="Anita" width="125" height="125" />
+						<img
+							src="./images/reviews/anita-desk.png"
+							srcset="
+								./images/RETINA/reviews/anita@2x-desk.png 2x,
+								./images/RETINA/reviews/anita@3x-desk.png 3x
+							"
+							alt="Anita"
+							width="125"
+							height="125"
+						/>
 						<h3 class="reviews-card-title">Anita</h3>
 						<p class="reviews-card-description">
 							Who is going to the mountains for the first time - this is exactly
@@ -177,7 +236,7 @@
 				</ul>
 			</section>
 			<!-- SECTION GALLERY -->
-			<section id="gallery" class="sec-gallery">
+			<section id="gallery" class="sec-gallery section">
 				<!-- Title -->
 				<h2 class="gallery-title">Gallery</h2>
 			</section>
