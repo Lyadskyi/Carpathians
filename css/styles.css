@@ -45,232 +45,362 @@ ol {
 
 .link {
 	text-decoration: none;
+	/* color: #f7fbfb; */
+}
+.container {
+	margin-left: 127px;
+	margin-right: 127px;
 }
 
-.section {
-	padding-top: 40px;
-	padding-bottom: 40px;
-}
+/* -------------------- DESKTOP -------------------- */
 
-/* ===== HEADER STYLES ===== */
-.main-header {
-	padding-bottom: 40px;
-}
+@media screen and (min-width: 1440px) {
+	.section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
 
-/* ===== SECTION HERO STYLES ===== */
-.hero-title {
-	margin-bottom: 40px;
-	/* width: 1170px;
-	height: 214px; */
-	font-size: 88px;
-	text-align: center;
-	text-transform: uppercase;
-}
+	/* ===== HEADER STYLES ===== */
+	/* Layout: width: 1170px; height: 118px; */
 
-.hero-description {
-	margin-bottom: 60px;
-	font-weight: 500;
-	font-size: 28px;
-	text-align: center;
-}
+	.main-header {
+		position: absolute;
+		left: 135px;
+		display: flex;
+		justify-content: space-between;
+		background: rgba(0, 0, 0, 0);
+	}
 
-.book-a-tour-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+	.menu {
+		display: flex;
+		justify-content: end;
+		gap: 80px;
+	}
 
-.hero-button {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 575px;
-	height: 69px;
-	padding: 10px;
-	text-transform: uppercase;
-	font-weight: 500;
-	font-size: 24px;
-	color: #f7fbfb;
-	background: #5b86a1;
-}
+	/* ===== SECTION HERO STYLES ===== */
+	/* Layout: width: (1440)/1170px; height: 906px; */
 
-/* ===== SECTION ABOUT US STYLES ===== */
-.about-us-title {
-	margin-bottom: 60px;
-	text-align: center;
-	font-size: 68px;
-}
+	.sec-hero {
+		width: 100%;
+		height: 906px; /* 1024px */
+		background-image: url('../images/hero/hero-desk.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
-.about-us-description {
-	font-size: 24px;
-	color: #202321;
-}
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
 
-/* ===== SECTION OUR ADVANTAGES STYLES ===== */
-.advantages-title {
-	margin-bottom: 140px;
-	font-size: 68px;
-	text-align: center;
-}
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
 
-.advantages-list {
-	display: flex;
-	justify-content: center;
-}
+	.hero-title {
+		display: block;
+		margin: 0 auto;
+		margin-inline: auto; /* Аналог margin: 0 auto; */
+		margin-bottom: 60px;
+		font-size: 88px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #f7fbfb;
+	}
 
-.advantages-container {
-	display: flex;
-	width: 630px;
-	flex-direction: column;
-	gap: 24px;
-}
+	.hero-description {
+		display: block;
+		width: 675px;
+		height: 68px;
+		margin-inline: auto;
+		margin-bottom: 40px;
+		font-weight: 500;
+		font-size: 28px;
+		text-align: center;
+		color: #f7fbfb;
+	}
 
-.advantages-container-list {
-	display: flex;
-	align-items: center;
-	height: 64px;
-	padding-left: 178px;
-	background: #5b86a1;
-}
+	.book-a-tour-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-.advantages-container-list:nth-child(3) {
-	margin-bottom: 4px;
-}
+	.hero-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 575px;
+		height: 69px;
+		padding: 10px;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 24px;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
 
-.advantages-list-item {
-	font-weight: 400;
-	font-size: 24px;
-	color: #f7fbfb;
-}
+	/* ===== SECTION ABOUT US STYLES ===== */
+	/* Layout: width: 1170px; height: 358px; */
 
-/* ===== SECTION UPCOMING TOURS STYLES ===== */
-.tours-title {
-	margin-bottom: 60px;
-	font-size: 68px;
-	text-align: center;
-}
+	.about-us-title {
+		margin-bottom: 60px;
+		text-align: center;
+		font-size: 68px;
+	}
 
-.tours-card-title {
-	font-weight: 600;
-	font-size: 28px;
-}
+	.about-us-description {
+		font-size: 24px;
+		color: #202321;
+	}
 
-.tours-card-price {
-	font-weight: 600;
-	font-size: 24px;
-	color: #202321;
-}
+	/* ===== SECTION OUR ADVANTAGES STYLES ===== */
+	/* Layout: width: 1170px; height: 811px; */
 
-.tours-btn-details {
-	padding: 10px;
-	width: 337px;
-	height: 69px;
-	font-weight: 500;
-	font-size: 24px;
-	text-transform: uppercase;
-	color: #f7fbfb;
-	background: #5b86a1;
-}
+	.advantages-title {
+		margin-bottom: 140px;
+		font-size: 68px;
+		text-align: center;
+	}
 
-/* ===== SECTION REVIEWS STYLES ===== */
-.reviews-title {
-	margin-bottom: 70px;
-	font-size: 68px;
-	text-align: center;
-}
+	.advantages-list {
+		display: flex;
+		justify-content: center;
+	}
 
-.reviews-card-title {
-	font-weight: 600;
-	font-size: 28px;
-	text-align: center;
-	color: #5b86a1;
-}
+	.advantages-container {
+		display: flex;
+		width: 630px;
+		flex-direction: column;
+		gap: 24px;
+	}
 
-.reviews-card-description {
-	font-size: 20px;
-	color: #202321;
-}
+	.advantages-container-list {
+		display: flex;
+		align-items: center;
+		height: 64px;
+		padding-left: 126px;
+		background: #5b86a1;
+	}
 
-/* ===== SECTION GALLERY STYLES ===== */
-.gallery-title {
-	margin-bottom: 59px;
-	font-size: 68px;
-	text-align: center;
-}
+	.advantages-container-list:nth-child(3) {
+		margin-bottom: 4px;
+	}
 
-/* ===== SECTION QUESTIONS STYLES ===== */
+	.advantages-container-star {
+		margin-right: 12px;
+	}
 
-.sec-questions {
-	padding-top: 40px;
-}
+	.advantages-list-item {
+		font-weight: 400;
+		font-size: 24px;
+		color: #f7fbfb;
+	}
 
-.questions-form-title {
-	font-weight: 500;
-	font-size: 48px;
-	text-align: center;
-}
+	/* ===== SECTION UPCOMING TOURS STYLES ===== */
+	/* Layout: width: 1170px; height: 861px; */
 
-.questions-form-description {
-	font-size: 20px;
-	text-align: center;
-	color: #202321;
-}
+	.tours-title {
+		margin-bottom: 60px;
+		font-size: 68px;
+		text-align: center;
+	}
 
-.questions-btn-call {
-	padding: 10px;
-	width: 575px;
-	height: 69px;
-	font-family: var(--font-family);
-	font-weight: 500;
-	font-size: 24px;
-	text-transform: uppercase;
-	color: #f7fbfb;
-	background: #5b86a1;
-}
+	.tours-list {
+		display: flex;
+		gap: 20px;
+	}
 
-/* ===== FOOTER STYLES ===== */
-.main-footer {
-	background: #202321;
-}
+	.tours-card-title {
+		font-weight: 600;
+		font-size: 28px;
+	}
 
-.main-footer-container {
-	display: flex;
-	justify-content: center;
-	gap: 128px;
-	margin-bottom: 64px;
-	padding-top: 60px;
-}
+	.tours-card-price {
+		font-weight: 600;
+		font-size: 24px;
+		color: #202321;
+	}
 
-.footer-title {
-	font-size: 60px;
-	text-align: center;
-	color: #f7fbfb;
-}
+	.tours-btn-details {
+		padding: 10px;
+		width: 337px;
+		height: 69px;
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
 
-.contacts-container {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
-}
+	/* ===== SECTION REVIEWS STYLES ===== */
+	/* Layout: width: 1170px; height: 723px; */
 
-.contacts-menu-item a {
-	font-size: 24px;
-	color: #f7fbfb;
-}
+	.reviews-title {
+		margin-bottom: 70px;
+		font-size: 68px;
+		text-align: center;
+	}
 
-.contacts-menu-item:not(:last-child) {
-	margin-bottom: 40px;
-}
+	.reviews-list {
+		display: flex;
+		gap: 20px;
+	}
 
-.footer-soc-net {
-	display: flex;
-	gap: 32px;
-}
+	.reviews-card-title {
+		font-weight: 600;
+		font-size: 28px;
+		text-align: center;
+		color: #5b86a1;
+	}
 
-.footer-description {
-	font-family: 'Manrope', sans-serif;
-	font-size: 16px;
-	text-align: center;
-	padding-bottom: 48px;
-	color: #a3a5a3;
+	.reviews-card-description {
+		font-size: 20px;
+		color: #202321;
+	}
+
+	/* ===== SECTION GALLERY STYLES ===== */
+	/* Layout: width: 1170px; height: 667px; */
+
+	.gallery-title {
+		margin-bottom: 59px;
+		font-size: 68px;
+		text-align: center;
+	}
+
+	/* ===== SECTION QUESTIONS STYLES ===== */
+	/* Layout: width: (1920)/1440px; height: 1074px; */
+
+	.sec-questions {
+		width: 100%;
+		height: 1074px; /* 1024px */
+		background-image: url('../images/questions/questions-desk.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions@2x-desk.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions@3x-desk.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.sec-questions {
+		padding-top: 40px;
+	}
+
+	.questions-form-title {
+		font-weight: 500;
+		font-size: 48px;
+		text-align: center;
+	}
+
+	.questions-form-description {
+		font-size: 20px;
+		text-align: center;
+		color: #202321;
+	}
+
+	.questions-btn-call {
+		padding: 10px;
+		width: 575px;
+		height: 69px;
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	/* ===== FOOTER STYLES ===== */
+	/* Layout: width: 1440px; height: 491px; */
+
+	.main-footer {
+		background: #202321;
+	}
+
+	.main-footer-container {
+		display: flex;
+		justify-content: center;
+		gap: 128px;
+		margin-bottom: 64px;
+		padding-top: 60px;
+	}
+
+	.footer-title {
+		font-size: 60px;
+		text-align: center;
+		color: #f7fbfb;
+	}
+
+	.contacts-container {
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+	}
+
+	.contacts-menu-item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.contacts-menu-item a {
+		font-size: 24px;
+		color: #f7fbfb;
+	}
+
+	.contacts-menu-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.footer-soc-net {
+		display: flex;
+		gap: 32px;
+	}
+
+	.footer-copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 8px;
+		padding-bottom: 48px;
+	}
+
+	.footer-description {
+		font-family: 'Manrope', sans-serif;
+		font-size: 16px;
+		color: #a3a5a3;
+	}
 }
