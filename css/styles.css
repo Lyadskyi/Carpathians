@@ -28,6 +28,10 @@ p {
 	font-weight: 400;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 img {
 	display: block;
 }
@@ -47,25 +51,52 @@ ol {
 	text-decoration: none;
 	/* color: #f7fbfb; */
 }
-.container {
-	margin-left: 127px;
-	margin-right: 127px;
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /* -------------------- DESKTOP -------------------- */
 
 @media screen and (min-width: 1440px) {
+	/* COMMON STYLES FOR DESKTOP */
+	.container {
+		width: 1170px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.section {
 		padding-top: 40px;
 		padding-bottom: 40px;
 	}
 
+	.section-title {
+		font-size: 68px;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
 	/* ===== HEADER STYLES ===== */
 	/* Layout: width: 1170px; height: 118px; */
 
+	.logotype {
+		background-color: #5b86a1;
+	}
+
 	.main-header {
-		position: absolute;
-		left: 135px;
+		/* position: absolute; */
+		/* left: 135px; */
 		display: flex;
 		justify-content: space-between;
 		background: rgba(0, 0, 0, 0);
@@ -157,12 +188,6 @@ ol {
 	/* ===== SECTION ABOUT US STYLES ===== */
 	/* Layout: width: 1170px; height: 358px; */
 
-	.about-us-title {
-		margin-bottom: 60px;
-		text-align: center;
-		font-size: 68px;
-	}
-
 	.about-us-description {
 		font-size: 24px;
 		color: #202321;
@@ -171,18 +196,33 @@ ol {
 	/* ===== SECTION OUR ADVANTAGES STYLES ===== */
 	/* Layout: width: 1170px; height: 811px; */
 
-	.advantages-title {
-		margin-bottom: 140px;
-		font-size: 68px;
-		text-align: center;
-	}
-
 	.advantages-list {
 		display: flex;
-		justify-content: center;
+		flex-wrap: nowrap;
+		column-gap: 19px;
+		height: 668px;
+		border: 1px solid #5b86a1;
+	}
+
+	.advantages-list-background-1 {
+		display: flex;
+		align-self: flex-start;
+	}
+
+	.advantages-list-background-2 {
+		display: flex;
+		align-self: center;
+	}
+
+	.advantages-list-background-3 {
+		display: flex;
+		align-self: flex-end;
 	}
 
 	.advantages-container {
+		position: absolute;
+		left: 762px;
+		top: 1687px;
 		display: flex;
 		width: 630px;
 		flex-direction: column;
@@ -213,12 +253,6 @@ ol {
 
 	/* ===== SECTION UPCOMING TOURS STYLES ===== */
 	/* Layout: width: 1170px; height: 861px; */
-
-	.tours-title {
-		margin-bottom: 60px;
-		font-size: 68px;
-		text-align: center;
-	}
 
 	.tours-list {
 		display: flex;
@@ -252,8 +286,6 @@ ol {
 
 	.reviews-title {
 		margin-bottom: 70px;
-		font-size: 68px;
-		text-align: center;
 	}
 
 	.reviews-list {
@@ -278,8 +310,6 @@ ol {
 
 	.gallery-title {
 		margin-bottom: 59px;
-		font-size: 68px;
-		text-align: center;
 	}
 
 	/* ===== SECTION QUESTIONS STYLES ===== */
