@@ -34,6 +34,9 @@ html {
 
 img {
 	display: block;
+	border: none;
+	box-shadow: none;
+	outline: none;
 }
 
 ul,
@@ -83,6 +86,7 @@ ol {
 
 	.section-title {
 		font-size: 68px;
+		line-height: 1.2206;
 		text-align: center;
 		margin-bottom: 60px;
 	}
@@ -187,7 +191,7 @@ ol {
 	}
 
 	/* ===== SECTION ABOUT US STYLES ===== */
-	/* Layout: width: 1170px; height: 358px; */
+	/* Layout: width: 1170px; height: 358px; =DONE= */
 
 	.about-us-description {
 		height: 215px;
@@ -196,49 +200,59 @@ ol {
 	}
 
 	/* ===== SECTION OUR ADVANTAGES STYLES ===== */
-	/* Layout: width: 1170px; height: 811px; */
+	/* Layout: width: 1170px; height: 811px; =DONE= */
 
-	.advantages-list {
+	.advantages-container {
+		position: relative;
+		display: flex;
+	}
+
+	.advantages-list-images {
 		display: flex;
 		flex-wrap: nowrap;
 		column-gap: 19px;
 		height: 668px;
 	}
 
-	.advantages-list-background-1 {
+	.advantages-list-img-item-first {
 		display: flex;
 		align-self: flex-start;
 	}
 
-	.advantages-list-background-2 {
+	.advantages-list-img-item-second {
 		display: flex;
 		align-self: center;
 	}
 
-	.advantages-list-background-3 {
+	.advantages-list-img-item-third {
 		display: flex;
 		align-self: flex-end;
 	}
 
-	.advantages-container {
+	.advantages-list-container {
 		position: absolute;
-		left: 762px;
-		top: 1687px;
-		display: flex;
 		width: 630px;
+		display: flex;
 		flex-direction: column;
 		gap: 24px;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
 	}
 
-	.advantages-container-list {
+	.advantages-list-cont-item {
 		display: flex;
 		align-items: center;
-		height: 64px;
 		padding-left: 126px;
+		height: 64px;
+		font-weight: 400;
+		font-size: 24px;
+		color: #f7fbfb;
 		background: #5b86a1;
 	}
 
-	.advantages-container-list:nth-child(3) {
+	.advantages-list-cont-item:nth-child(3) {
 		margin-bottom: 4px;
 	}
 
@@ -246,28 +260,34 @@ ol {
 		margin-right: 12px;
 	}
 
-	.advantages-list-item {
-		font-weight: 400;
-		font-size: 24px;
-		color: #f7fbfb;
-	}
-
 	/* ===== SECTION UPCOMING TOURS STYLES ===== */
-	/* Layout: width: 1170px; height: 861px; */
+	/* Layout: width: 1170px; height: 861px; =DONE= */
 
 	.tours-list {
 		display: flex;
-		gap: 20px;
+		column-gap: 19px;
+	}
+
+	.image-wrapper {
+		border: 1px solid #5b86a1;
+		background-color: rgba(32, 35, 33, 0.3);
+	}
+
+	.tours-content {
+		padding: 44px 20px 48px;
+		border: 1px solid #5b86a1;
 	}
 
 	.tours-card-title {
 		font-weight: 600;
 		font-size: 28px;
+		margin-bottom: 20px;
 	}
 
 	.tours-card-price {
 		font-weight: 600;
 		font-size: 24px;
+		margin-bottom: 36px;
 		color: #202321;
 	}
 
