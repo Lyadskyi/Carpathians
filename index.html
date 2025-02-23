@@ -17,6 +17,11 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		/>
+		<!-- Swiper -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 		<!-- My stylesheets -->
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
@@ -122,30 +127,9 @@
 					<div class="advantages-container">
 						<!-- List of images -->
 						<ul class="advantages-list-images list">
-							<li class="advantages-list-img-item-first">
-								<img
-									src="./images/advantages/mountains-left-desk.jpg"
-									alt="Mountains"
-									width="377"
-									height="588"
-								/>
-							</li>
-							<li class="advantages-list-img-item-second">
-								<img
-									src="./images/advantages/mountains-center-desk.jpg"
-									alt="Mountains"
-									width="377"
-									height="507"
-								/>
-							</li>
-							<li class="advantages-list-img-item-third">
-								<img
-									src="./images/advantages/mountains-right-desk.jpg"
-									alt="Mountains"
-									width="377"
-									height="588"
-								/>
-							</li>
+							<li class="advantages-list-img-item-first"></li>
+							<li class="advantages-list-img-item-second"></li>
+							<li class="advantages-list-img-item-third"></li>
 						</ul>
 						<ul class="advantages-list-container list">
 							<li class="advantages-list-cont-item">
@@ -239,41 +223,32 @@
 					<!-- Reviews cards -->
 					<ul class="reviews-list list">
 						<li class="reviews-list-item">
-							<div class="reviews-image-wrapper"></div>
-							<!-- Reviews card MARIA -->
-							<div class="reviews-content">
-								<img
-									src="./images/reviews/maria-desk.png"
-									srcset="
-										./images/RETINA/reviews/maria@2x-desk.png 2x,
-										./images/RETINA/reviews/maria@3x-desk.png 3x
-									"
-									alt="Maria"
-									width="125"
-									height="125"
-									class="reviews-avatar"
-								/>
-								<h3 class="reviews-card-title">Maria</h3>
-								<p class="reviews-card-description">
-									It was really cool! We saw everything - sun, snow, rain, fog!
-									It's very exciting and interesting, you won't regret it - it's
-									worth going and seeing everything with your own eyes.
-									Everything is organized at the highest level.
-								</p>
-							</div>
-						</li>
-						<!-- <section class="content__block">
-								<h2>Backface-visibility</h2>
-							<div class="flip">
-								<div class="flip__body">
-									<div class="flip__front">FONT</div>
-									<div class="flip__back">BACK</div>
+							<div class="reviews-front">
+								<div class="reviews-image-wrapper"></div>
+								<!-- Reviews card MARIA -->
+								<div class="reviews-content">
+									<img
+										src="./images/reviews/maria-desk.png"
+										srcset="
+											./images/RETINA/reviews/maria@2x-desk.png 2x,
+											./images/RETINA/reviews/maria@3x-desk.png 3x
+										"
+										alt="Maria"
+										width="125"
+										height="125"
+										class="reviews-avatar"
+									/>
+									<h3 class="reviews-card-title">Maria</h3>
+									<p class="reviews-card-description">
+										It was really cool! We saw everything - sun, snow, rain,
+										fog! It's very exciting and interesting, you won't regret it
+										- it's worth going and seeing everything with your own eyes.
+										Everything is organized at the highest level.
+									</p>
 								</div>
 							</div>
-							<p>
-							Свойство определяет, будет ли видна пользователю обратная сторона элемента.
-							</p>
-								</section> -->
+							<div class="reviews-back"></div>
+						</li>
 						<li class="reviews-list-item">
 							<div class="reviews-image-wrapper"></div>
 							<!-- Reviews card OSTAP -->
@@ -329,6 +304,26 @@
 				<div class="container">
 					<!-- Title -->
 					<h2 class="section-title gallery-title">Gallery</h2>
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">Slide 1</div>
+							<div class="swiper-slide">Slide 2</div>
+							<div class="swiper-slide">Slide 3</div>
+							...
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
 				</div>
 			</section>
 			<!-- SECTION QUESTIONS -->
@@ -432,5 +427,7 @@
 				<p class="footer-description">Сreated by LelekaSoft</p>
 			</div>
 		</footer>
+		<!-- Swiper script -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	</body>
 </html>
