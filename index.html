@@ -44,7 +44,7 @@
 						<li class="menu-item">
 							<a href="#gallery" class="menu-link link">Gallery</a>
 						</li>
-						<li class="menu">
+						<li class="menu-item">
 							<a href="#contacts" class="menu-link link">Contacts</a>
 						</li>
 					</ul>
@@ -67,7 +67,7 @@
 					</div>
 					<!-- Social networks -->
 					<ul class="hero-soc-net list">
-						<li class="hero-soc-net-item hero-soc-net-item-first">
+						<li class="hero-soc-net-item">
 							<a href="https://t.me" class="hero-soc-net-link link"
 								><svg width="40" height="40">
 									<use
@@ -196,15 +196,8 @@
 					<!-- Tour cards -->
 					<ul class="tours-list list">
 						<li class="tours-list-item">
-							<div class="image-wrapper">
-								<img
-									src="./images/tours/hoverla-desk.jpg"
-									alt="Hoverla"
-									width="377"
-									height="438"
-								/>
-							</div>
-							<div class="tours-content">
+							<div class="tours-card-image hoverla-card"></div>
+							<div class="tours-card-content">
 								<h3 class="tours-card-title">Ascent to Hoverla</h3>
 								<p class="tours-card-price">From UAH 4,499/person</p>
 								<!-- Button MORE DETAILS -->
@@ -214,15 +207,8 @@
 							</div>
 						</li>
 						<li class="tours-list-item">
-							<div class="image-wrapper">
-								<img
-									src="./images/tours/bukovel-desk.jpg"
-									alt="Bukovel"
-									width="377"
-									height="438"
-								/>
-							</div>
-							<div class="tours-content">
+							<div class="tours-card-image bukovel-card"></div>
+							<div class="tours-card-content">
 								<h3 class="tours-card-title">Ski tour to Bukovel</h3>
 								<p class="tours-card-price">From UAH 7,499/person</p>
 								<!-- Button MORE DETAILS -->
@@ -232,15 +218,8 @@
 							</div>
 						</li>
 						<li class="tours-list-item">
-							<div class="image-wrapper">
-								<img
-									src="./images/tours/carpathians-desk.jpg"
-									alt="Carpathians"
-									width="377"
-									height="438"
-								/>
-							</div>
-							<div class="tours-content">
+							<div class="tours-card-image carpathians-card"></div>
+							<div class="tours-card-content">
 								<h3 class="tours-card-title">Week in Carpathians</h3>
 								<p class="tours-card-price">From UAH 9,999/person</p>
 								<!-- Button MORE DETAILS -->
@@ -260,63 +239,87 @@
 					<!-- Reviews cards -->
 					<ul class="reviews-list list">
 						<li class="reviews-list-item">
-							<div></div>
-							<img
-								src="./images/reviews/maria-desk.png"
-								srcset="
-									./images/RETINA/reviews/maria@2x-desk.png 2x,
-									./images/RETINA/reviews/maria@3x-desk.png 3x
-								"
-								alt="Maria"
-								width="125"
-								height="125"
-							/>
-							<h3 class="reviews-card-title">Maria</h3>
-							<p class="reviews-card-description">
-								It was really cool! We saw everything - sun, snow, rain, fog!
-								It's very exciting and interesting, you won't regret it - it's
-								worth going and seeing everything with your own eyes. Everything
-								is organized at the highest level.
+							<div class="reviews-image-wrapper"></div>
+							<!-- Reviews card MARIA -->
+							<div class="reviews-content">
+								<img
+									src="./images/reviews/maria-desk.png"
+									srcset="
+										./images/RETINA/reviews/maria@2x-desk.png 2x,
+										./images/RETINA/reviews/maria@3x-desk.png 3x
+									"
+									alt="Maria"
+									width="125"
+									height="125"
+									class="reviews-avatar"
+								/>
+								<h3 class="reviews-card-title">Maria</h3>
+								<p class="reviews-card-description">
+									It was really cool! We saw everything - sun, snow, rain, fog!
+									It's very exciting and interesting, you won't regret it - it's
+									worth going and seeing everything with your own eyes.
+									Everything is organized at the highest level.
+								</p>
+							</div>
+						</li>
+						<!-- <section class="content__block">
+								<h2>Backface-visibility</h2>
+							<div class="flip">
+								<div class="flip__body">
+									<div class="flip__front">FONT</div>
+									<div class="flip__back">BACK</div>
+								</div>
+							</div>
+							<p>
+							Свойство определяет, будет ли видна пользователю обратная сторона элемента.
 							</p>
+								</section> -->
+						<li class="reviews-list-item">
+							<div class="reviews-image-wrapper"></div>
+							<!-- Reviews card OSTAP -->
+							<div class="reviews-content">
+								<img
+									src="./images/reviews/ostap-desk.png"
+									srcset="
+										./images/RETINA/reviews/ostap@2x-desk.png 2x,
+										./images/RETINA/reviews/ostap@3x-desk.png 3x
+									"
+									alt="Ostap"
+									width="125"
+									height="125"
+									class="reviews-avatar"
+								/>
+								<h3 class="reviews-card-title">Ostap</h3>
+								<p class="reviews-card-description">
+									Good organization, everything went smoothly. Friendly guide
+									Taras told interesting facts about the area and customs
+									throughout the tour.
+								</p>
+							</div>
 						</li>
 						<li class="reviews-list-item">
-							<div></div>
-							<img
-								src="./images/reviews/ostap-desk.png"
-								srcset="
-									./images/RETINA/reviews/ostap@2x-desk.png 2x,
-									./images/RETINA/reviews/ostap@3x-desk.png 3x
-								"
-								alt="Ostap"
-								width="125"
-								height="125"
-							/>
-							<h3 class="reviews-card-title">Ostap</h3>
-							<p class="reviews-card-description">
-								Good organization, everything went smoothly. Friendly guide
-								Taras told interesting facts about the area and customs
-								throughout the tour.
-							</p>
-						</li>
-						<li class="reviews-list-item">
-							<div></div>
-							<img
-								src="./images/reviews/anita-desk.png"
-								srcset="
-									./images/RETINA/reviews/anita@2x-desk.png 2x,
-									./images/RETINA/reviews/anita@3x-desk.png 3x
-								"
-								alt="Anita"
-								width="125"
-								height="125"
-							/>
-							<h3 class="reviews-card-title">Anita</h3>
-							<p class="reviews-card-description">
-								Who is going to the mountains for the first time - this is
-								exactly the tour and the people who organize everything. Guide
-								Makar is interesting stories, selection of a route for a
-								comfortable ascent, motivation and support.
-							</p>
+							<div class="reviews-image-wrapper"></div>
+							<!-- Reviews card ANITA -->
+							<div class="reviews-content">
+								<img
+									src="./images/reviews/anita-desk.png"
+									srcset="
+										./images/RETINA/reviews/anita@2x-desk.png 2x,
+										./images/RETINA/reviews/anita@3x-desk.png 3x
+									"
+									alt="Anita"
+									width="125"
+									height="125"
+									class="reviews-avatar"
+								/>
+								<h3 class="reviews-card-title">Anita</h3>
+								<p class="reviews-card-description">
+									Who is going to the mountains for the first time - this is
+									exactly the tour and the people who organize everything. Guide
+									Makar is interesting stories, selection of a route for a
+									comfortable ascent, motivation and support.
+								</p>
+							</div>
 						</li>
 					</ul>
 				</div>
