@@ -110,7 +110,7 @@ ol {
 
 	.menu {
 		display: flex;
-		gap: 80px;
+		column-gap: 80px;
 	}
 
 	.menu-item {
@@ -195,8 +195,13 @@ ol {
 	.hero-soc-net {
 		display: flex;
 		flex-direction: column;
-		row-gap: 32px;
 		align-items: end;
+		row-gap: 32px;
+		line-height: 0;
+	}
+
+	.hero-soc-net-link {
+		display: block;
 	}
 
 	/* .hero-soc-net-item:not(:last-child) {
@@ -272,7 +277,7 @@ ol {
 		width: 630px;
 		display: flex;
 		flex-direction: column;
-		gap: 24px;
+		row-gap: 24px;
 		top: 50%;
 		left: 50%;
 		margin-right: -50%;
@@ -527,7 +532,7 @@ ol {
 	.main-footer-container {
 		display: flex;
 		justify-content: center;
-		gap: 128px;
+		column-gap: 128px;
 		margin-bottom: 64px;
 		padding-top: 60px;
 	}
@@ -541,7 +546,11 @@ ol {
 	.contacts-container {
 		display: flex;
 		flex-direction: column;
-		gap: 40px;
+		row-gap: 40px;
+	}
+
+	.footer-address {
+		padding-top: 17px;
 	}
 
 	.contacts-menu-item {
@@ -561,14 +570,19 @@ ol {
 
 	.footer-soc-net {
 		display: flex;
-		gap: 32px;
+		column-gap: 32px;
+		line-height: 0;
+	}
+
+	.footer-soc-net-link {
+		display: block;
 	}
 
 	.footer-copyright {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 8px;
+		column-gap: 8px;
 		padding-bottom: 48px;
 	}
 
