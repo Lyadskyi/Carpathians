@@ -506,6 +506,33 @@ ol {
 		margin-bottom: 59px;
 	}
 
+	.swiper {
+		position: relative;
+		display: flex;
+	}
+
+	.swiper-pagination {
+		position: absolute;
+		bottom: 10px;
+		left: 50%;
+		z-index: 100;
+		transform: translateX(-50%);
+	}
+
+	.image-slider .swiper-button-prev::after,
+	.image-slider .swiper-button-next::after {
+		font-size: 40px;
+		color: #a3a5a3;
+	}
+
+	.image-slider .swiper-pagination-bullet {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+		font-size: 12px;
+		background-color: indianred;
+	}
+
 	/* ===== SECTION QUESTIONS STYLES ===== */
 	/* Layout: width: (1920)/1440px; height: 1074px; */
 
