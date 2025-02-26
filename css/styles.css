@@ -94,7 +94,11 @@ ol {
 	/* ===== HEADER STYLES ===== */
 	/* Layout: width: 1170px; height: 118px; */
 	.main-header {
-		background-color: aquamarine;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 118px;
+		background: rgba(0, 0, 0, 0);
 	}
 
 	.main-header-container {
@@ -102,10 +106,6 @@ ol {
 		justify-content: space-between;
 		align-items: center;
 		padding-top: 40px;
-	}
-
-	.main-header {
-		height: 118px;
 	}
 
 	.menu {
@@ -118,12 +118,17 @@ ol {
 		font-size: 24px;
 	}
 
+	.menu-link:hover {
+		color: #5b86a1;
+		transition: color 250ms linear;
+	}
+
 	/* ===== SECTION HERO STYLES ===== */
 	/* Layout: width: (1440)/1170px; height: 906px; */
 
 	.sec-hero {
 		width: 100%;
-		height: 906px; /* 1024px */
+		height: 1024px;
 		background-image: url('../images/hero/hero-desk.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
@@ -154,6 +159,7 @@ ol {
 
 	.hero-title {
 		margin: 0 auto;
+		padding-top: 280px;
 		margin-bottom: 40px;
 		font-size: 88px;
 		text-align: center;
@@ -165,7 +171,7 @@ ol {
 		width: 675px;
 		height: 68px;
 		margin: 0 auto;
-		margin-bottom: 60px;
+		margin-bottom: 47px;
 		font-weight: 500;
 		font-size: 28px;
 		text-align: center;
@@ -173,6 +179,10 @@ ol {
 	}
 
 	.book-a-tour-container {
+		position: absolute;
+		left: 50%;
+		top: 702px;
+		transform: translate(-50%, -50%);
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -203,14 +213,6 @@ ol {
 	.hero-soc-net-link {
 		display: block;
 	}
-
-	/* .hero-soc-net-item:not(:last-child) {
-		margin-bottom: 32px;
-	} */
-
-	/* 	.contacts-menu-item:not(:last-child) {
-		margin-bottom: 40px;
-	} */
 
 	/* ===== SECTION ABOUT US STYLES ===== */
 	/* Layout: width: 1170px; height: 358px; =DONE= */
@@ -396,6 +398,24 @@ ol {
 		column-gap: 20px;
 	}
 
+	.reviews-list-item:hover .reviews-body {
+		transform: rotateY(180deg);
+		transition: all 0.3s ease-out;
+		transform-style: preserve-3d;
+	}
+
+	.reviews-body {
+		position: relative;
+		display: flex;
+	}
+
+	.reviews-front {
+		z-index: 2;
+		transform: rotateY(0deg);
+
+		backface-visibility: hidden;
+	}
+
 	.reviews-image-wrapper {
 		display: flex;
 		position: relative;
@@ -405,6 +425,7 @@ ol {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+		border: 1px solid #5b86a1;
 	}
 
 	.reviews-content {
@@ -440,13 +461,37 @@ ol {
 		color: #202321;
 	}
 
-	.reviews-list-item {
-		transition: transform 0.4s ease-in-out;
+	.reviews-back {
+		position: absolute;
+		width: 377px;
+		height: 570px;
+		top: 0;
+		left: 0;
+		transform: rotateY(-180deg);
+		width: 377px;
+		height: 570px;
+		border: solid 1px #5b86a1;
 	}
 
-	.reviews-list-item:hover {
-		transform: scale(1.05);
-		animation: rotateCard 0.6s ease-in-out forwards;
+	.maria-back {
+		background-image: url('../images/reviews/maria-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.ostap-back {
+		background-image: url('../images/reviews/ostap-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.anita-back {
+		background-image: url('../images/reviews/anita-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	/* ===== SECTION GALLERY STYLES ===== */
@@ -590,5 +635,13 @@ ol {
 		font-family: 'Manrope', sans-serif;
 		font-size: 16px;
 		color: #a3a5a3;
+	}
+
+	.arrowUp {
+		position: fixed;
+		bottom: 5%;
+		right: 3%;
+		width: 60px;
+		height: 60px;
 	}
 }

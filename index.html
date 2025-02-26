@@ -74,7 +74,7 @@
 					<ul class="hero-soc-net list">
 						<li class="hero-soc-net-item">
 							<a href="https://t.me" class="hero-soc-net-link link"
-								><svg width="40" height="40">
+								><svg width="40" height="40" class="hero-soc-net-icon">
 									<use
 										href="./images/icons/sprite.svg#icon-telegram"
 									></use></svg
@@ -223,77 +223,89 @@
 					<!-- Reviews cards -->
 					<ul class="reviews-list list">
 						<li class="reviews-list-item">
-							<div class="reviews-front">
-								<div class="reviews-image-wrapper"></div>
-								<!-- Reviews card MARIA -->
-								<div class="reviews-content">
-									<img
-										src="./images/reviews/maria-desk.png"
-										srcset="
-											./images/RETINA/reviews/maria@2x-desk.png 2x,
-											./images/RETINA/reviews/maria@3x-desk.png 3x
-										"
-										alt="Maria"
-										width="125"
-										height="125"
-										class="reviews-avatar"
-									/>
-									<h3 class="reviews-card-title">Maria</h3>
-									<p class="reviews-card-description">
-										It was really cool! We saw everything - sun, snow, rain,
-										fog! It's very exciting and interesting, you won't regret it
-										- it's worth going and seeing everything with your own eyes.
-										Everything is organized at the highest level.
-									</p>
+							<div class="reviews-body">
+								<div class="reviews-front">
+									<div class="reviews-image-wrapper"></div>
+									<!-- Reviews card MARIA -->
+									<div class="reviews-content">
+										<img
+											src="./images/reviews/maria-desk.png"
+											srcset="
+												./images/RETINA/reviews/maria@2x-desk.png 2x,
+												./images/RETINA/reviews/maria@3x-desk.png 3x
+											"
+											alt="Maria"
+											width="125"
+											height="125"
+											class="reviews-avatar"
+										/>
+										<h3 class="reviews-card-title">Maria</h3>
+										<p class="reviews-card-description">
+											It was really cool! We saw everything - sun, snow, rain,
+											fog! It's very exciting and interesting, you won't regret
+											it - it's worth going and seeing everything with your own
+											eyes. Everything is organized at the highest level.
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="reviews-back"></div>
-						</li>
-						<li class="reviews-list-item">
-							<div class="reviews-image-wrapper"></div>
-							<!-- Reviews card OSTAP -->
-							<div class="reviews-content">
-								<img
-									src="./images/reviews/ostap-desk.png"
-									srcset="
-										./images/RETINA/reviews/ostap@2x-desk.png 2x,
-										./images/RETINA/reviews/ostap@3x-desk.png 3x
-									"
-									alt="Ostap"
-									width="125"
-									height="125"
-									class="reviews-avatar"
-								/>
-								<h3 class="reviews-card-title">Ostap</h3>
-								<p class="reviews-card-description">
-									Good organization, everything went smoothly. Friendly guide
-									Taras told interesting facts about the area and customs
-									throughout the tour.
-								</p>
+								<div class="reviews-back maria-back"></div>
 							</div>
 						</li>
 						<li class="reviews-list-item">
-							<div class="reviews-image-wrapper"></div>
-							<!-- Reviews card ANITA -->
-							<div class="reviews-content">
-								<img
-									src="./images/reviews/anita-desk.png"
-									srcset="
-										./images/RETINA/reviews/anita@2x-desk.png 2x,
-										./images/RETINA/reviews/anita@3x-desk.png 3x
-									"
-									alt="Anita"
-									width="125"
-									height="125"
-									class="reviews-avatar"
-								/>
-								<h3 class="reviews-card-title">Anita</h3>
-								<p class="reviews-card-description">
-									Who is going to the mountains for the first time - this is
-									exactly the tour and the people who organize everything. Guide
-									Makar is interesting stories, selection of a route for a
-									comfortable ascent, motivation and support.
-								</p>
+							<div class="reviews-body">
+								<div class="reviews-front">
+									<div class="reviews-image-wrapper"></div>
+									<!-- Reviews card OSTAP -->
+									<div class="reviews-content">
+										<img
+											src="./images/reviews/ostap-desk.png"
+											srcset="
+												./images/RETINA/reviews/ostap@2x-desk.png 2x,
+												./images/RETINA/reviews/ostap@3x-desk.png 3x
+											"
+											alt="Ostap"
+											width="125"
+											height="125"
+											class="reviews-avatar"
+										/>
+										<h3 class="reviews-card-title">Ostap</h3>
+										<p class="reviews-card-description">
+											Good organization, everything went smoothly. Friendly
+											guide Taras told interesting facts about the area and
+											customs throughout the tour.
+										</p>
+									</div>
+								</div>
+								<div class="reviews-back ostap-back"></div>
+							</div>
+						</li>
+						<li class="reviews-list-item">
+							<div class="reviews-body">
+								<div class="reviews-front">
+									<div class="reviews-image-wrapper"></div>
+									<!-- Reviews card ANITA -->
+									<div class="reviews-content">
+										<img
+											src="./images/reviews/anita-desk.png"
+											srcset="
+												./images/RETINA/reviews/anita@2x-desk.png 2x,
+												./images/RETINA/reviews/anita@3x-desk.png 3x
+											"
+											alt="Anita"
+											width="125"
+											height="125"
+											class="reviews-avatar"
+										/>
+										<h3 class="reviews-card-title">Anita</h3>
+										<p class="reviews-card-description">
+											Who is going to the mountains for the first time - this is
+											exactly the tour and the people who organize everything.
+											Guide Makar is interesting stories, selection of a route
+											for a comfortable ascent, motivation and support.
+										</p>
+									</div>
+								</div>
+								<div class="reviews-back anita-back"></div>
 							</div>
 						</li>
 					</ul>
@@ -399,8 +411,10 @@
 							</div>
 						</div>
 						<!-- If we need navigation buttons -->
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="swiper-buttons-container">
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -504,6 +518,14 @@
 				/>
 				<p class="footer-description">Сreated by LelekaSoft</p>
 			</div>
+			<a href="#" class="arrowUp">
+				<img
+					src="./images/arrowUp/arrow.png"
+					alt="Arrow up"
+					width="70"
+					height="70"
+				/>
+			</a>
 		</footer>
 		<!-- Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
