@@ -8,10 +8,10 @@ new Swiper('.image-slider', {
 		pageUpDown: true,
 	},
 	loop: true,
-	mousewheel: {
-		sensitivity: 1,
-		eventsTarget: '.image-slider',
-	},
+	// mousewheel: {
+	// 	sensitivity: 1,
+	// 	eventsTarget: '.image-slider',
+	// },
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',

@@ -55,7 +55,7 @@ ol {
 	color: #f7fbfb;
 }
 
-.visually-hidden {
+/* .visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -67,7 +67,7 @@ ol {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-}
+} */
 
 /* -------------------- DESKTOP -------------------- */
 
@@ -571,22 +571,79 @@ ol {
 		padding-top: 40px;
 	}
 
+	.contact-form {
+		box-sizing: border-box;
+		width: 774px;
+		height: 583px;
+		padding: 60px 47px 60px 46px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 244px;
+		background: #f7fbfb;
+	}
+
 	.questions-form-title {
 		font-weight: 500;
 		font-size: 48px;
+		line-height: 1.2292;
 		text-align: center;
+		margin-bottom: 32px;
 	}
 
 	.questions-form-description {
+		width: 502px;
+		height: 48px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 44px;
 		font-size: 20px;
 		text-align: center;
 		color: #202321;
 	}
 
-	.questions-btn-call {
-		padding: 10px;
+	.input-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.input-wrapper::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 52px;
+		width: 575px;
+		height: 0px;
+		border: 1px solid #a3a5a3;
+	}
+
+	.contact-form-input {
+		display: block;
+		box-sizing: border-box;
+		width: 575px;
+		height: 37px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 28px;
+		padding-left: 7px;
+		border: none;
+		font-size: 24px;
+		background: #f7fbfb;
+	}
+
+	.contact-form-input::placeholder {
+		font-size: 24px;
+		color: #202321;
+	}
+
+	.contact-form-btn {
+		display: block;
 		width: 575px;
 		height: 69px;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 44px;
 		font-weight: 500;
 		font-size: 24px;
 		text-transform: uppercase;
