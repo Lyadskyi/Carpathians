@@ -728,4 +728,54 @@ ol {
 		width: 60px;
 		height: 60px;
 	}
+
+	/* ===== BACKDROP STYLES ===== */
+
+	.backdrop {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999999999;
+		background-color: rgba(32, 35, 33, 0.6);
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 250ms linear, visibility 250ms linear;
+	}
+
+	.backdrop.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	/* ===== MODAL-WINDOW STYLES ===== */
+
+	.modal-window {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 774px;
+		min-height: 745px;
+		transform: stroke 250ms linear;
+		stroke: #202321;
+		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+		background-color: #f7fbfb;
+	}
+
+	.modal-close-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		line-height: 0;
+	}
+
+	.modal-close-btn:hover,
+	.modal-close-btn:focus {
+		stroke: #5b86a1;
+	}
 }
