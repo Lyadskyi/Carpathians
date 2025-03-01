@@ -31,3 +31,9 @@ new Swiper('.image-slider', {
 	speed: 600,
 	touchRatio: 2,
 });
+
+let modal = document.getElementById('backdrop');
+
+function openModal() {
+	modal.style.display = 'block';
+}

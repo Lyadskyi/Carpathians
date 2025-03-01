@@ -778,4 +778,83 @@ ol {
 	.modal-close-btn:focus {
 		stroke: #5b86a1;
 	}
+
+	.modal-window-form {
+		box-sizing: border-box;
+		padding: 116px 99px 60px 100px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.modal-window-form-title {
+		font-size: 60px;
+		line-height: 1.2168;
+		text-align: center;
+		margin-bottom: 28px;
+	}
+
+	.modal-window-form-description {
+		font-size: 24px;
+		line-height: 1.2085;
+		text-align: center;
+		margin-bottom: 32px;
+		color: #202321;
+	}
+
+	.modal-window-form-input {
+		display: block;
+		box-sizing: border-box;
+		width: 575px;
+		height: 37px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 28px;
+		padding-left: 7px;
+		border: none;
+		font-size: 24px;
+		background: #f7fbfb;
+	}
+
+	.modal-window-form-input::placeholder {
+		font-size: 24px;
+		color: #202321;
+	}
+
+	.modal-window-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.modal-window-wrapper::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 575px;
+		height: 0px;
+		border: 1px solid #a3a5a3;
+	}
+
+	.checkbox-container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		margin-bottom: 44px;
+	}
+
+	.checkbox-label {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 24px;
+	}
+
+	input[type='checkbox'] {
+		width: 24px;
+		height: 24px;
+		border-radius: 0;
+		border: 1px solid black;
+		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+	}
 }
