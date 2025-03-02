@@ -863,9 +863,10 @@ ol {
 		stroke: #202321;
 	}
 
-	.modal-window-checkbox:focus {
-		outline-color: #5b86a1;
-		/* outline-offset: 4px; */
+	.modal-window-checkbox:focus
+		+ .checkbox-fieldset-own-checkmark
+		.checkbox-fieldset-own-checkmark-icon {
+		border: solid 1px #5b86a1;
 	}
 
 	.checkbox-fieldset-own-checkmark {
@@ -881,5 +882,9 @@ ol {
 
 	.checkbox-fieldset-own-checkmark-icon {
 		fill: none;
+	}
+
+	.contact-form-btn:focus {
+		outline-color: #202321;
 	}
 }
