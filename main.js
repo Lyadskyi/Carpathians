@@ -32,7 +32,7 @@ new Swiper('.image-slider', {
 	touchRatio: 2,
 });
 
-let modal = document.getElementById('backdrop');
+let modal = document.getElementById('modal-window');
 
 function openModal() {
 	modal.style.display = 'block';

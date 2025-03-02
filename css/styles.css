@@ -55,7 +55,7 @@ ol {
 	color: #f7fbfb;
 }
 
-/* .visually-hidden {
+.visually-hidden {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -67,7 +67,7 @@ ol {
 	clip-path: inset(100%);
 	clip: rect(0 0 0 0);
 	overflow: hidden;
-} */
+}
 
 /* -------------------- DESKTOP -------------------- */
 
@@ -759,11 +759,8 @@ ol {
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		width: 774px;
-		min-height: 745px;
-		transform: stroke 250ms linear;
-		stroke: #202321;
 		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+		stroke: #202321;
 		background-color: #f7fbfb;
 	}
 
@@ -780,37 +777,34 @@ ol {
 	}
 
 	.modal-window-form {
-		box-sizing: border-box;
 		padding: 116px 99px 60px 100px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 	.modal-window-form-title {
+		margin-bottom: 28px;
+		text-align: center;
 		font-size: 60px;
 		line-height: 1.2168;
-		text-align: center;
-		margin-bottom: 28px;
 	}
 
 	.modal-window-form-description {
+		margin-bottom: 32px;
+		text-align: center;
 		font-size: 24px;
 		line-height: 1.2085;
-		text-align: center;
-		margin-bottom: 32px;
 		color: #202321;
 	}
 
 	.modal-window-form-input {
 		display: block;
 		box-sizing: border-box;
-		width: 575px;
+		width: 100%;
 		height: 37px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 28px;
 		padding-left: 7px;
-		border: none;
+		border: transparent;
 		font-size: 24px;
 		background: #f7fbfb;
 	}
@@ -818,6 +812,11 @@ ol {
 	.modal-window-form-input::placeholder {
 		font-size: 24px;
 		color: #202321;
+	}
+
+	.modal-window-form-input:focus {
+		/* transition: outline-color 0.1s linear; */
+		outline-color: #5b86a1;
 	}
 
 	.modal-window-wrapper {
@@ -831,16 +830,18 @@ ol {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 575px;
+		width: 100%;
 		height: 0px;
 		border: 1px solid #a3a5a3;
 	}
 
-	.checkbox-container {
+	.checkbox-fieldset-wrapper {
 		display: flex;
 		flex-direction: column;
 		row-gap: 24px;
 		margin-bottom: 44px;
+		padding: 0;
+		border: none;
 	}
 
 	.checkbox-label {
@@ -848,13 +849,37 @@ ol {
 		align-items: center;
 		gap: 12px;
 		font-size: 24px;
+		line-height: 1.2085;
 	}
 
 	input[type='checkbox'] {
 		width: 24px;
 		height: 24px;
-		border-radius: 0;
-		border: 1px solid black;
-		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+	}
+
+	.modal-window-checkbox:checked
+		+ .checkbox-fieldset-own-checkmark
+		.checkbox-fieldset-own-checkmark-icon {
+		stroke: #202321;
+	}
+
+	.modal-window-checkbox:focus {
+		outline-color: #5b86a1;
+		/* outline-offset: 4px; */
+	}
+
+	.checkbox-fieldset-own-checkmark {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		stroke: transparent;
+		border: solid 1px #202321;
+	}
+
+	.checkbox-fieldset-own-checkmark-icon {
+		fill: none;
 	}
 }
