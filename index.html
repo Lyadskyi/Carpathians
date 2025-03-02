@@ -30,27 +30,27 @@
 		<header class="main-header">
 			<div class="main-header-container container">
 				<!-- Logotype -->
-				<a href="./index.html" class="logotype link"
-					><svg width="60" height="60">
+				<a class="logotype link" href="./index.html">
+					<svg width="60" height="60">
 						<use href="./images/icons/sprite.svg#icon-logotype"></use></svg
 				></a>
 				<!-- Navigation -->
 				<nav class="main-navigation">
 					<ul class="menu list">
 						<li class="menu-item">
-							<a href="#about-us" class="menu-link link">About us</a>
+							<a class="menu-link link" href="#about-us">About us</a>
 						</li>
 						<li class="menu-item">
-							<a href="#tours" class="menu-link link">Tours</a>
+							<a class="menu-link link" href="#tours">Tours</a>
 						</li>
 						<li class="menu-item">
-							<a href="#reviews" class="menu-link link">Reviews</a>
+							<a class="menu-link link" href="#reviews">Reviews</a>
 						</li>
 						<li class="menu-item">
-							<a href="#gallery" class="menu-link link">Gallery</a>
+							<a class="menu-link link" href="#gallery">Gallery</a>
 						</li>
 						<li class="menu-item">
-							<a href="#contacts" class="menu-link link">Contacts</a>
+							<a class="menu-link link" href="#contacts">Contacts</a>
 						</li>
 					</ul>
 				</nav>
@@ -67,32 +67,31 @@
 						real reboot
 					</p>
 					<!-- todo Button BOOK A TOUR -->
-					<!-- <div class="book-a-tour-container">
-						<a href="" class="hero-button link">book a tour</a>
-					</div> -->
-					<button onclick="openModal()">book a tour</button>
+					<button class="hero-btn" onclick="openModal()">book a tour</button>
 					<!-- Social networks -->
-					<!-- todo заменить классы местами -->
 					<ul class="hero-soc-net list">
 						<li class="hero-soc-net-item">
-							<a href="https://t.me" class="hero-soc-net-link link"
-								><svg width="40" height="40" class="hero-soc-net-icon">
+							<a class="hero-soc-net-link link" href="https://t.me">
+								<svg class="hero-soc-net-icon" width="40" height="40">
 									<use
 										href="./images/icons/sprite.svg#icon-telegram"
 									></use></svg
 							></a>
 						</li>
 						<li class="hero-soc-net-item">
-							<a href="https://www.instagram.com" class="hero-soc-net-link link"
-								><svg width="40" height="40">
+							<a
+								class="hero-soc-net-link link"
+								href="https://www.instagram.com"
+							>
+								<svg class="hero-soc-net-icon" width="40" height="40">
 									<use
 										href="./images/icons/sprite.svg#icon-instagram"
 									></use></svg
 							></a>
 						</li>
 						<li class="hero-soc-net-item">
-							<a href="https://www.facebook.com" class="hero-soc-net-link link"
-								><svg width="40" height="40">
+							<a class="hero-soc-net-link link" href="https://www.facebook.com">
+								<svg class="hero-soc-net-icon" width="40" height="40">
 									<use
 										href="./images/icons/sprite.svg#icon-facebook"
 									></use></svg
@@ -102,7 +101,7 @@
 				</div>
 			</section>
 			<!-- ! SECTION ABOUT US -->
-			<section id="about-us" class="sec-about-us section">
+			<section class="sec-about-us section" id="about-us">
 				<div class="container">
 					<!-- Title & description -->
 					<h2 class="section-title">About us</h2>
@@ -175,7 +174,7 @@
 				</div>
 			</section>
 			<!-- ! SECTION UPCOMING TOURS -->
-			<section id="tours" class="sec-tours section">
+			<section class="sec-tours section" id="tours">
 				<div class="container">
 					<!-- Title -->
 					<h2 class="section-title">Upcoming tours</h2>
@@ -187,7 +186,7 @@
 								<h3 class="tours-card-title">Ascent to Hoverla</h3>
 								<p class="tours-card-price">From UAH 4,499/person</p>
 								<!-- todo Button MORE DETAILS -->
-								<button type="button" class="tours-btn-details">
+								<button class="tours-details-btn" type="button">
 									more details
 								</button>
 							</div>
@@ -198,7 +197,7 @@
 								<h3 class="tours-card-title">Ski tour to Bukovel</h3>
 								<p class="tours-card-price">From UAH 7,499/person</p>
 								<!-- todo Button MORE DETAILS -->
-								<button type="button" class="tours-btn-details">
+								<button class="tours-details-btn" type="button">
 									more details
 								</button>
 							</div>
@@ -209,7 +208,7 @@
 								<h3 class="tours-card-title">Week in Carpathians</h3>
 								<p class="tours-card-price">From UAH 9,999/person</p>
 								<!-- todo Button MORE DETAILS -->
-								<button type="button" class="tours-btn-details">
+								<button class="tours-details-btn" type="button">
 									more details
 								</button>
 							</div>
@@ -559,9 +558,8 @@
 			</a>
 		</footer>
 		<!-- ! BACKDROP -->
-		<!-- todo Переделать, так как два дива -->
 		<div class="backdrop is-open" id="backdrop-window">
-			<div class="modal-window" id="modal-window">
+			<div class="modal-window">
 				<!-- todo Button CLOSE -->
 				<button
 					class="modal-close-btn"
@@ -586,7 +584,7 @@
 							placeholder="Your name*"
 							name="user_name"
 							pattern="[a-zA-Zа-яА-ЯґҐєЄіІїЇйЙ']+"
-							title="Dmytro"
+							title="Введіть ваше ім'я латиницею"
 							required
 						/>
 					</div>
@@ -596,10 +594,11 @@
 							type="tel"
 							placeholder="Phone number*"
 							name="phone_number_name"
-							pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+							pattern="^\+?\d{0,2}[-.\s]?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{2}[-.\s]?\d{2}$"
 							title="XXX-XXX-XX-XX"
 							required
 						/>
+						<!-- pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" -->
 					</div>
 					<!-- Input's fieldset -->
 					<fieldset class="checkbox-fieldset-wrapper">
@@ -607,7 +606,7 @@
 							<input
 								class="modal-window-checkbox visually-hidden"
 								type="checkbox"
-								name="username_option"
+								name="username_option[]"
 								value="Ascent to Hoverla"
 							/>
 							<span class="checkbox-fieldset-own-checkmark">
@@ -627,7 +626,7 @@
 							<input
 								class="modal-window-checkbox visually-hidden"
 								type="checkbox"
-								name="username_option"
+								name="username_option[]"
 								value="Ski tour to Bukovel"
 							/>
 							<span class="checkbox-fieldset-own-checkmark">
@@ -647,7 +646,7 @@
 							<input
 								class="modal-window-checkbox visually-hidden"
 								type="checkbox"
-								name="username_option"
+								name="username_option[]"
 								value="Week in Carpathians"
 							/>
 							<span class="checkbox-fieldset-own-checkmark">

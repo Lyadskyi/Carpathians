@@ -178,20 +178,11 @@ ol {
 		color: #f7fbfb;
 	}
 
-	.book-a-tour-container {
+	.hero-btn {
 		position: absolute;
 		left: 50%;
-		top: 702px;
+		top: 682px;
 		transform: translate(-50%, -50%);
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.hero-button {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		width: 575px;
 		height: 69px;
 		padding: 10px;
@@ -375,7 +366,7 @@ ol {
 		color: #202321;
 	}
 
-	.tours-btn-details {
+	.tours-details-btn {
 		padding: 10px;
 		width: 337px;
 		height: 69px;
@@ -732,11 +723,13 @@ ol {
 	/* ===== BACKDROP STYLES ===== */
 
 	.backdrop {
+		display: block;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		overflow: auto;
 		z-index: 999999999;
 		background-color: rgba(32, 35, 33, 0.6);
 
@@ -795,6 +788,22 @@ ol {
 		color: #202321;
 	}
 
+	.modal-window-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.modal-window-wrapper::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0px;
+		border: 1px solid #a3a5a3;
+	}
+
 	.modal-window-form-input {
 		display: block;
 		box-sizing: border-box;
@@ -817,22 +826,6 @@ ol {
 	.modal-window-form-input:focus {
 		/* transition: outline-color 0.1s linear; */
 		outline-color: #5b86a1;
-	}
-
-	.modal-window-wrapper {
-		position: relative;
-		display: block;
-	}
-
-	.modal-window-wrapper::after {
-		content: '';
-		display: block;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
-		height: 0px;
-		border: 1px solid #a3a5a3;
 	}
 
 	.checkbox-fieldset-wrapper {
@@ -863,9 +856,7 @@ ol {
 		stroke: #202321;
 	}
 
-	.modal-window-checkbox:focus
-		+ .checkbox-fieldset-own-checkmark
-		.checkbox-fieldset-own-checkmark-icon {
+	.modal-window-checkbox:focus + .checkbox-fieldset-own-checkmark {
 		border: solid 1px #5b86a1;
 	}
 
