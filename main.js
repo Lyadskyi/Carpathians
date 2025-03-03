@@ -1,7 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
-	const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закриття
+	const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закриття на X
+	const closeModalCallMeBtn = document.querySelector('.contact-form-btn'); // Кнопка закриття на кнопку CALL ME
 	const backdrop = document.querySelector('.backdrop'); // Фон модального вікна
+
+	console.log(closeModalCallMeBtn);
 
 	if (!openModalBtn || !closeModalBtn || !backdrop) {
 		console.error('❌ Один із елементів не знайдено!');
@@ -23,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	// Обробник кліку для закриття модального вікна
 	closeModalBtn.addEventListener('click', closeModal);
+
+	// Обробник кліку для закриття модального вікна
+	closeModalCallMeBtn.addEventListener('click', closeModal);
 
 	// Закриття модального вікна при кліку на фон (backdrop)
 	backdrop.addEventListener('click', (event) => {
@@ -57,10 +63,10 @@ document.addEventListener('DOMContentLoaded', () => {
 			pageUpDown: true,
 		},
 		loop: true,
-		mousewheel: {
-			sensitivity: 1,
-			eventsTarget: '.image-slider',
-		},
+		// mousewheel: {
+		// 	sensitivity: 1,
+		// 	eventsTarget: '.image-slider',
+		// },
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -68,10 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		pagination: {
 			el: '.swiper-pagination',
 			clickable: true,
-			dynamicBullets: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (index + 1) + '</span>';
-			},
 		},
 		simulateTouch: true,
 		slidesPerView: 2,

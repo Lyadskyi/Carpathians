@@ -504,10 +504,9 @@ ol {
 
 	.swiper-pagination {
 		position: absolute;
-		bottom: 10px;
-		left: 50%;
+		bottom: 20px;
+		left: 10%;
 		z-index: 100;
-		transform: translateX(-50%);
 	}
 
 	.image-slider .swiper-button-prev::after,
@@ -517,11 +516,9 @@ ol {
 	}
 
 	.image-slider .swiper-pagination-bullet {
-		width: 20px;
-		height: 20px;
-		line-height: 20px;
-		font-size: 12px;
-		background-color: indianred;
+		width: 16px;
+		height: 16px;
+		background-color: #a3a5a3;
 	}
 
 	/* ===== SECTION QUESTIONS STYLES ===== */
@@ -712,10 +709,10 @@ ol {
 		color: #a3a5a3;
 	}
 
-	.arrowUp {
+	.arrow-up {
 		position: fixed;
-		bottom: 5%;
-		right: 3%;
+		bottom: 10px;
+		right: 10px;
 		width: 60px;
 		height: 60px;
 	}
