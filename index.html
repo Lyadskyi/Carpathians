@@ -17,13 +17,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
 		/>
+		<!-- ? My stylesheets -->
+		<link rel="stylesheet" href="./css/styles.css" />
 		<!-- ? Swiper -->
+
 		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
-		<!-- ? My stylesheets -->
-		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!-- ! HEADER -->
@@ -67,7 +68,7 @@
 						real reboot
 					</p>
 					<!-- todo Button BOOK A TOUR -->
-					<button class="hero-btn" onclick="openModal()">book a tour</button>
+					<button class="hero-btn">book a tour</button>
 					<!-- Social networks -->
 					<ul class="hero-soc-net list">
 						<li class="hero-soc-net-item">
@@ -558,7 +559,7 @@
 			</a>
 		</footer>
 		<!-- ! BACKDROP -->
-		<div class="backdrop is-open" id="backdrop-window">
+		<div class="backdrop" id="backdrop-window">
 			<div class="modal-window">
 				<!-- todo Button CLOSE -->
 				<button
@@ -668,9 +669,12 @@
 				</form>
 			</div>
 		</div>
+
 		<!-- * Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->
+
 		<!-- * Main script -->
-		<script src="main.js"></script>
+		<script src="main.js" defer></script>
 	</body>
 </html>
