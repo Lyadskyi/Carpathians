@@ -114,13 +114,25 @@ ol {
 	}
 
 	.menu-item {
+		position: relative;
 		font-weight: 500;
 		font-size: 24px;
 	}
 
-	.menu-link:hover {
-		color: #5b86a1;
-		transition: color 250ms linear;
+	.menu-link::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+		width: 0;
+		height: 2px;
+		border-radius: 1px;
+		transition: 0.25s linear;
+		background-color: #f7fbfb;
+	}
+
+	.menu-link:hover::after {
+		width: 100%;
 	}
 
 	/* ===== SECTION HERO STYLES ===== */
