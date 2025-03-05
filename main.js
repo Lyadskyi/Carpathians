@@ -1,4 +1,4 @@
-// ? Modal window //
+// ? Modal window BOOK A TOUR //
 
 document.addEventListener('DOMContentLoaded', () => {
 	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
@@ -16,11 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Функція відкриття модального вікна
 	function openModal() {
 		backdrop.classList.add('is-open');
+		body.classList.add('no-scroll'); // Заборона прокрутки
 	}
 
 	// Функція закриття модального вікна
 	function closeModal() {
 		backdrop.classList.remove('is-open');
+		body.classList.remove('no-scroll'); // Відновлення прокрутки
 	}
 
 	// Обробник кліку для відкриття модального вікна
@@ -47,7 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-// ? Sider Swiper //
+// ? Modal window TOUR'S DETAILS //
+
+// ? Slider swiper GALLERY //
 
 document.addEventListener('DOMContentLoaded', () => {
 	const sliderElement = document.querySelector('.image-slider');
@@ -83,6 +87,43 @@ document.addEventListener('DOMContentLoaded', () => {
 		touchRatio: 2,
 	});
 });
+
+// ? Slider swiper MODAL UPCOMING TOURS //
+
+// document.addEventListener('DOMContentLoaded', () => {
+// 	const sliderElementModal = document.querySelector('.modal-image-slider');
+
+// 	if (!sliderElementModal) {
+// 		console.error("❌ Елемент '.modal-image-slider' не знайдено!");
+// 		return;
+// 	}
+
+// 	new Swiper('.modal-image-slider', {
+// 		autoHeight: true,
+// 		centeredSlides: false,
+// 		grabCursor: true,
+// 		keyboard: {
+// 			enabled: true,
+// 			onlyInViewport: true,
+// 			pageUpDown: true,
+// 		},
+// 		loop: true,
+// 		navigation: {
+// 			nextEl: '.swiper-button-next',
+// 			prevEl: '.swiper-button-prev',
+// 		},
+// 		pagination: {
+// 			el: '.swiper-pagination',
+// 			clickable: true,
+// 		},
+// 		simulateTouch: true,
+// 		slidesPerView: 2,
+// 		slideToClickedSlide: true,
+// 		spaceBetween: 20,
+// 		speed: 600,
+// 		touchRatio: 2,
+// 	});
+// });
 
 // ? Button UP //
 
