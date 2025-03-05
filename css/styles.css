@@ -84,6 +84,16 @@ ol {
 		padding-bottom: 40px;
 	}
 
+	.modal-container {
+		box-sizing: border-box;
+		width: 1170px;
+		height: 976px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 108px;
+		padding-left: 100px;
+	}
+
 	.section-title {
 		font-size: 68px;
 		line-height: 1.2206;
@@ -722,6 +732,13 @@ ol {
 		fill: #f7fbfb;
 	}
 
+	.footer-soc-net-link:hover,
+	.footer-soc-net-link:focus {
+		/* transform: scale(1.1); */
+		transition: 250ms linear;
+		fill: #5b86a1;
+	}
+
 	.footer-copyright {
 		display: flex;
 		justify-content: center;
@@ -738,14 +755,6 @@ ol {
 
 	/* todo Button UP */
 
-	/* .arrow-up {
-		position: fixed;
-		bottom: 10px;
-		right: 10px;
-		width: 60px;
-		height: 60px;
-	} */
-
 	.back-to-top {
 		position: fixed;
 		z-index: 10;
@@ -757,7 +766,7 @@ ol {
 		cursor: pointer;
 		background: url('/images/arrowUp/arrow-up.png') no-repeat center center;
 		background-size: contain;
-		/* border: none; */
+		border: none;
 	}
 
 	.back-to-top.active {
@@ -765,9 +774,9 @@ ol {
 		transition: 0.5s linear;
 	}
 
-	/* ===== BACKDROP STYLES ===== */
+	/* ! BACKDROP - MODAL WINDOW "BOOK A TOUR" */
 
-	.backdrop {
+	.backdrop-book-a-tour {
 		display: block;
 		position: fixed;
 		top: 0;
@@ -784,13 +793,13 @@ ol {
 		transition: opacity 250ms linear, visibility 250ms linear;
 	}
 
-	.backdrop.is-open {
+	.backdrop-book-a-tour.is-open {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: auto;
 	}
 
-	/* ===== MODAL-WINDOW STYLES ===== */
+	/* ===== STYLES - MODAL WINDOW "BOOK A TOUR" ===== */
 
 	.modal-window {
 		position: absolute;
@@ -920,7 +929,95 @@ ol {
 		fill: none;
 	}
 
+	.contact-form-btn:hover,
 	.contact-form-btn:focus {
-		outline-color: #202321;
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		outline-color: #5b86a1;
+	}
+
+	/* ! BACKDROP - MODAL WINDOW "TOUR'S DETAILS" */
+
+	.backdrop-tours-details {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		z-index: 999999999;
+		background-color: rgba(32, 35, 33, 0.6);
+
+		/* opacity: 1;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 250ms linear, visibility 250ms linear; */
+	}
+
+	.backdrop-tours-details.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	/* ===== STYLES - MODAL WINDOW "TOUR'S DETAILS" ===== */
+
+	.modal-window-tours-details {
+		width: 1170px;
+		height: 742px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/modal/hoverla-first-day-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.swiper-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide-title {
+		position: relative;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 1.225;
+		margin-bottom: 12px;
+		color: #f7fbfb;
+	}
+
+	.swiper-slide-list-item {
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 1.2145;
+		color: #f7fbfb;
+	}
+
+	.swiper-slide-list-item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	.swiper-slide-list-item:nth-child(2) {
+		margin-top: 76px;
+	}
+
+	.swiper-slide-subtitle {
+		position: absolute;
+		top: 61px;
+		left: -100px;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding-left: 100px;
+		border-radius: 0 8px 8px 0;
+		width: 477px;
+		height: 48px;
+		background: #5b86a1;
+	}
+
+	.swiper-slide-container-button {
+		background: #f7fbfb;
 	}
 }

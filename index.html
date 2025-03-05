@@ -551,17 +551,9 @@
 				/>
 				<p class="footer-description">Сreated by LelekaSoft</p>
 			</div>
-			<!-- <a class="arrow-up" href="#">
-				<img
-					src="./images/arrowUp/arrow-up.png"
-					alt="Arrow up"
-					width="45"
-					height="45"
-				/>
-			</a> -->
 		</footer>
-		<!-- ! BACKDROP -->
-		<div class="backdrop" id="backdrop-window">
+		<!-- ! BACKDROP - MODAL WINDOW "BOOK A TOUR" -->
+		<div class="backdrop-book-a-tour" id="backdrop_window_book_a_tour">
 			<div class="modal-window">
 				<!-- todo Button CLOSE -->
 				<button
@@ -671,7 +663,55 @@
 				</form>
 			</div>
 		</div>
-
+		<!-- ! BACKDROP - MODAL WINDOW "TOUR'S DETAILS" -->
+		<div class="backdrop-tours-details" id="backdrop_window_tours_details">
+			<div class="modal-window-tours-details modal-container">
+				<button
+					class="modal-close-btn"
+					type="button"
+					aria-label="Modal close button"
+				>
+					<svg class="modal-close-btn-icon" width="40" height="40">
+						<use href="./images/icons/sprite.svg#icon-close"></use>
+					</svg>
+				</button>
+				<!-- Title modal's slider -->
+				<h2 class="modal-upcoming-tours-title visually-hidden">
+					Tour's details
+				</h2>
+				<!-- Slider -->
+				<div class="modal-swiper modal-image-slider">
+					<!-- Обгортка -->
+					<div class="swiper-wrapper">
+						<!-- Day 1 -->
+						<div class="swiper-slide">
+							<h2 class="swiper-slide-title">Ascent to Hoverla</h2>
+							<ul class="swiper-slide-list list">
+								<li class="swiper-slide-list-item swiper-slide-subtitle">
+									1 day
+								</li>
+								<li class="swiper-slide-list-item">Departure from Lviv</li>
+								<li class="swiper-slide-list-item">Manyava Hermitage</li>
+								<li class="swiper-slide-list-item">Manyava waterfall</li>
+								<li class="swiper-slide-list-item">Arrival to Bukovel</li>
+								<li class="swiper-slide-list-item">Check-in</li>
+								<li class="swiper-slide-list-item">Dinner</li>
+								<li class="swiper-slide-list-item">Evening by the fireplace</li>
+							</ul>
+						</div>
+						<!-- <div class="swiper-slide-container-button">
+							<p>UAH 4,499/person</p>
+							<button>book a tour</button>
+						</div> -->
+					</div>
+					<!-- Кнопки навігації -->
+					<!-- <div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div> -->
+					<!-- Пагінація -->
+					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+			</div>
+		</div>
 		<!-- * Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<!-- <script src="https://unpkg.com/swiper@11/swiper-bundle.min.js"></script> -->

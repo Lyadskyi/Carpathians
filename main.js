@@ -1,8 +1,10 @@
+// ? Modal window //
+
 document.addEventListener('DOMContentLoaded', () => {
 	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
 	const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закриття на X
 	const closeModalCallMeBtn = document.querySelector('.contact-form-btn'); // Кнопка закриття на кнопку CALL ME
-	const backdrop = document.querySelector('.backdrop'); // Фон модального вікна
+	const backdrop = document.querySelector('.backdrop-book-a-tour'); // Фон модального вікна BOOK A TOUR
 
 	console.log(closeModalCallMeBtn);
 
@@ -45,6 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
+// ? Sider Swiper //
+
 document.addEventListener('DOMContentLoaded', () => {
 	const sliderElement = document.querySelector('.image-slider');
 
@@ -63,10 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
 			pageUpDown: true,
 		},
 		loop: true,
-		// mousewheel: {
-		// 	sensitivity: 1,
-		// 	eventsTarget: '.image-slider',
-		// },
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',
@@ -83,6 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
 		touchRatio: 2,
 	});
 });
+
+// ? Button UP //
 
 $(window).scroll(function () {
 	let scrolled = $(window).scrollTop();
