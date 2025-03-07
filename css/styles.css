@@ -961,10 +961,10 @@ ol {
 		z-index: 999999999;
 		background-color: rgba(32, 35, 33, 0.6);
 
-		/* opacity: 1;
+		opacity: 1;
 		visibility: hidden;
 		pointer-events: none;
-		transition: opacity 250ms linear, visibility 250ms linear; */
+		transition: opacity 250ms linear, visibility 250ms linear;
 	}
 
 	.backdrop-tours-details.is-open {
