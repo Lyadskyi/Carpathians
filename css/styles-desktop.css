@@ -75,17 +75,6 @@ ol {
 	height: 100vh;
 }
 
-/* !========== MOBILE ==========! */
-
-.container {
-	padding: 0 32px;
-}
-
-.section {
-}
-
-/* !========== TABLET ==========! */
-
 /* !========== DESKTOP ==========! */
 @media screen and (min-width: 1440px) {
 	/* COMMON STYLES for DESKTOP */

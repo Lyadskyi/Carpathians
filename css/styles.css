@@ -1,1 +1,196 @@
-/* COMMON STYLES */
+/* ===== COMMON STYLES ===== */
+address {
+	font-style: normal;
+}
+
+body {
+	font-family: 'Montserrat', 'Manrope', sans-serif;
+	color: #1b1d1b;
+	background-color: #f7fbfb;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	display: block;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.container {
+	width: 311px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 32px;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.link {
+	text-decoration: none;
+	color: #f7fbfb;
+}
+
+/* ===== GLOBAL STYLES ===== */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow: hidden;
+	height: 100vh;
+}
+
+/* !========== MOBILE/SECTION HERO ==========! */
+/* Layout: width: 375px(content-311px); height: 788px; */
+
+/* HEADER */
+.main-header {
+	/* position: relative;
+	left: 0; */
+	padding-top: 20px;
+}
+
+.main-header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 0;
+}
+
+.logotype {
+	display: inline-block;
+	line-height: 0;
+}
+
+.logotype-icon {
+	stroke: #5b86a1;
+}
+
+.main-navigation {
+	display: none;
+}
+
+.mobile-open-btn {
+	border: solid 1px;
+	line-height: 0;
+}
+
+/* ===== SECTION HERO STYLES ===== */
+.sec-hero {
+	/* position: absolute;
+	left: 0;
+	top: 0; */
+	width: 100%;
+	height: 788px;
+	background-image: url('../images/hero/hero-mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+	screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+	screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+	.sec-hero {
+		background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+	screen and (min-resolution: 3dppx) and (min-width: 1440px),
+	screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+	.sec-hero {
+		background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+.hero-title {
+	margin: 128px 0 60px;
+	font-size: 40px;
+	line-height: 1.225;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f7fbfb;
+}
+
+.hero-description {
+	margin-bottom: 88px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	color: #f7fbfb;
+}
+
+.hero-btn {
+	padding: 10px;
+	width: 285px;
+	height: 52px;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #f7fbfb;
+	background: #5b86a1;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+	transition: 250ms linear;
+	color: #5b86a1;
+	background-color: #1b1d1b;
+	border: solid 1px #5b86a1;
+	outline-color: #5b86a1;
+}
+
+.hero-soc-net {
+	display: none;
+}
+
+/* !========== TABLET ==========! */
