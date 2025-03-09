@@ -82,14 +82,10 @@ ol {
 /* !========== MOBILE/SECTION HERO ==========! */
 /* Layout: width: 375px(content-311px); height: 788px; */
 
-/* HEADER */
-/* .main-header {
-	margin-top: 20px;
-} */
-
 @media screen and (min-width: 375px) {
 	.container {
-		width: 311px;
+		width: 100%;
+		max-width: 311px;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -98,10 +94,12 @@ ol {
 .main-header-container {
 	position: absolute;
 	left: 50%;
-	margin-top: 20px;
 	transform: translate(-50%);
 	display: flex;
 	justify-content: space-between;
+	width: 100%;
+	max-width: 311px;
+	padding-top: 20px;
 }
 
 .logotype {
@@ -132,7 +130,7 @@ ol {
 	screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
 	.sec-hero {
 		background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
-		background-position: center;
+		background-position: top;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
@@ -143,7 +141,7 @@ ol {
 	screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
 	.sec-hero {
 		background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
-		background-position: center;
+		background-position: top;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
