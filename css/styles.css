@@ -98,7 +98,7 @@ ol {
 .main-header-container {
 	position: absolute;
 	left: 50%;
-	margin-top: 20px;
+	/* margin-top: 20px; */
 	transform: translate(-50%);
 	display: flex;
 	justify-content: space-between;
