@@ -1,0 +1,1131 @@
+/* ===== COMMON STYLES ===== */
+address {
+	font-style: normal;
+}
+
+body {
+	font-family: 'Montserrat', 'Manrope', sans-serif;
+	color: #1b1d1b;
+	background-color: #f7fbfb;
+}
+
+button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 400;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+img {
+	display: block;
+	border: none;
+	box-shadow: none;
+	outline: none;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.list {
+	list-style-type: none;
+}
+
+.link {
+	text-decoration: none;
+	color: #f7fbfb;
+}
+
+/* ===== GLOBAL STYLES ===== */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.no-scroll {
+	overflow: hidden;
+	height: 100vh;
+}
+
+/* !========== MOBILE ==========! */
+
+.container {
+	padding: 0 32px;
+}
+
+.section {
+}
+
+/* !========== TABLET ==========! */
+
+/* !========== DESKTOP ==========! */
+@media screen and (min-width: 1440px) {
+	/* COMMON STYLES for DESKTOP */
+	.container {
+		width: 1170px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.modal-container {
+		box-sizing: border-box;
+		width: 1170px;
+		height: 976px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 40px;
+		padding-top: 108px;
+		padding-left: 100px;
+	}
+
+	.section-title {
+		font-size: 68px;
+		line-height: 1.2206;
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	/* ===== HEADER STYLES ===== */
+	/* Layout: width: 1170px; height: 118px; */
+	.main-header {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 118px;
+		background: rgba(0, 0, 0, 0);
+	}
+
+	.main-header-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 40px;
+	}
+
+	.menu {
+		display: flex;
+		column-gap: 80px;
+	}
+
+	.menu-item {
+		position: relative;
+		font-weight: 500;
+		font-size: 24px;
+	}
+
+	.menu-link::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: -7px;
+		width: 0;
+		height: 2px;
+		border-radius: 1px;
+		transition: 250ms linear;
+		background-color: #f7fbfb;
+	}
+
+	.menu-link:hover::after {
+		width: 100%;
+	}
+
+	/* ===== SECTION HERO STYLES ===== */
+	/* Layout: width: (1440)/1170px; height: 906px; */
+
+	.sec-hero {
+		width: 100%;
+		height: 1024px;
+		background-image: url('../images/hero/hero-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.hero-title {
+		margin: 0 auto;
+		padding-top: 280px;
+		margin-bottom: 40px;
+		font-size: 88px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #f7fbfb;
+	}
+
+	.hero-description {
+		width: 675px;
+		height: 68px;
+		margin: 0 auto;
+		margin-bottom: 47px;
+		font-weight: 500;
+		font-size: 28px;
+		text-align: center;
+		color: #f7fbfb;
+	}
+
+	.hero-btn {
+		position: absolute;
+		left: 50%;
+		top: 682px;
+		transform: translate(-50%, -50%);
+		width: 575px;
+		height: 69px;
+		padding: 10px;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size: 24px;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.hero-btn:hover,
+	.hero-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
+	}
+
+	.hero-soc-net {
+		display: flex;
+		flex-direction: column;
+		align-items: end;
+		row-gap: 32px;
+		line-height: 0;
+	}
+
+	.hero-soc-net-link {
+		display: block;
+		fill: #f7fbfb;
+	}
+
+	.hero-soc-net-link:hover,
+	.hero-soc-net-link:focus {
+		transform: rotate(360deg);
+		transition: 350ms linear;
+		fill: #5b86a1;
+	}
+
+	/* ===== SECTION ABOUT US STYLES ===== */
+	/* Layout: width: 1170px; height: 358px; =DONE= */
+
+	.about-us-description {
+		height: 215px;
+		font-size: 24px;
+		color: #202321;
+	}
+
+	/* ===== SECTION OUR ADVANTAGES STYLES ===== */
+	/* Layout: width: 1170px; height: 811px; =DONE= */
+
+	.advantages-container {
+		position: relative;
+		display: flex;
+	}
+
+	.advantages-list-images {
+		display: flex;
+		flex-wrap: nowrap;
+		column-gap: 19px;
+		height: 668px;
+	}
+
+	.advantages-list-img-item-first {
+		display: flex;
+		align-self: flex-start;
+		width: 377px;
+		height: 588px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-left-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-img-item-second {
+		display: flex;
+		align-self: center;
+		width: 377px;
+		height: 507px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-center-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-img-item-third {
+		display: flex;
+		align-self: flex-end;
+		width: 377px;
+		height: 588px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-right-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-container {
+		position: absolute;
+		width: 630px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.advantages-list-cont-item {
+		display: flex;
+		align-items: center;
+		padding-left: 126px;
+		height: 64px;
+		font-weight: 400;
+		font-size: 24px;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.advantages-list-cont-item:nth-child(3) {
+		margin-bottom: 4px;
+	}
+
+	.advantages-container-star {
+		margin-right: 12px;
+	}
+
+	/* ===== SECTION UPCOMING TOURS STYLES ===== */
+	/* Layout: width: 1170px; height: 861px; =DONE= */
+
+	.tours-list {
+		display: flex;
+		column-gap: 19px;
+	}
+
+	.tours-list-item {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.tours-card-image {
+		border: 1px solid #5b86a1;
+		width: 377px;
+		height: 438px;
+	}
+
+	.hoverla-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/hoverla-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.bukovel-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/bukovel-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.carpathians-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/carpathians-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.tours-card-content {
+		padding: 44px 20px 48px;
+		border: 1px solid #5b86a1;
+		background: #f7fbfb;
+	}
+
+	.tours-card-title {
+		font-weight: 600;
+		font-size: 28px;
+		margin-bottom: 20px;
+	}
+
+	.tours-card-price {
+		font-weight: 600;
+		font-size: 24px;
+		margin-bottom: 36px;
+		color: #202321;
+	}
+
+	.upcoming-tours-btn {
+		padding: 10px;
+		width: 337px;
+		height: 69px;
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.upcoming-tours-btn:hover,
+	.upcoming-tours-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
+	}
+
+	/* ===== SECTION REVIEWS STYLES ===== */
+	/* Layout: width: 1170px; height: 723px; */
+
+	.reviews-title {
+		margin-bottom: 70px;
+	}
+
+	.reviews-list {
+		display: flex;
+		column-gap: 20px;
+	}
+
+	.reviews-list-item:hover .reviews-body {
+		transform: rotateY(180deg);
+		transition: all 0.3s ease-out;
+		transform-style: preserve-3d;
+	}
+
+	.reviews-body {
+		position: relative;
+		display: flex;
+	}
+
+	.reviews-front {
+		z-index: 2;
+		transform: rotateY(0deg);
+
+		backface-visibility: hidden;
+	}
+
+	.reviews-image-wrapper {
+		display: flex;
+		position: relative;
+		width: 377px;
+		height: 134px;
+		background-image: url('../images/reviews/reviews-bg-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border: 1px solid #5b86a1;
+	}
+
+	.reviews-content {
+		position: relative;
+		width: 377px;
+		height: 436px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		border: 1px solid #5b86a1;
+		background: #f7fbfb;
+	}
+
+	.reviews-avatar {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.reviews-card-title {
+		font-weight: 600;
+		font-size: 28px;
+		text-align: center;
+		margin-top: 83px;
+		margin-bottom: 24px;
+		color: #5b86a1;
+	}
+
+	.reviews-card-description {
+		font-size: 20px;
+		padding: 0 28px;
+		width: 321px;
+		height: 192px;
+		color: #202321;
+	}
+
+	.reviews-back {
+		position: absolute;
+		width: 377px;
+		height: 570px;
+		top: 0;
+		left: 0;
+		transform: rotateY(-180deg);
+		width: 377px;
+		height: 570px;
+		border: solid 1px #5b86a1;
+	}
+
+	.maria-back {
+		background-image: url('../images/reviews/maria-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.ostap-back {
+		background-image: url('../images/reviews/ostap-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.anita-back {
+		background-image: url('../images/reviews/anita-back-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	/* ===== SECTION GALLERY STYLES ===== */
+	/* Layout: width: 1170px; height: 667px; */
+
+	.sec-gallery {
+		/* width: 1170px; */
+		height: 667px;
+	}
+
+	.gallery-title {
+		margin-bottom: 59px;
+	}
+
+	.swiper {
+		position: relative;
+		display: flex;
+	}
+
+	.swiper-pagination {
+		position: absolute;
+		bottom: 20px;
+		left: 10%;
+		z-index: 100;
+	}
+
+	.image-slider .swiper-button-prev::after,
+	.image-slider .swiper-button-next::after {
+		font-size: 40px;
+		color: #a3a5a3;
+	}
+
+	.image-slider .swiper-pagination-bullet {
+		width: 16px;
+		height: 16px;
+		background-color: #a3a5a3;
+	}
+
+	/* ===== SECTION QUESTIONS STYLES ===== */
+	/* Layout: width: (1920)/1440px; height: 1074px; */
+
+	.sec-questions {
+		width: 100%;
+		height: 1074px; /* 1024px */
+		background-image: url('../images/questions/questions-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions@2x-desk.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions@3x-desk.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.sec-questions {
+		padding-top: 40px;
+	}
+
+	.contact-form {
+		box-sizing: border-box;
+		width: 774px;
+		height: 583px;
+		padding: 60px 47px 60px 46px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 244px;
+		background: #f7fbfb;
+	}
+
+	.questions-form-title {
+		font-weight: 500;
+		font-size: 48px;
+		line-height: 1.2292;
+		text-align: center;
+		margin-bottom: 32px;
+	}
+
+	.questions-form-description {
+		width: 502px;
+		height: 48px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 44px;
+		font-size: 20px;
+		text-align: center;
+		color: #202321;
+	}
+
+	.input-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.input-wrapper::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 52px;
+		width: 575px;
+		height: 0px;
+		border: 1px solid #a3a5a3;
+	}
+
+	.contact-form-input {
+		display: block;
+		box-sizing: border-box;
+		width: 575px;
+		height: 37px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 28px;
+		padding-left: 7px;
+		border: none;
+		font-size: 24px;
+		background: #f7fbfb;
+	}
+
+	.contact-form-input::placeholder {
+		font-size: 24px;
+		color: #202321;
+	}
+
+	.contact-form-btn {
+		display: block;
+		width: 575px;
+		height: 69px;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 44px;
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.contact-form-btn:hover,
+	.contact-form-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
+	}
+
+	/* ===== FOOTER STYLES ===== */
+	/* Layout: width: 1440px; height: 491px; */
+
+	.main-footer {
+		background: #202321;
+	}
+
+	.main-footer-container {
+		display: flex;
+		justify-content: center;
+		column-gap: 128px;
+		margin-bottom: 64px;
+		padding-top: 60px;
+	}
+
+	.footer-title {
+		font-size: 60px;
+		text-align: center;
+		color: #f7fbfb;
+	}
+
+	.contacts-container {
+		display: flex;
+		flex-direction: column;
+		row-gap: 40px;
+	}
+
+	.footer-address {
+		padding-top: 17px;
+	}
+
+	.contacts-menu-item {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.contacts-menu-item a {
+		font-size: 24px;
+		color: #f7fbfb;
+	}
+
+	.contacts-menu-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.footer-soc-net {
+		display: flex;
+		column-gap: 32px;
+		line-height: 0;
+	}
+
+	.footer-soc-net-link {
+		display: block;
+		fill: #f7fbfb;
+	}
+
+	.footer-soc-net-link:hover,
+	.footer-soc-net-link:focus {
+		/* transform: scale(1.1); */
+		transition: 250ms linear;
+		fill: #5b86a1;
+	}
+
+	.footer-copyright {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		column-gap: 8px;
+		padding-bottom: 48px;
+	}
+
+	.footer-description {
+		font-family: 'Manrope', sans-serif;
+		font-size: 16px;
+		color: #a3a5a3;
+	}
+
+	/* todo Button UP */
+
+	.back-to-top {
+		position: fixed;
+		z-index: 10;
+		bottom: -40px;
+		right: 40px;
+		width: 40px;
+		height: 40px;
+		transition: 0.5s linear;
+		cursor: pointer;
+		background: url('/images/arrowUp/arrow-up.png') no-repeat center center;
+		background-size: contain;
+		border: none;
+	}
+
+	.back-to-top.active {
+		bottom: 40px;
+		transition: 0.5s linear;
+	}
+
+	/* ! BACKDROP - MODAL WINDOW "BOOK A TOUR" */
+
+	.backdrop-book-a-tour {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		z-index: 999999999;
+		background-color: rgba(32, 35, 33, 0.6);
+
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 250ms linear, visibility 250ms linear;
+	}
+
+	.backdrop-book-a-tour.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	/* ===== STYLES - MODAL WINDOW "BOOK A TOUR" ===== */
+
+	.modal-window {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+		stroke: #202321;
+		background-color: #f7fbfb;
+	}
+
+	.modal-close-btn {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		line-height: 0;
+	}
+
+	.modal-close-btn .modal-close-btn-icon {
+		stroke: #202321;
+	}
+
+	.modal-close-btn:hover,
+	.modal-close-btn:focus {
+		stroke: #5b86a1;
+	}
+
+	.modal-window-form {
+		padding: 116px 99px 60px 100px;
+	}
+
+	.modal-window-form-title {
+		margin-bottom: 28px;
+		text-align: center;
+		font-size: 60px;
+		line-height: 1.2168;
+	}
+
+	.modal-window-form-description {
+		margin-bottom: 32px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1.2085;
+		color: #202321;
+	}
+
+	.modal-window-wrapper {
+		position: relative;
+		display: block;
+	}
+
+	.modal-window-wrapper::after {
+		content: '';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 0px;
+		border: 1px solid #a3a5a3;
+	}
+
+	.modal-window-form-input {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: 37px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 28px;
+		padding-left: 7px;
+		border: transparent;
+		font-size: 24px;
+		background: #f7fbfb;
+	}
+
+	.modal-window-form-input::placeholder {
+		font-size: 24px;
+		color: #202321;
+	}
+
+	.modal-window-form-input:focus {
+		/* transition: outline-color 0.1s linear; */
+		outline-color: #5b86a1;
+	}
+
+	.checkbox-fieldset-wrapper {
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		margin-bottom: 44px;
+		padding: 0;
+		border: none;
+	}
+
+	.checkbox-label {
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		font-size: 24px;
+		line-height: 1.2085;
+	}
+
+	input[type='checkbox'] {
+		width: 24px;
+		height: 24px;
+	}
+
+	.modal-window-checkbox:checked
+		+ .checkbox-fieldset-own-checkmark
+		.checkbox-fieldset-own-checkmark-icon {
+		stroke: #202321;
+	}
+
+	.modal-window-checkbox:focus + .checkbox-fieldset-own-checkmark {
+		border: solid 1px #5b86a1;
+	}
+
+	.checkbox-fieldset-own-checkmark {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		stroke: transparent;
+		border: solid 1px #202321;
+	}
+
+	.checkbox-fieldset-own-checkmark-icon {
+		fill: none;
+	}
+
+	.contact-form-btn:hover,
+	.contact-form-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		outline-color: #5b86a1;
+	}
+
+	/* ! BACKDROP - MODAL WINDOW "TOUR'S DETAILS" */
+
+	.backdrop-tours-details {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		z-index: 999999999;
+		background-color: rgba(32, 35, 33, 0.6);
+
+		opacity: 1;
+		visibility: hidden;
+		pointer-events: none;
+		transition: opacity 250ms linear, visibility 250ms linear;
+	}
+
+	.backdrop-tours-details.is-open {
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	/* ===== STYLES - MODAL WINDOW "TOUR'S DETAILS" ===== */
+
+	.modal-window-tours-details {
+		position: relative;
+		width: 1170px;
+		height: 742px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+			url('../images/modal/hoverla-first-day-desk.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	.modal-close-btn-tours-details {
+		position: absolute;
+		top: 40px;
+		right: 40px;
+		line-height: 0;
+	}
+
+	.modal-close-btn-icon {
+		stroke: #f7fbfb;
+	}
+
+	.modal-close-btn-icon:hover,
+	.modal-close-btn-icon:focus {
+		transition: stroke 250ms linear;
+		stroke: #5b86a1;
+	}
+
+	.swiper-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide-title {
+		position: relative;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 1.225;
+		margin-bottom: 12px;
+		color: #f7fbfb;
+	}
+
+	.swiper-slide-list-item {
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 1.2145;
+		color: #f7fbfb;
+	}
+
+	.swiper-slide-list-item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+
+	.swiper-slide-list-item:nth-child(2) {
+		margin-top: 76px;
+	}
+
+	.swiper-slide-subtitle {
+		position: absolute;
+		top: 61px;
+		left: -100px;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		padding-left: 100px;
+		border-radius: 0 8px 8px 0;
+		width: 477px;
+		height: 48px;
+		background: #5b86a1;
+	}
+
+	.swiper-slide-container-button {
+		background: #f7fbfb;
+	}
+
+	.modal-swiper-pagination {
+		position: absolute;
+		bottom: 20px;
+		left: 10%;
+		z-index: 100000000;
+	}
+
+	.modal-image-slider .modal-swiper-pagination-bullet {
+		width: 16px;
+		height: 16px;
+		background-color: #a3a5a3;
+	}
+
+	.modal-footer-container {
+		width: 1170px;
+		height: 234px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 40px;
+		background-color: #f7fbfb;
+	}
+
+	.modal-footer-description {
+		padding-top: 48px;
+		margin-bottom: 28px;
+		font-weight: 600;
+		font-size: 24px;
+		text-align: center;
+		color: #202321;
+	}
+
+	.modal-footer-btn {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		font-weight: 500;
+		font-size: 24px;
+		text-transform: uppercase;
+		padding: 10px;
+		width: 575px;
+		height: 69px;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.modal-footer-btn:hover,
+	.modal-footer-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+	}
+}
