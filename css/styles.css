@@ -87,7 +87,7 @@ ol {
 	margin-top: 20px;
 } */
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 375px) {
 	.container {
 		width: 311px;
 		margin-left: auto;
@@ -98,7 +98,7 @@ ol {
 .main-header-container {
 	position: absolute;
 	left: 50%;
-	/* margin-top: 20px; */
+	margin-top: 20px;
 	transform: translate(-50%);
 	display: flex;
 	justify-content: space-between;
