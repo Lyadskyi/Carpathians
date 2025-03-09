@@ -79,18 +79,18 @@ ol {
 	height: 100vh;
 }
 
-/* !========== MOBILE/SECTION HERO ==========! */
+/* !========== MOBILE ==========! */
 /* Layout: width: 375px(content-311px); height: 788px; */
 
 @media screen and (min-width: 375px) {
 	.container {
-		width: 100%;
-		max-width: 311px;
+		width: 311px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 }
 
+/* ===== MOBILE-HEADER STYLES ===== */
 .main-header-container {
 	position: absolute;
 	left: 50%;
@@ -99,7 +99,7 @@ ol {
 	justify-content: space-between;
 	width: 100%;
 	max-width: 311px;
-	padding-top: 20px;
+	margin-top: 20px;
 }
 
 .logotype {
@@ -115,7 +115,7 @@ ol {
 	line-height: 0;
 }
 
-/* ===== SECTION HERO STYLES ===== */
+/* ===== MOBILE-SECTION HERO STYLES ===== */
 .sec-hero {
 	width: 100%;
 	height: 788px;
@@ -149,7 +149,7 @@ ol {
 
 .hero-title {
 	margin-bottom: 60px;
-	padding-top: 168px;
+	padding-top: 188px;
 	font-size: 40px;
 	line-height: 1.225;
 	text-align: center;
@@ -161,11 +161,15 @@ ol {
 	margin-bottom: 88px;
 	font-size: 16px;
 	font-weight: 500;
+	line-height: 1.25;
 	text-align: center;
 	color: #f7fbfb;
 }
 
 .hero-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 10px;
 	width: 285px;
 	height: 52px;
@@ -189,3 +193,83 @@ ol {
 }
 
 /* !========== TABLET ==========! */
+/* Layout: width: 768px(content-728px); height: 818px; */
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 728px;
+		padding: 0 20px;
+	}
+
+	/* ===== TABLET-HEADER STYLES ===== */
+	.main-header-container {
+		max-width: 728px;
+		margin-top: 24px;
+	}
+
+	.logotype-icon {
+		width: 60px;
+		height: 60px;
+	}
+
+	/* ===== TABLET-SECTION HERO STYLES ===== */
+	.sec-hero {
+		width: 100%;
+		height: 818px;
+		background-image: url('../images/hero/hero-tablet.jpg');
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero-tablet@2x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-hero {
+			background-image: url('../images/RETINA/hero/hero-tablet@3x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.hero-title {
+		margin-bottom: 40px;
+		padding-top: 180px;
+		font-size: 68px;
+		line-height: 1.2208;
+	}
+
+	.hero-description {
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 60px;
+		width: 470px;
+		height: 48px;
+	}
+
+	.hero-btn {
+		width: 394px;
+		height: 56px;
+		font-size: 20px;
+	}
+
+	.hero-btn:hover,
+	.hero-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
+	}
+}
