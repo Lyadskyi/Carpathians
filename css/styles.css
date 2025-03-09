@@ -56,7 +56,6 @@ ol {
 }
 
 /* ===== GLOBAL STYLES ===== */
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -76,8 +75,11 @@ ol {
 	height: 100vh;
 }
 
-/* -------------------- DESKTOP -------------------- */
+/* !========== MOBILE ==========! */
 
+/* !========== TABLET ==========! */
+
+/* !========== DESKTOP ==========! */
 @media screen and (min-width: 1440px) {
 	/* COMMON STYLES for DESKTOP */
 	.container {
@@ -227,6 +229,8 @@ ol {
 	.hero-btn:focus {
 		transition: 250ms linear;
 		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
 	}
 
 	.hero-soc-net {
@@ -410,7 +414,7 @@ ol {
 		color: #202321;
 	}
 
-	.tours-details-btn {
+	.upcoming-tours-btn {
 		padding: 10px;
 		width: 337px;
 		height: 69px;
@@ -419,6 +423,14 @@ ol {
 		text-transform: uppercase;
 		color: #f7fbfb;
 		background: #5b86a1;
+	}
+
+	.upcoming-tours-btn:hover,
+	.upcoming-tours-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
 	}
 
 	/* ===== SECTION REVIEWS STYLES ===== */
@@ -681,6 +693,14 @@ ol {
 		text-transform: uppercase;
 		color: #f7fbfb;
 		background: #5b86a1;
+	}
+
+	.contact-form-btn:hover,
+	.contact-form-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
 	}
 
 	/* ===== FOOTER STYLES ===== */
