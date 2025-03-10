@@ -1,4 +1,4 @@
-/* ===== COMMON STYLES ===== */
+/* ===== COMMON STYLES { TAGS } ===== */
 address {
 	font-style: normal;
 }
@@ -45,6 +45,8 @@ ol {
 	margin-bottom: 0;
 	padding-left: 0;
 }
+
+/* ===== COMMON STYLES { CLASSES } ===== */
 
 .list {
 	list-style-type: none;

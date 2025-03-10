@@ -1,4 +1,5 @@
-/* ===== COMMON STYLES ===== */
+/* ===== COMMON STYLES { TAGS } ===== */
+
 address {
 	font-style: normal;
 }
@@ -46,8 +47,15 @@ ol {
 	padding-left: 0;
 }
 
+/* ===== COMMON STYLES { CLASSES } ===== */
+
 .container {
 	padding: 0 32px;
+}
+
+.section {
+	padding-top: 26px;
+	padding-bottom: 26px;
 }
 
 .list {
@@ -57,6 +65,14 @@ ol {
 .link {
 	text-decoration: none;
 	color: #f7fbfb;
+}
+
+.section-title {
+	font-size: 32px;
+	line-height: 1.219;
+	text-align: center;
+	margin-bottom: 28px;
+	color: #1b1d1b;
 }
 
 /* ===== GLOBAL STYLES ===== */
@@ -85,6 +101,14 @@ ol {
 @media screen and (min-width: 375px) {
 	.container {
 		width: 311px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.container {
+		width: 100vw;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -119,6 +143,7 @@ ol {
 .sec-hero {
 	width: 100%;
 	height: 788px;
+	padding-bottom: 26px;
 	background-image: url('../images/hero/hero-mobile.jpg');
 	background-position: top;
 	background-repeat: no-repeat;
@@ -192,16 +217,28 @@ ol {
 	display: none;
 }
 
+/* ===== MOBILE-SECTION ABOUT US STYLES ===== */
+
+.about-us-description {
+	font-size: 16px;
+	line-height: 1.204;
+	color: #202321;
+}
+
+.first {
+	margin-bottom: 20px;
+}
+
 /* ===== MOBILE-MENU STYLES ===== */
 /* Layout: width: 233px; height: 787; */
 
 .mobile-menu {
-	position: fixed;
+	/* position: fixed; */
 	top: 0;
 	left: 0;
 	z-index: 999999999;
 	width: 233px;
-	height: 787px;
+	height: 100vh;
 	transform: translateX(-100%);
 	transition: transform 250ms linear;
 	background-color: rgba(32, 35, 33, 0.7);
@@ -257,13 +294,33 @@ ol {
 	fill: #f7fbfb;
 }
 
+.hero-soc-net-link:hover,
+.hero-soc-net-link:focus {
+	/* transform: scale(1.1); */
+	transition: 250ms linear;
+	fill: #5b86a1;
+}
+
 /* !========== TABLET ==========! */
 /* Layout: width: 768px(content-728px); height: 818px; */
 
 @media screen and (min-width: 768px) {
+	/* ===== COMMON STYLES { CLASSES } ===== */
+
 	.container {
 		width: 728px;
 		padding: 0 20px;
+	}
+
+	.section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.section-title {
+		font-size: 52px;
+		line-height: 1.2116;
+		margin-bottom: 40px;
 	}
 
 	/* ===== TABLET-HEADER STYLES ===== */
@@ -279,12 +336,9 @@ ol {
 
 	/* ===== TABLET-SECTION HERO STYLES ===== */
 	.sec-hero {
-		width: 100%;
 		height: 818px;
+		padding-bottom: 40px;
 		background-image: url('../images/hero/hero-tablet.jpg');
-		background-position: top;
-		background-repeat: no-repeat;
-		background-size: contain;
 	}
 
 	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
@@ -328,5 +382,13 @@ ol {
 		width: 394px;
 		height: 56px;
 		font-size: 20px;
+	}
+
+	/* ===== TABLET-SECTION ABOUT US STYLES ===== */
+
+	.about-us-description {
+		font-size: 20px;
+		line-height: 1.1336;
+		color: #202321;
 	}
 }
