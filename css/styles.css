@@ -106,14 +106,6 @@ ol {
 	}
 }
 
-@media screen and (max-width: 374px) {
-	.container {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
 /* ===== MOBILE-HEADER STYLES ===== */
 .main-header-container {
 	position: absolute;
