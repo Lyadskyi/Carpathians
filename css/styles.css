@@ -5,6 +5,7 @@ address {
 }
 
 body {
+	overflow-x: hidden;
 	font-family: 'Montserrat', 'Manrope', sans-serif;
 	color: #1b1d1b;
 	background-color: #f7fbfb;
@@ -201,7 +202,7 @@ ol {
 
 .hero-btn:hover,
 .hero-btn:focus {
-	transition: 300ms linear;
+	transition: 150ms linear;
 	transform: scale(1.01);
 	background-color: #1b1d1b;
 	border: solid 1px #5b86a1;
