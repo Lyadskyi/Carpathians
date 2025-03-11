@@ -136,13 +136,14 @@ ol {
 /* ===== MOBILE (SECTION HERO) STYLES ===== */
 
 .sec-hero {
-	width: 100%;
+	max-width: 100vw;
 	height: 788px;
 	padding-bottom: 26px;
+	overflow: hidden; /* Щоб уникнути горизонтального скролу */
 	background-image: url('../images/hero/hero-mobile.jpg');
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
@@ -152,7 +153,7 @@ ol {
 		background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
 		background-position: top;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 }
 
@@ -163,7 +164,7 @@ ol {
 		background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
 		background-position: top;
 		background-repeat: no-repeat;
-		background-size: contain;
+		background-size: cover;
 	}
 }
 
@@ -274,7 +275,7 @@ ol {
 }
 
 .tours-card-image {
-	display: block; /* Уникаю зайвих відступів */
+	display: block;
 	width: 311px;
 	height: 338px;
 	outline: 1px solid #5b86a1;
@@ -330,6 +331,100 @@ ol {
 	background-color: #1b1d1b;
 	border: solid 1px #5b86a1;
 	outline-color: #5b86a1;
+}
+
+/* ===== MOBILE (SECTION REVIEWS) STYLES ===== */
+
+.reviews-list {
+	display: flex;
+	flex-wrap: wrap;
+	row-gap: 32px;
+}
+
+.reviews-list-item:hover .reviews-body {
+	transform: rotateY(180deg);
+	transition: all 0.3s ease-out;
+	transform-style: preserve-3d;
+}
+
+.reviews-body {
+	position: relative;
+	display: flex;
+}
+
+.reviews-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+
+	backface-visibility: hidden;
+	border: 1px solid #5b86a1;
+}
+
+.reviews-image-wrapper {
+	display: flex;
+	position: relative;
+	/* width: 311px; */
+	height: 134px;
+	background-image: url('../images/reviews/reviews-bg-mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.reviews-content {
+	position: relative;
+	width: 311px;
+	height: 318px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background: #f7fbfb;
+}
+
+.reviews-avatar {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.reviews-card-title {
+	font-weight: 600;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 70px;
+	margin-bottom: 16px;
+	color: #5b86a1;
+}
+
+.reviews-card-description {
+	font-size: 16px;
+	padding: 0 35px 48px;
+	width: 241px;
+	height: 160px;
+	color: #202321;
+}
+
+.reviews-back {
+	position: absolute;
+	width: 311px;
+	height: 452px;
+	top: 0;
+	left: 0;
+	transform: rotateY(-180deg);
+	border: solid 1px #5b86a1;
+}
+
+.maria-back {
+	background-image: url('../images/reviews/maria-back-mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ostap-back {
+	background-image: url('../images/reviews/ostap-back-mobile.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 /* ===== MOBILE (MENU) STYLES ===== */
