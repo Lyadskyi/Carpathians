@@ -5,8 +5,8 @@ address {
 }
 
 body {
-	overflow-x: hidden;
 	font-family: 'Montserrat', 'Manrope', sans-serif;
+	overflow-x: hidden;
 	color: #1b1d1b;
 	background-color: #f7fbfb;
 }
@@ -39,6 +39,8 @@ img {
 	border: none;
 	box-shadow: none;
 	outline: none;
+	max-width: 100%;
+	height: auto;
 }
 
 ul,
@@ -52,6 +54,8 @@ ol {
 
 .container {
 	padding: 0 32px;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 .section {
