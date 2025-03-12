@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			clickable: true,
 		},
 		simulateTouch: true,
-		slidesPerView: 2,
+		slidesPerView: 1.2,
 		slideToClickedSlide: true,
 		spaceBetween: 20,
 		speed: 600,
