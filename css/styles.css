@@ -79,6 +79,16 @@ ol {
 	margin-bottom: 28px;
 }
 
+.sec-hero,
+.advantages-container,
+.image-container,
+.reviews-image-wrapper,
+.reviews-content,
+.reviews-back {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+
 /* ===== GLOBAL STYLES ===== */
 
 .visually-hidden {
@@ -140,7 +150,7 @@ ol {
 /* ===== MOBILE (SECTION HERO) STYLES ===== */
 
 .sec-hero {
-	max-width: 100vw;
+	max-width: 100%;
 	height: 788px;
 	padding-bottom: 26px;
 	overflow: hidden; /* Щоб уникнути горизонтального скролу */
@@ -632,7 +642,7 @@ ol {
 /* todo Button UP */
 
 .back-to-top {
-display: none;
+	display: none;
 }
 
 /* ===== MOBILE (MENU) STYLES ===== */
