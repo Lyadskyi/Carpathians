@@ -441,6 +441,7 @@ ol {
 .sec-questions {
 	width: 100%;
 	height: 632px;
+	margin-top: 26px;
 	background-image: url('../images/questions/questions-background-mobile.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -467,10 +468,6 @@ ol {
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
-}
-
-.sec-questions {
-	padding-top: 26px;
 }
 
 .contact-form {
@@ -559,6 +556,83 @@ ol {
 	background-color: #1b1d1b;
 	border: solid 1px #5b86a1;
 	outline-color: #5b86a1;
+}
+
+/* ===== MOBILE (FOOTER) STYLES ===== */
+/* Layout: width: 375px; height: 400px; */
+
+.main-footer {
+	height: 400px;
+	background: #202321;
+}
+
+.footer-title {
+	margin-top: 40px;
+	margin-bottom: 28px;
+	font-size: 28px;
+	line-height: 1.2145;
+	text-align: center;
+	color: #f7fbfb;
+}
+
+.contacts-menu {
+	margin-bottom: 20px;
+}
+
+.contacts-menu-item {
+	display: flex;
+	align-items: center;
+	column-gap: 4px;
+}
+
+.contacts-menu-link {
+	font-size: 16px;
+	line-height: 1.25;
+	text-align: center;
+	color: #f7fbfb;
+}
+
+.contacts-menu-item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.footer-soc-net {
+	display: flex;
+	column-gap: 32px;
+	line-height: 0;
+	margin-bottom: 40px;
+}
+
+.footer-soc-net-link {
+	display: block;
+	fill: #f7fbfb;
+}
+
+.footer-soc-net-link:hover,
+.footer-soc-net-link:focus {
+	filter: drop-shadow(0 0 1px rgba(247, 251, 251, 0.8));
+	transition: 150ms linear;
+	fill: #5b86a1;
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.footer-description {
+	font-family: 'Manrope', sans-serif;
+	font-size: 16px;
+	line-height: 1.375;
+	color: #a3a5a3;
+}
+
+/* todo Button UP */
+
+.back-to-top {
+display: none;
 }
 
 /* ===== MOBILE (MENU) STYLES ===== */
