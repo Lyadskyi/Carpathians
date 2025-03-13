@@ -79,16 +79,6 @@ ol {
 	margin-bottom: 28px;
 }
 
-.sec-hero,
-.advantages-container,
-.image-container,
-.reviews-image-wrapper,
-.reviews-content,
-.reviews-back {
-	max-width: 100%;
-	overflow-x: hidden;
-}
-
 /* ===== GLOBAL STYLES ===== */
 
 .visually-hidden {
@@ -445,6 +435,25 @@ ol {
 	display: none;
 }
 
+/* ===== MOBILE (SECTION GALLERY) STYLES ===== */
+/* Layout: width: 343px; height: 599px; */
+
+.swiper-button-prev {
+	position: absolute;
+	top: 410px;
+	left: 100px;
+	font-size: 24px;
+	color: #5b86a1;;
+}
+
+.swiper-button-next {
+	position: absolute;
+	top: 410px;
+	right: 100px;
+	font-size: 24px;
+	color: #5b86a1;;
+}
+
 /* ===== MOBILE (SECTION QUESTIONS) STYLES ===== */
 /* Layout: width: 375px; height: 632px; */
 
@@ -649,7 +658,7 @@ ol {
 /* Layout: width: 233px; height: 787; */
 
 .mobile-menu {
-	/* position: fixed; */
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 999999999;
