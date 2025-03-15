@@ -99,101 +99,102 @@ document.addEventListener('DOMContentLoaded', () => {
 	// });
 
 	// Закриття модального вікна при натисканні "Escape"
-// 	document.addEventListener('keydown', (event) => {
-// 		if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
-// 			closeModal();
-// 		}
-// 	});
-// });
+	// 	document.addEventListener('keydown', (event) => {
+	// 		if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
+	// 			closeModal();
+	// 		}
+	// 	});
+	// });
 
-// ! Slider swiper GALLERY //
+	// ! Slider swiper GALLERY //
 
-document.addEventListener('DOMContentLoaded', () => {
-	const sliderElement = document.querySelector('.image-slider');
+	document.addEventListener('DOMContentLoaded', () => {
+		const sliderElement = document.querySelector('.image-slider');
 
-	if (!sliderElement) {
-		console.error("❌ Елемент '.image-slider' не знайдено!");
-		return;
-	}
+		if (!sliderElement) {
+			console.error("❌ Елемент '.image-slider' не знайдено!");
+			return;
+		}
 
-	new Swiper('.image-slider', {
-		autoHeight: true,
-		centeredSlides: false,
-		grabCursor: true,
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true,
-			pageUpDown: true,
-		},
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		simulateTouch: true,
-		slidesPerView: 1.2,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-		speed: 600,
-		touchRatio: 2,
+		new Swiper('.image-slider', {
+			autoHeight: true,
+			centeredSlides: false,
+			grabCursor: true,
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+				pageUpDown: true,
+			},
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			simulateTouch: true,
+			slidesPerView: 1.2,
+			slideToClickedSlide: true,
+			spaceBetween: 20,
+			speed: 600,
+			touchRatio: 2,
+		});
 	});
-});
 
-// ! Slider swiper MODAL UPCOMING TOURS //
+	// ! Slider swiper MODAL UPCOMING TOURS //
 
-document.addEventListener('DOMContentLoaded', () => {
-	const sliderElementModal = document.querySelector('.modal-image-slider');
+	document.addEventListener('DOMContentLoaded', () => {
+		const sliderElementModal = document.querySelector('.modal-image-slider');
 
-	if (!sliderElementModal) {
-		console.error("❌ Елемент '.modal-image-slider' не знайдено!");
-		return;
-	}
+		if (!sliderElementModal) {
+			console.error("❌ Елемент '.modal-image-slider' не знайдено!");
+			return;
+		}
 
-	new Swiper('.modal-image-slider', {
-		autoHeight: true,
-		centeredSlides: false,
-		grabCursor: true,
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true,
-			pageUpDown: true,
-		},
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		simulateTouch: true,
-		slidesPerView: 2,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-		speed: 600,
-		touchRatio: 2,
+		new Swiper('.modal-image-slider', {
+			autoHeight: true,
+			centeredSlides: false,
+			grabCursor: true,
+			keyboard: {
+				enabled: true,
+				onlyInViewport: true,
+				pageUpDown: true,
+			},
+			loop: true,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			},
+			simulateTouch: true,
+			slidesPerView: 2,
+			slideToClickedSlide: true,
+			spaceBetween: 20,
+			speed: 600,
+			touchRatio: 2,
+		});
 	});
-});
 
-// ! Button UP //
+	// ! Button UP //
 
-$(window).scroll(function () {
-	let scrolled = $(window).scrollTop();
+	$(window).scroll(function () {
+		let scrolled = $(window).scrollTop();
 
-	console.log(scrolled);
+		console.log(scrolled);
 
-	if (scrolled > 400) {
-		$('#back_to_top').addClass('active');
-	} else {
-		$('#back_to_top').removeClass('active');
-	}
-});
+		if (scrolled > 400) {
+			$('#back_to_top').addClass('active');
+		} else {
+			$('#back_to_top').removeClass('active');
+		}
+	});
 
-$('#back_to_top').click(function () {
-	$('body,html').animate({ scrollTop: 0 }, 10);
-});
+	$('#back_to_top').click(function () {
+		$('body,html').animate({ scrollTop: 0 }, 10);
+	});
+
