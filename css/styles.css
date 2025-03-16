@@ -51,7 +51,7 @@ ol {
 }
 
 /* * {
-	outline: 1px solid red;
+	outline: 1px solid palevioletred;
 } */
 
 /* ===== COMMON STYLES { CLASSES } ===== */
@@ -82,7 +82,7 @@ ol {
 	margin-bottom: 28px;
 }
 
-/* ===== GLOBAL STYLES ===== */
+/* ===== COMMON GLOBAL STYLES ===== */
 
 .visually-hidden {
 	position: absolute;
@@ -141,6 +141,7 @@ ol {
 }
 
 /* ===== MOBILE (SECTION HERO) STYLES ===== */
+/* Layout: width: 375px(content-315px); height: 788px; */
 
 .sec-hero {
 	max-width: 100%;
@@ -153,22 +154,22 @@ ol {
 	background-size: contain;
 }
 
-@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-	screen and (min-resolution: 2ddpx) and (min-width: 1440px),
-	screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+@media screen and (min-resolution: 192dpi) and (max-width: 374px),
+	screen and (min-resolution: 2dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 2) and (max-width: 374px) {
 	.sec-hero {
-		background-image: url('../images/RETINA/hero/hero@2x-desk.jpg');
+		background-image: url('../images/RETINA/hero/hero-mobile@2x.jpg');
 		background-position: top;
 		background-repeat: no-repeat;
 		background-size: contain;
 	}
 }
 
-@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
-	screen and (min-resolution: 3dppx) and (min-width: 1440px),
-	screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+@media screen and (min-resolution: 288dpi) and (max-width: 374px),
+	screen and (min-resolution: 3dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 3) and (max-width: 374px) {
 	.sec-hero {
-		background-image: url('../images/RETINA/hero/hero@3x-desk.jpg');
+		background-image: url('../images/RETINA/hero/hero-mobile@3x.jpg');
 		background-position: top;
 		background-repeat: no-repeat;
 		background-size: contain;
@@ -221,6 +222,7 @@ ol {
 }
 
 /* ===== MOBILE (SECTION ABOUT US) STYLES ===== */
+/* Layout: width: 311px; height: 395px; */
 
 .about-us-description {
 	font-size: 16px;
@@ -233,8 +235,14 @@ ol {
 }
 
 /* ===== MOBILE (SECTION OUR ADVANTAGES) STYLES ===== */
+/* Layout: width: 315px; height: 621px; */
 
 .advantages-container {
+	display: flex;
+	position: relative;
+}
+
+.advantages-list-images .advantages-list-img-item-first {
 	position: relative;
 	left: -2px;
 	width: 315px;
@@ -246,7 +254,31 @@ ol {
 	background-size: contain;
 }
 
+@media screen and (min-resolution: 192dpi) and (max-width: 374px),
+	screen and (min-resolution: 2dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 2) and (max-width: 374px) {
+	.sec-hero {
+		background-image: url('../images/RETINA/advantages/advantages-mobile@2x.jpg');
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+@media screen and (min-resolution: 288dpi) and (max-width: 374px),
+	screen and (min-resolution: 3dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 3) and (max-width: 374px) {
+	.sec-hero {
+		background-image: url('../images/RETINA/advantages/advantages-mobile@3x.jpg');
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
 .advantages-list-container {
+	position: absolute;
+	left: -2px;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
@@ -270,6 +302,7 @@ ol {
 }
 
 /* ===== MOBILE (SECTION UPCOMING TOURS) STYLES ===== */
+/* Layout: width: 311px; height: 646px; */
 
 .image-container {
 	position: relative;
@@ -470,7 +503,7 @@ ol {
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-	screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+	screen and (min-resolution: 2dppx) and (min-width: 1440px),
 	screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
 	.sec-questions {
 		background-image: url('../images/RETINA/questions/questions-background-mobile@2x.jpg');
@@ -729,7 +762,7 @@ ol {
 }
 
 /* !========== TABLET ==========! */
-/* Layout: width: 768px(content-728px); height: 818px; */
+/* Layout: width: 768px(content-728px); height: 5367px; */
 
 @media screen and (min-width: 768px) {
 	/* ===== COMMON STYLES { CLASSES } ===== */
@@ -750,7 +783,8 @@ ol {
 		margin-bottom: 40px;
 	}
 
-	/* ===== TABLET-HEADER STYLES ===== */
+	/* ===== TABLET (HEADER) STYLES ===== */
+
 	.main-header-container {
 		max-width: 728px;
 		margin-top: 24px;
@@ -761,16 +795,18 @@ ol {
 		height: 60px;
 	}
 
-	/* ===== TABLET-SECTION HERO STYLES ===== */
+	/* ===== TABLET (SECTION HERO) STYLES ===== */
+	/* Layout: width: 768px(content-728px); height: 818px; */
+
 	.sec-hero {
 		height: 818px;
 		padding-bottom: 40px;
 		background-image: url('../images/hero/hero-tablet.jpg');
 	}
 
-	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
-		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
-		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 		.sec-hero {
 			background-image: url('../images/RETINA/hero/hero-tablet@2x.jpg');
 			background-position: top;
@@ -779,9 +815,9 @@ ol {
 		}
 	}
 
-	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
-		screen and (min-resolution: 3dppx) and (min-width: 1440px),
-		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
 		.sec-hero {
 			background-image: url('../images/RETINA/hero/hero-tablet@3x.jpg');
 			background-position: top;
@@ -791,18 +827,18 @@ ol {
 	}
 
 	.hero-title {
+		font-size: 68px;
+		line-height: 1.2207;
 		margin-bottom: 40px;
 		padding-top: 180px;
-		font-size: 68px;
-		line-height: 1.2208;
 	}
 
 	.hero-description {
+		width: 470px;
+		height: 48px;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 60px;
-		width: 470px;
-		height: 48px;
 	}
 
 	.hero-btn {
@@ -811,15 +847,236 @@ ol {
 		font-size: 20px;
 	}
 
-	/* ===== TABLET-SECTION ABOUT US STYLES ===== */
+	/* ===== TABLET (SECTION ABOUT US) STYLES ===== */
+	/* Layout: width: 728px; height: 327px; */
 
 	.about-us-description {
 		font-size: 20px;
-		line-height: 1.1336;
-		color: #202321;
+		line-height: 1.138;
+	}
+
+	/* ===== TABLET (SECTION OUR ADVANTAGES) STYLES ===== */
+	/* Layout: width: 728px; height: 747px; */
+
+	.advantages-container {
+		height: 644px;
+	}
+
+	.advantages-list-images {
+		display: flex;
+	}
+
+	.advantages-list-images .advantages-list-img-item-first {
+		width: 354px;
+		height: 441px;
+		left: 0;
+		margin-right: 20px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/advantages-left-tablet.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.advantages-list-images .advantages-list-img-item-first {
+			background-image: url('../images/RETINA/advantages/advantages-left-tablet@2x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.advantages-list-images .advantages-list-img-item-first {
+			background-image: url('../images/RETINA/advantages/advantages-left-tablet@3x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.advantages-list-img-item-second {
+		display: flex;
+		align-self: flex-end;
+		width: 354px;
+		height: 441px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/advantages-right-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.advantages-list-img-item-second {
+			background-image: url('../images/RETINA/advantages/advantages-right-tablet@2x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.advantages-list-img-item-second {
+			background-image: url('../images/RETINA/advantages/advantages-right-tablet@3x.jpg');
+			background-position: top;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.advantages-list-container {
+		row-gap: 20px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0;
+	}
+
+	.advantages-list-cont-item {
+		width: 604px;
+		height: 64px;
+		font-size: 20px;
+	}
+
+	.advantages-container-star {
+		width: 40px;
+		height: 40px;
+		margin-left: 44px;
+		margin-right: 12px;
+	}
+
+	/* ===== TABLET (SECTION UPCOMING TOURS) STYLES ===== */
+	/* Layout: width: 728px; height: 789px; */
+
+	.image-container {
+		position: relative;
+		width: 728px;
+	}
+
+	.tours-list {
+		display: flex;
+	}
+
+	.tours-list-item {
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.tours-list-item:not(:last-child) {
+		margin-right: 20px;
+	}
+
+	.tours-card-image {
+		display: block;
+		width: 311px;
+		height: 338px;
+		border: 1px solid #5b86a1;
+		outline: none;
+	}
+
+	.hoverla-card {
+		width: 354px;
+		height: 357px;
+		/* border: 1px solid #5b86a1; */
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/hoverla-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.hoverla-card {
+			background-image: url('../images/RETINA/tours/hoverla-tablet@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.hoverla-card {
+			background-image: url('../images/RETINA/tours/hoverla-tablet@3x.jpg');
+		}
+	}
+
+	.bukovel-card {
+		width: 354px;
+		height: 357px;
+		/* border: 1px solid #5b86a1; */
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/bukovel-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.bukovel-card {
+			background-image: url('../images/RETINA/tours/bukovel-tablet@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.bukovel-card {
+			background-image: url('../images/RETINA/tours/bukovel-tablet@3x.jpg');
+		}
+	}
+
+	.tours-card-content {
+		display: block;
+		padding: 48px 20px;
+		border: 1px solid #5b86a1;
+		/* outline: 1px solid #5b86a1; */
+		background: #f7fbfb;
+	}
+
+	.tours-card-title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 1.2085;
+		margin-bottom: 20px;
+	}
+
+	.tours-card-price {
+		font-size: 20px;
+		line-height: 1.2;
+		margin-bottom: 40px;
+	}
+
+	.upcoming-tours-btn {
+		width: 314px;
+		height: 56px;
+		font-size: 20px;
+	}
+
+	.upcoming-tours-btn:hover,
+	.upcoming-tours-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
 	}
 
 	/* ===== TABLET (SECTION REVIEWS) STYLES ===== */
+	/* Layout: width: 728px; height: 747px; */
 
 	.reviews-list {
 		column-gap: 20px;
