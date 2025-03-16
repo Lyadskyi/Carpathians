@@ -373,6 +373,7 @@ ol {
 }
 
 /* ===== MOBILE (SECTION REVIEWS) STYLES ===== */
+/* Layout: width: 311px; height: 1003px; */
 
 .reviews-list {
 	display: flex;
@@ -471,7 +472,7 @@ ol {
 }
 
 /* ===== MOBILE (SECTION GALLERY) STYLES ===== */
-/* Layout: width: 343px; height: 599px; */
+/* Layout: width: 4480px; height: 599px; */
 /* 
 .swiper-button-prev {
 	position: absolute;
@@ -1076,9 +1077,116 @@ ol {
 	}
 
 	/* ===== TABLET (SECTION REVIEWS) STYLES ===== */
-	/* Layout: width: 728px; height: 747px; */
+	/* Layout: width: 728px; height: 607px; */
 
 	.reviews-list {
 		column-gap: 20px;
 	}
+
+	.reviews-list-item:hover .reviews-body {
+		transform: rotateY(180deg);
+		transition: all 0.3s ease-out;
+		transform-style: preserve-3d;
+	}
+
+	.reviews-image-wrapper {
+		width: 354px;
+		background-image: url('../images/reviews/reviews-bg-tablet.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.reviews-image-wrapper {
+			background-image: url('../images/RETINA/reviews/reviews-bg-tablet@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.reviews-image-wrapper {
+			background-image: url('../images/RETINA/reviews/reviews-bg-tablet@3x.jpg');
+		}
+	}
+
+	.reviews-content {
+		width: 354px;
+		height: 504px;
+	}
+
+	.reviews-card-title {
+		font-size: 24px;
+		line-height: 1.2085;
+		margin: 74px 0px 24px;
+	}
+
+	.reviews-card-description {
+		font-size: 20px;
+		padding: 0px 20px;
+		width: 314px;
+	}
+
+	.reviews-back {
+		position: absolute;
+		width: 354px;
+		height: 504px;
+		top: 0;
+		left: 0;
+		transform: rotateY(-180deg);
+	}
+
+	.maria-back {
+		background-image: url('../images/reviews/maria-back-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.maria-back {
+			background-image: url('../images/RETINA/reviews/maria-back-tablet@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.maria-back {
+			background-image: url('../images/RETINA/reviews/maria-back-tablet@3x.jpg');
+		}
+	}
+
+	.ostap-back {
+		background-image: url('../images/reviews/ostap-back-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.ostap-back {
+			background-image: url('../images/RETINA/reviews/ostap-back-tablet@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.ostap-back {
+			background-image: url('../images/RETINA/reviews/ostap-back-tablet@3x.jpg');
+		}
+	}
+
+	.reviews-list-item-anita {
+		display: none;
+	}
+
+	/* ===== TABLET (SECTION GALLERY) STYLES ===== */
+/* Layout: width: 728px; height: 442px; */
+
 }
