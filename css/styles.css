@@ -1294,4 +1294,52 @@ ol {
 		border: solid 1px #5b86a1;
 		outline-color: #5b86a1;
 	} */
+
+	/* ===== TABLET (FOOTER) STYLES ===== */
+	/* Layout: width: 768px; height: 469px; */
+
+	.main-footer {
+		width: 768px;
+		height: 469px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main-footer-container {
+		display: flex;
+		column-gap: 137px;
+		padding: 64px 0 40px;
+	}
+
+	.footer-title {
+		font-size: 32px;
+		margin: 0;
+		padding-left: 94px;
+	}
+
+	.contacts-menu {
+		margin-bottom: 40px;
+	}
+
+	.contacts-menu-item {
+		column-gap: 8px;
+	}
+
+	.contacts-menu-link {
+		font-size: 18px;
+		line-height: 1.223;
+	}
+
+	.contacts-menu-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.contacts-menu-item svg {
+		width: 40px;
+		height: 40px;
+	}
+
+	.footer-soc-net {
+		margin-bottom: 0px;
+	}
 }
