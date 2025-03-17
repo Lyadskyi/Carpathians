@@ -405,10 +405,26 @@ ol {
 	position: relative;
 	width: 311px;
 	height: 134px;
-	background-image: url('../images/reviews/reviews-bg-mobile.jpg');
+	background-image: url('../images/reviews/reviews-background-mobile.jpg');
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 374px),
+	screen and (min-resolution: 2dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 2) and (max-width: 374px) {
+	.reviews-image-wrapper {
+		background-image: url('../images/RETINA/reviews/reviews-background-mobile@2x.jpg');
+	}
+}
+
+@media screen and (min-resolution: 288dpi) and (max-width: 374px),
+	screen and (min-resolution: 3dppx) and (max-width: 374px),
+	screen and (min-device-pixel-ratio: 3) and (max-width: 374px) {
+	.reviews-image-wrapper {
+		background-image: url('../images/RETINA/reviews/reviews-background-mobile@3x.jpg');
+	}
 }
 
 .reviews-content {
@@ -1091,14 +1107,14 @@ ol {
 
 	.reviews-image-wrapper {
 		width: 354px;
-		background-image: url('../images/reviews/reviews-bg-tablet.jpg');
+		background-image: url('../images/reviews/reviews-background-tablet.jpg');
 	}
 
 	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
 		screen and (min-resolution: 2dppx) and (min-width: 768px),
 		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 		.reviews-image-wrapper {
-			background-image: url('../images/RETINA/reviews/reviews-bg-tablet@2x.jpg');
+			background-image: url('../images/RETINA/reviews/reviews-background-tablet@2x.jpg');
 		}
 	}
 
@@ -1106,7 +1122,7 @@ ol {
 		screen and (min-resolution: 3dppx) and (min-width: 768px),
 		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
 		.reviews-image-wrapper {
-			background-image: url('../images/RETINA/reviews/reviews-bg-tablet@3x.jpg');
+			background-image: url('../images/RETINA/reviews/reviews-background-tablet@3x.jpg');
 		}
 	}
 
@@ -1187,6 +1203,95 @@ ol {
 	}
 
 	/* ===== TABLET (SECTION GALLERY) STYLES ===== */
-/* Layout: width: 728px; height: 442px; */
+	/* Layout: width: 728px; height: 442px; */
 
+	/* ===== TABLET (SECTION QUESTIONS) STYLES ===== */
+	/* Layout: width: 768px; height: 688px; */
+
+	.sec-questions {
+		width: 768px;
+		height: 688px;
+		margin-top: 40px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url('../images/questions/questions-background-tablet.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
+		screen and (min-resolution: 2dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions-background-tablet@2x.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 768px),
+		screen and (min-resolution: 3dppx) and (min-width: 768px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions-background-tablet@3x.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+	}
+
+	.contact-form {
+		width: 478px;
+		height: 512px;
+		margin-top: 88px;
+		padding: 40px 42px;
+	}
+
+	.questions-form-title {
+		font-size: 32px;
+		line-height: 1.219;
+		margin-bottom: 24px;
+	}
+
+	.questions-form-description {
+		width: 344px;
+		height: 66px;
+		font-size: 18px;
+		margin-bottom: 32px;
+	}
+
+	.input-wrapper::after {
+		width: 354px;
+		bottom: -4px;
+		left: 20px;
+	}
+
+	.contact-form-input {
+		width: 354px;
+		height: 32px;
+		margin-bottom: 24px;
+		font-size: 20px;
+	}
+
+	.contact-form-input::placeholder {
+		font-size: 20px;
+		color: #202321;
+	}
+
+	.contact-form-btn {
+		width: 394px;
+		height: 56px;
+		font-size: 20px;
+		margin-top: 36px;
+	}
+
+	/* .contact-form-btn:hover,
+	.contact-form-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		border: solid 1px #5b86a1;
+		outline-color: #5b86a1;
+	} */
 }
