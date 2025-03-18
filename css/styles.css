@@ -1,4 +1,4 @@
-/* ===== COMMON STYLES { TAGS } ===== */
+/* ----- COMMON STYLES { TAGS } ----- */
 
 address {
 	font-style: normal;
@@ -54,7 +54,7 @@ ol {
 	outline: 1px solid palevioletred;
 } */
 
-/* ===== COMMON STYLES { CLASSES } ===== */
+/* ----- COMMON STYLES { CLASSES } ----- */
 
 .container {
 	padding: 0 32px;
@@ -82,7 +82,7 @@ ol {
 	margin-bottom: 28px;
 }
 
-/* ===== COMMON GLOBAL STYLES ===== */
+/* ----- COMMON GLOBAL STYLES ----- */
 
 .visually-hidden {
 	position: absolute;
@@ -103,7 +103,7 @@ ol {
 	height: 100vh;
 }
 
-/* !========== MOBILE ==========! */
+/* ! ========== MOBILE ========== ! */
 /* Layout: width: 375px(content-311px); height: 5396px; */
 
 @media screen and (min-width: 320px) {
@@ -114,7 +114,7 @@ ol {
 	}
 }
 
-/* ===== MOBILE (HEADER) STYLES ===== */
+/* ----- MOBILE (HEADER) STYLES ----- */
 
 .main-header-container {
 	position: absolute;
@@ -140,7 +140,7 @@ ol {
 	line-height: 0;
 }
 
-/* ===== MOBILE (SECTION HERO) STYLES ===== */
+/* ----- MOBILE (SECTION HERO) STYLES ----- */
 /* Layout: width: 375px(content-315px); height: 788px; */
 
 .sec-hero {
@@ -221,7 +221,7 @@ ol {
 	display: none;
 }
 
-/* ===== MOBILE (SECTION ABOUT US) STYLES ===== */
+/* ----- MOBILE (SECTION ABOUT US) STYLES ----- */
 /* Layout: width: 311px; height: 395px; */
 
 .about-us-description {
@@ -234,7 +234,7 @@ ol {
 	margin-bottom: 20px;
 }
 
-/* ===== MOBILE (SECTION OUR ADVANTAGES) STYLES ===== */
+/* ----- MOBILE (SECTION OUR ADVANTAGES) STYLES ----- */
 /* Layout: width: 315px; height: 621px; */
 
 .advantages-container {
@@ -301,7 +301,7 @@ ol {
 	margin-right: 8px;
 }
 
-/* ===== MOBILE (SECTION UPCOMING TOURS) STYLES ===== */
+/* ----- MOBILE (SECTION UPCOMING TOURS) STYLES ----- */
 /* Layout: width: 311px; height: 646px; */
 
 .image-container {
@@ -329,6 +329,14 @@ ol {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
+}
+
+.tours-list-item-bukovel {
+	display: none;
+}
+
+.tours-list-item-carpathians {
+	display: none;
 }
 
 .tours-card-content {
@@ -372,7 +380,7 @@ ol {
 	outline-color: #5b86a1;
 }
 
-/* ===== MOBILE (SECTION REVIEWS) STYLES ===== */
+/* ----- MOBILE (SECTION REVIEWS) STYLES ----- */
 /* Layout: width: 311px; height: 1003px; */
 
 .reviews-list {
@@ -487,7 +495,7 @@ ol {
 	display: none;
 }
 
-/* ===== MOBILE (SECTION GALLERY) STYLES ===== */
+/* ----- MOBILE (SECTION GALLERY) STYLES ----- */
 /* Layout: width: 4480px; height: 599px; */
 /* 
 .swiper-button-prev {
@@ -506,7 +514,7 @@ ol {
 	color: #5b86a1;;
 } */
 
-/* ===== MOBILE (SECTION QUESTIONS) STYLES ===== */
+/* ----- MOBILE (SECTION QUESTIONS) STYLES ----- */
 /* Layout: width: 375px; height: 632px; */
 
 .sec-questions {
@@ -629,7 +637,7 @@ ol {
 	outline-color: #5b86a1;
 }
 
-/* ===== MOBILE (FOOTER) STYLES ===== */
+/* ----- MOBILE (FOOTER) STYLES ----- */
 /* Layout: width: 375px; height: 400px; */
 
 .main-footer {
@@ -706,7 +714,7 @@ ol {
 	display: block;
 }
 
-/* ===== MOBILE (SIDE-OUT MENU) STYLES ===== */
+/* ----- MOBILE (SIDE-OUT MENU) STYLES ----- */
 /* Layout: width: 233px; height: 787; */
 
 .side-out-menu {
@@ -778,11 +786,187 @@ ol {
 	fill: #5b86a1;
 }
 
-/* !========== TABLET ==========! */
+/* ! ========== BACKDROP - MODAL WINDOW "BOOK A TOUR" ========== */
+
+.backdrop-book-a-tour {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	z-index: 900;
+	background-color: rgba(32, 35, 33, 0.6);
+
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.backdrop-book-a-tour.is-open {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+/* ----- MOBILE STYLES - MODAL WINDOW "BOOK A TOUR" ----- */
+
+.modal-window {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 375px;
+	height: 504px;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 20px 50px 0 rgba(32, 35, 33, 0.1);
+	stroke: #202321;
+	background-color: #f7fbfb;
+}
+
+.modal-close-btn {
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	line-height: 0;
+}
+
+.modal-close-btn .modal-close-btn-icon {
+	stroke: #202321;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+	stroke: #5b86a1;
+}
+
+.modal-window-form {
+	padding: 52px 32px 36px;
+}
+
+.modal-window-form-title {
+	font-size: 24px;
+	line-height: 1.2085;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.modal-window-form-description {
+	width: 238px;
+	height: 51px;
+	font-size: 14px;
+	line-height: 1.2085;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 24px;
+	color: #202321;
+}
+
+.modal-window-wrapper {
+	position: relative;
+	display: block;
+}
+
+.modal-window-wrapper::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	border: 1px solid #a3a5a3;
+}
+
+.modal-window-form-input {
+	display: block;
+	box-sizing: border-box;
+	border: transparent;
+	width: 100%;
+	height: 28px;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding-left: 4px;
+	background: #f7fbfb;
+}
+
+.modal-window-form-input::placeholder {
+	font-size: 16px;
+	color: #202321;
+}
+
+.modal-window-form-input:focus {
+	/* transition: outline-color 0.1s linear; */
+	outline-color: #5b86a1;
+}
+
+.checkbox-fieldset-wrapper {
+	display: flex;
+	flex-direction: column;
+	row-gap: 24px;
+	margin-bottom: 24px;
+	padding: 0;
+	border: none;
+}
+
+.checkbox-label {
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	font-size: 16px;
+	line-height: 1.2085;
+}
+
+input[type='checkbox'] {
+	width: 24px;
+	height: 24px;
+}
+
+.modal-window-checkbox:checked
+	+ .checkbox-fieldset-own-checkmark
+	.checkbox-fieldset-own-checkmark-icon {
+	stroke: #202321;
+}
+
+.modal-window-checkbox:focus + .checkbox-fieldset-own-checkmark {
+	border: solid 1px #5b86a1;
+}
+
+.checkbox-fieldset-own-checkmark {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+	stroke: transparent;
+	border: solid 1px #202321;
+}
+
+.checkbox-fieldset-own-checkmark-icon {
+	fill: none;
+}
+
+.contact-form-btn {
+	width: 100%;
+}
+
+.contact-form-btn:hover,
+.contact-form-btn:focus {
+	transition: 250ms linear;
+	background-color: #1b1d1b;
+	outline-color: #5b86a1;
+}
+
+/* ! ========== TABLET ========== ! */
 /* Layout: width: 768px(content-728px); height: 5367px; */
 
 @media screen and (min-width: 768px) {
-	/* ===== COMMON STYLES { CLASSES } ===== */
+	/* ----- COMMON STYLES { CLASSES } ----- */
 
 	.container {
 		width: 728px;
@@ -800,7 +984,7 @@ ol {
 		margin-bottom: 40px;
 	}
 
-	/* ===== TABLET (HEADER) STYLES ===== */
+	/* ----- TABLET (HEADER) STYLES ----- */
 
 	.main-header-container {
 		max-width: 728px;
@@ -812,7 +996,7 @@ ol {
 		height: 60px;
 	}
 
-	/* ===== TABLET (SECTION HERO) STYLES ===== */
+	/* ----- TABLET (SECTION HERO) STYLES ----- */
 	/* Layout: width: 768px(content-728px); height: 818px; */
 
 	.sec-hero {
@@ -864,7 +1048,7 @@ ol {
 		font-size: 20px;
 	}
 
-	/* ===== TABLET (SECTION ABOUT US) STYLES ===== */
+	/* ----- TABLET (SECTION ABOUT US) STYLES ----- */
 	/* Layout: width: 728px; height: 327px; */
 
 	.about-us-description {
@@ -872,7 +1056,7 @@ ol {
 		line-height: 1.138;
 	}
 
-	/* ===== TABLET (SECTION OUR ADVANTAGES) STYLES ===== */
+	/* ----- TABLET (SECTION OUR ADVANTAGES) STYLES ----- */
 	/* Layout: width: 728px; height: 747px; */
 
 	.advantages-container {
@@ -969,7 +1153,7 @@ ol {
 		margin-right: 12px;
 	}
 
-	/* ===== TABLET (SECTION UPCOMING TOURS) STYLES ===== */
+	/* ----- TABLET (SECTION UPCOMING TOURS) STYLES ----- */
 	/* Layout: width: 728px; height: 789px; */
 
 	.image-container {
@@ -1092,7 +1276,7 @@ ol {
 		outline-color: #5b86a1;
 	}
 
-	/* ===== TABLET (SECTION REVIEWS) STYLES ===== */
+	/* ----- TABLET (SECTION REVIEWS) STYLES ----- */
 	/* Layout: width: 728px; height: 607px; */
 
 	.reviews-list {
@@ -1202,10 +1386,10 @@ ol {
 		display: none;
 	}
 
-	/* ===== TABLET (SECTION GALLERY) STYLES ===== */
+	/* ----- TABLET (SECTION GALLERY) STYLES ----- */
 	/* Layout: width: 728px; height: 442px; */
 
-	/* ===== TABLET (SECTION QUESTIONS) STYLES ===== */
+	/* ----- TABLET (SECTION QUESTIONS) STYLES ----- */
 	/* Layout: width: 768px; height: 688px; */
 
 	.sec-questions {
@@ -1287,7 +1471,7 @@ ol {
 		margin-top: 36px;
 	}
 
-	/* ===== TABLET (FOOTER) STYLES ===== */
+	/* ----- TABLET (FOOTER) STYLES ----- */
 	/* Layout: width: 768px; height: 469px; */
 
 	.main-footer {
@@ -1335,7 +1519,7 @@ ol {
 		margin-bottom: 0px;
 	}
 
-	/* ===== TABLET (SIDE-OUT MENU) STYLES ===== */
+	/* ----- TABLET (SIDE-OUT MENU) STYLES ----- */
 	/* Layout: width: 374px; height: 818; */
 
 	.side-out-menu {
