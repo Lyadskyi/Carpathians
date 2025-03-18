@@ -1,66 +1,66 @@
 // ! Modal window BOOK A TOUR //
 
-// document.addEventListener('DOMContentLoaded', () => {
-// 	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
-// 	const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закриття на X
-// 	const closeModalCallMeBtn = document.querySelector('.contact-form-btn'); // Кнопка закриття на кнопку CALL ME
-// 	const backdrop = document.querySelector('.backdrop-book-a-tour'); // Фон модального вікна BOOK A TOUR
+document.addEventListener('DOMContentLoaded', () => {
+	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
+	const closeModalBtn = document.querySelector('.modal-close-btn'); // Кнопка закриття на X
+	const closeModalCallMeBtn = document.querySelector('.contact-form-btn'); // Кнопка закриття на кнопку CALL ME
+	const backdrop = document.querySelector('.backdrop-book-a-tour'); // Фон модального вікна BOOK A TOUR
 
-// 	console.log(closeModalCallMeBtn);
+	console.log(closeModalCallMeBtn);
 
-// 	if (!openModalBtn || !closeModalBtn || !backdrop) {
-// 		console.error('❌ Один із елементів не знайдено!');
-// 		return;
-// 	}
+	if (!openModalBtn || !closeModalBtn || !backdrop) {
+		console.error('❌ Один із елементів не знайдено!');
+		return;
+	}
 
-// 	// Функція відкриття модального вікна
-// 	function openModal() {
-// 		backdrop.classList.add('is-open');
-// 		body.classList.add('no-scroll'); // Заборона прокрутки
-// 	}
+	// Функція відкриття модального вікна
+	function openModal() {
+		backdrop.classList.add('is-open');
+		body.classList.add('no-scroll'); // Заборона прокрутки
+	}
 
-// 	// Функція закриття модального вікна
-// 	function closeModal() {
-// 		backdrop.classList.remove('is-open');
-// 		body.classList.remove('no-scroll'); // Відновлення прокрутки
-// 	}
+	// Функція закриття модального вікна
+	function closeModal() {
+		backdrop.classList.remove('is-open');
+		body.classList.remove('no-scroll'); // Відновлення прокрутки
+	}
 
-// 	// Обробник кліку для відкриття модального вікна
-// 	openModalBtn.addEventListener('click', openModal);
+	// Обробник кліку для відкриття модального вікна
+	openModalBtn.addEventListener('click', openModal);
 
-// 	// Обробник кліку для закриття модального вікна
-// 	closeModalBtn.addEventListener('click', closeModal);
+	// Обробник кліку для закриття модального вікна
+	closeModalBtn.addEventListener('click', closeModal);
 
-// 	// Обробник кліку для закриття модального вікна
-// 	closeModalCallMeBtn.addEventListener('click', closeModal);
+	// Обробник кліку для закриття модального вікна
+	closeModalCallMeBtn.addEventListener('click', closeModal);
 
-// 	// Закриття модального вікна при кліку на фон (backdrop)
-// 	backdrop.addEventListener('click', (event) => {
-// 		if (event.target === backdrop) {
-// 			closeModal();
-// 		}
-// 	});
+	// Закриття модального вікна при кліку на фон (backdrop)
+	backdrop.addEventListener('click', (event) => {
+		if (event.target === backdrop) {
+			closeModal();
+		}
+	});
 
-// 	// Закриття модального вікна при натисканні "Escape"
-// 	document.addEventListener('keydown', (event) => {
-// 		if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
-// 			closeModal();
-// 		}
-// 	});
-// });
+	// Закриття модального вікна при натисканні "Escape"
+	document.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape' && backdrop.classList.contains('is-open')) {
+			closeModal();
+		}
+	});
+});
 
 // ! Modal window TOUR'S DETAILS //
 
-// ! Side-out menu MOBILE //
+// ! Side-out menu //
 
 document.addEventListener('DOMContentLoaded', () => {
 	// Кнопка відкриття меню
 	const openModalMobileMenuBtn = document.querySelector('.mobile-open-btn');
 	// Кнопка закриття меню на X
 	const closeModalMobileMenuBtn = document.querySelector(
-		'.mobile-menu-close-btn'
+		'.side-out-menu-close-btn'
 	);
-	const mobileMenu = document.querySelector('.mobile-menu');
+	const mobileMenu = document.querySelector('.side-out-menu');
 
 	if (!openModalMobileMenuBtn || !closeModalMobileMenuBtn || !mobileMenu) {
 		console.error('❌ Один із елементів не знайдено!');
@@ -125,8 +125,8 @@ document.addEventListener('DOMContentLoaded', () => {
 			clickable: true,
 		},
 		simulateTouch: true,
-		slidesPerView: 2, // Tablet & desktop version
-		// 		slidesPerView: 1.2,
+		// slidesPerView: 2, // Tablet & desktop version
+		slidesPerView: 1.2,
 		slideToClickedSlide: true,
 		spaceBetween: 20,
 		speed: 600,

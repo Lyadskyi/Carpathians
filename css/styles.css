@@ -448,13 +448,13 @@ ol {
 	font-size: 20px;
 	line-height: 1.2;
 	text-align: center;
-	margin: 70px 0px 16px;
+	margin: 70px 0 16px;
 	color: #5b86a1;
 }
 
 .reviews-card-description {
 	font-size: 16px;
-	padding: 0px 35px;
+	padding: 0 35px;
 	width: 241px;
 	height: 160px;
 	color: #202321;
@@ -706,10 +706,10 @@ ol {
 	display: block;
 }
 
-/* ===== MOBILE (MENU) STYLES ===== */
+/* ===== MOBILE (SIDE-OUT MENU) STYLES ===== */
 /* Layout: width: 233px; height: 787; */
 
-.mobile-menu {
+.side-out-menu {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -721,15 +721,15 @@ ol {
 	background-color: rgba(32, 35, 33, 0.7);
 }
 
-.mobile-menu.is-open {
+.side-out-menu.is-open {
 	transform: translateX(0%);
 }
 
-.container.mobile-menu-container {
+.container.side-out-menu-container {
 	position: relative;
 }
 
-.mobile-menu-close-btn {
+.side-out-menu-close-btn {
 	position: absolute;
 	top: 20px;
 	right: 32px;
@@ -737,12 +737,12 @@ ol {
 	stroke: #f7fbfb;
 }
 
-.mobile-menu-logotype {
+.side-out-menu-logotype {
 	margin-top: 20px;
 	margin-bottom: 72px;
 }
 
-.mobile-menu-main-navigation {
+.side-out-menu-main-navigation {
 	display: block;
 	margin-bottom: 64px;
 }
@@ -758,7 +758,7 @@ ol {
 	margin-bottom: 30px;
 }
 
-.mobile-menu-soc-net {
+.side-out-menu-soc-net {
 	display: flex;
 	flex-direction: column;
 	align-items: start;
@@ -1134,12 +1134,12 @@ ol {
 	.reviews-card-title {
 		font-size: 24px;
 		line-height: 1.2085;
-		margin: 74px 0px 24px;
+		margin: 74px 0 24px;
 	}
 
 	.reviews-card-description {
 		font-size: 20px;
-		padding: 0px 20px;
+		padding: 0 20px;
 		width: 314px;
 	}
 
@@ -1333,5 +1333,40 @@ ol {
 
 	.footer-soc-net {
 		margin-bottom: 0px;
+	}
+
+	/* ===== TABLET (SIDE-OUT MENU) STYLES ===== */
+	/* Layout: width: 374px; height: 818; */
+
+	.side-out-menu {
+		width: 374px;
+		height: 818px;
+	}
+
+	.side-out-menu-close-btn {
+		top: 34px;
+		right: 20px;
+	}
+
+	.side-out-menu-logotype {
+		margin: 24px 0 100px 62px;
+	}
+
+	.side-out-menu-main-navigation {
+		margin: 0 0 80px 62px;
+	}
+
+	.menu-item {
+		font-weight: 500;
+	}
+
+	.menu-item:not(:last-child) {
+		margin-bottom: 40px;
+	}
+
+	.side-out-menu-soc-net {
+		flex-direction: row;
+		column-gap: 32px;
+		margin-left: 62px;
 	}
 }
