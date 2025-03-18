@@ -1,4 +1,4 @@
-// ! Modal window BOOK A TOUR //
+// ! ---------- Modal window BOOK A TOUR ---------- //
 
 document.addEventListener('DOMContentLoaded', () => {
 	const openModalBtn = document.querySelector('.hero-btn'); // Кнопка відкриття
@@ -49,9 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-// ! Modal window TOUR'S DETAILS //
-
-// ! Side-out menu //
+// ! ---------- Side-out menu ---------- //
 
 document.addEventListener('DOMContentLoaded', () => {
 	// Кнопка відкриття меню
@@ -96,7 +94,9 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
-// ! Slider swiper GALLERY //
+// ! ---------- Modal window TOUR'S DETAILS ---------- //
+
+// ! ---------- Slider swiper GALLERY ---------- //
 
 document.addEventListener('DOMContentLoaded', () => {
 	const sliderElement = document.querySelector('.image-slider');
@@ -125,53 +125,36 @@ document.addEventListener('DOMContentLoaded', () => {
 			clickable: true,
 		},
 		simulateTouch: true,
-		// slidesPerView: 2, // Tablet & desktop version
-		slidesPerView: 1.2,
+		// ** slidesPerView: 1.2, // Mobile version
+		// ** slidesPerView: 2, // Tablet & desktop version
 		slideToClickedSlide: true,
-		spaceBetween: 20,
+		// ** spaceBetween: 20,
 		speed: 600,
 		touchRatio: 2,
+		// ** Breakpoints для адаптації **
+		breakpoints: {
+			320: {
+				// ** Мобільні пристрої **
+				slidesPerView: 1.2,
+				spaceBetween: 20,
+			},
+			768: {
+				// ** Планшети **
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+			1024: {
+				// ** Десктопи **
+				slidesPerView: 2,
+				spaceBetween: 20,
+			},
+		},
 	});
 });
 
-// ! Slider swiper MODAL UPCOMING TOURS //
+// * ---------- Slider swiper MODAL UPCOMING TOURS ---------- * //
 
-document.addEventListener('DOMContentLoaded', () => {
-	const sliderElementModal = document.querySelector('.modal-image-slider');
-
-	if (!sliderElementModal) {
-		console.error("❌ Елемент '.modal-image-slider' не знайдено!");
-		return;
-	}
-
-	new Swiper('.modal-image-slider', {
-		autoHeight: true,
-		centeredSlides: false,
-		grabCursor: true,
-		keyboard: {
-			enabled: true,
-			onlyInViewport: true,
-			pageUpDown: true,
-		},
-		loop: true,
-		navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev',
-		},
-		pagination: {
-			el: '.swiper-pagination',
-			clickable: true,
-		},
-		simulateTouch: true,
-		slidesPerView: 2,
-		slideToClickedSlide: true,
-		spaceBetween: 20,
-		speed: 600,
-		touchRatio: 2,
-	});
-});
-
-// ! Button UP //
+// ! ---------- Button UP ---------- //
 
 $(window).scroll(function () {
 	let scrolled = $(window).scrollTop();
