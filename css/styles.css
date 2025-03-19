@@ -714,78 +714,6 @@ ol {
 	display: block;
 }
 
-/* ----- MOBILE (SIDE-OUT MENU) STYLES ----- */
-/* Layout: width: 233px; height: 787; */
-
-.side-out-menu {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 900;
-	width: 233px;
-	height: 100vh;
-	transform: translateX(-100%);
-	transition: transform 250ms linear;
-	background-color: rgba(32, 35, 33, 0.7);
-}
-
-.side-out-menu.is-open {
-	transform: translateX(0%);
-}
-
-.container.side-out-menu-container {
-	position: relative;
-}
-
-.side-out-menu-close-btn {
-	position: absolute;
-	top: 20px;
-	right: 32px;
-	line-height: 0;
-	stroke: #f7fbfb;
-}
-
-.side-out-menu-logotype {
-	margin-top: 20px;
-	margin-bottom: 72px;
-}
-
-.side-out-menu-main-navigation {
-	display: block;
-	margin-bottom: 64px;
-}
-
-.menu-item {
-	font-size: 28px;
-	line-height: 1.2145;
-	text-align: start;
-	color: #f7fbfb;
-}
-
-.menu-item:not(:last-child) {
-	margin-bottom: 30px;
-}
-
-.side-out-menu-soc-net {
-	display: flex;
-	flex-direction: column;
-	align-items: start;
-	row-gap: 32px;
-	line-height: 0;
-}
-
-.hero-soc-net-link {
-	display: block;
-	fill: #f7fbfb;
-}
-
-.hero-soc-net-link:hover,
-.hero-soc-net-link:focus {
-	/* transform: scale(1.1); */
-	transition: 250ms linear;
-	fill: #5b86a1;
-}
-
 /* ! ========== BACKDROP - MODAL WINDOW "BOOK A TOUR" ========== */
 
 .backdrop-book-a-tour {
@@ -812,6 +740,7 @@ ol {
 }
 
 /* ----- MOBILE STYLES - MODAL WINDOW "BOOK A TOUR" ----- */
+/* Layout: width: 375px; height: 504px; */
 
 .modal-window {
 	position: absolute;
@@ -960,6 +889,80 @@ input[type='checkbox'] {
 	transition: 250ms linear;
 	background-color: #1b1d1b;
 	outline-color: #5b86a1;
+}
+
+/* ! ========== SIDE-OUT MENU ========== */
+
+/* ----- MOBILE (SIDE-OUT MENU) STYLES ----- */
+/* Layout: width: 233px; height: 787; */
+
+.side-out-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 900;
+	width: 233px;
+	height: 100vh;
+	transform: translateX(-100%);
+	transition: transform 250ms linear;
+	background-color: rgba(32, 35, 33, 0.7);
+}
+
+.side-out-menu.is-open {
+	transform: translateX(0%);
+}
+
+.container.side-out-menu-container {
+	position: relative;
+}
+
+.side-out-menu-close-btn {
+	position: absolute;
+	top: 20px;
+	right: 32px;
+	line-height: 0;
+	stroke: #f7fbfb;
+}
+
+.side-out-menu-logotype {
+	margin-top: 20px;
+	margin-bottom: 72px;
+}
+
+.side-out-menu-main-navigation {
+	display: block;
+	margin-bottom: 64px;
+}
+
+.menu-item {
+	font-size: 28px;
+	line-height: 1.2145;
+	text-align: start;
+	color: #f7fbfb;
+}
+
+.menu-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.side-out-menu-soc-net {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	row-gap: 32px;
+	line-height: 0;
+}
+
+.hero-soc-net-link {
+	display: block;
+	fill: #f7fbfb;
+}
+
+.hero-soc-net-link:hover,
+.hero-soc-net-link:focus {
+	/* transform: scale(1.1); */
+	transition: 250ms linear;
+	fill: #5b86a1;
 }
 
 /* ! ========== TABLET ========== ! */
@@ -1518,6 +1521,64 @@ input[type='checkbox'] {
 	.footer-soc-net {
 		margin-bottom: 0px;
 	}
+
+	/* ! ========== BACKDROP - MODAL WINDOW "BOOK A TOUR" ========== */
+
+	/* ----- TABLET STYLES - MODAL WINDOW "BOOK A TOUR" ----- */
+/* Layout: width: 478px; height: 581px; */
+
+	.modal-window {
+		width: 478px;
+		height: 581px;
+	}
+
+	.modal-close-btn {
+		top: 20px;
+		right: 20px;
+	}
+
+	.modal-close-btn .modal-close-btn-icon {
+		width: 40px;
+		height: 40px;
+		stroke: #202321;
+	}
+
+	.modal-window-form {
+		padding: 60px 42px 40px;
+	}
+
+	.modal-window-form-title {
+		font-size: 32px;
+		line-height: 1.219;
+		margin-bottom: 24px;
+	}
+
+	.modal-window-form-description {
+		width: 312px;
+		height: 66px;
+		font-size: 18px;
+		margin-bottom: 32px;
+	}
+
+	.modal-window-form-input {
+		height: 32px;
+		font-size: 20px;
+		margin-bottom: 24px;
+	}
+
+	.modal-window-form-input::placeholder {
+		font-size: 20px;
+	}
+
+	.checkbox-fieldset-wrapper {
+		margin-bottom: 32px;
+	}
+
+	.checkbox-label {
+		font-size: 20px;
+	}
+
+	/* ! ========== SIDE-OUT MENU ========== */
 
 	/* ----- TABLET (SIDE-OUT MENU) STYLES ----- */
 	/* Layout: width: 374px; height: 818; */
