@@ -106,9 +106,10 @@ ol {
 /* ! ========== MOBILE ========== ! */
 /* Layout: width: 375px(content-311px); height: 5396px; */
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
 	.container {
-		width: 311px;
+		/* width: 311px; */
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -761,7 +762,8 @@ ol {
 	line-height: 0;
 }
 
-.modal-close-btn .modal-close-btn-icon {
+.modal-close-btn-icon {
+	fill: none;
 	stroke: #202321;
 }
 
@@ -890,6 +892,11 @@ input[type='checkbox'] {
 	background-color: #1b1d1b;
 	outline-color: #5b86a1;
 }
+
+/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
+
+/* ----- MOBILE STYLES - MODAL WINDOW "TOUR'S DETAILS" ----- */
+/* Layout: width: 315px; height: 624px; */
 
 /* ! ========== SIDE-OUT MENU ========== */
 
@@ -1525,7 +1532,7 @@ input[type='checkbox'] {
 	/* ! ========== BACKDROP - MODAL WINDOW "BOOK A TOUR" ========== */
 
 	/* ----- TABLET STYLES - MODAL WINDOW "BOOK A TOUR" ----- */
-/* Layout: width: 478px; height: 581px; */
+	/* Layout: width: 478px; height: 581px; */
 
 	.modal-window {
 		width: 478px;
@@ -1537,10 +1544,9 @@ input[type='checkbox'] {
 		right: 20px;
 	}
 
-	.modal-close-btn .modal-close-btn-icon {
+	.modal-close-btn-icon {
 		width: 40px;
 		height: 40px;
-		stroke: #202321;
 	}
 
 	.modal-window-form {
@@ -1577,6 +1583,11 @@ input[type='checkbox'] {
 	.checkbox-label {
 		font-size: 20px;
 	}
+
+	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
+
+	/* ----- TABLET STYLES - MODAL WINDOW "TOUR'S DETAILS" ----- */
+	/* Layout: width: 728px; height: 734px; */
 
 	/* ! ========== SIDE-OUT MENU ========== */
 
