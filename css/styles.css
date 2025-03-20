@@ -106,10 +106,9 @@ ol {
 /* ! ========== MOBILE ========== ! */
 /* Layout: width: 375px(content-311px); height: 5396px; */
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 375px) {
 	.container {
-		/* width: 311px; */
-		width: 100%;
+		width: 311px;
 		margin-left: auto;
 		margin-right: auto;
 	}
