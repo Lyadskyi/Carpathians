@@ -50,9 +50,9 @@ ol {
 	padding-left: 0;
 }
 
-/* * {
+* {
 	outline: 1px solid palevioletred;
-} */
+}
 
 /* ----- COMMON STYLES for MOBILE { CLASSES } ----- */
 
@@ -1755,7 +1755,7 @@ input[type='checkbox'] {
 		height: 69px;
 		font-size: 24px;
 	}
-	
+
 	.hero-soc-net {
 		display: flex;
 		flex-direction: column;
@@ -1777,18 +1777,99 @@ input[type='checkbox'] {
 	}
 
 	/* ----- DESKTOP (SECTION ABOUT US) STYLES ----- */
-/* Layout: width: 311px; height: 395px; */
+	/* Layout: width: 1170px; height: 358px; */
 
-.about-us-description {
-	font-size: 24px;
-	line-height: 1.2085;
-	color: #202321;
-}
+	.about-us-description {
+		font-size: 24px;
+		line-height: 1.2085;
+		color: #202321;
+	}
 
-.first {
-	margin-bottom: 20px;
-}
+	.first {
+		margin-bottom: 20px;
+	}
 
+	/* ----- DESKTOP (SECTION OUR ADVANTAGES) STYLES ----- */
+	/* Layout: width: 1170px; height: 811px; */
+
+	.advantages-container {
+		position: relative;
+		display: flex;
+	}
+
+	.advantages-list-images {
+		display: flex;
+		flex-wrap: nowrap;
+		column-gap: 19px;
+		height: 668px;
+	}
+
+	.advantages-list-img-item-first {
+		display: flex;
+		align-self: flex-start;
+		width: 377px;
+		height: 588px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-left-desktop.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-img-item-second {
+		display: flex;
+		align-self: center;
+		width: 377px;
+		height: 507px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-center-desktop.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-img-item-third {
+		display: flex;
+		align-self: flex-end;
+		width: 377px;
+		height: 588px;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+			url('../images/advantages/mountains-right-desktop.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.advantages-list-container {
+		position: absolute;
+		width: 630px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 24px;
+		top: 50%;
+		left: 50%;
+		margin-right: -50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.advantages-list-cont-item {
+		display: flex;
+		align-items: center;
+		padding-left: 126px;
+		height: 64px;
+		font-weight: 400;
+		font-size: 24px;
+		color: #f7fbfb;
+		background: #5b86a1;
+	}
+
+	.advantages-list-cont-item:nth-child(3) {
+		margin-bottom: 4px;
+	}
+
+	.advantages-container-star {
+		margin-right: 12px;
+	}
 
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
 
