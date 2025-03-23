@@ -1793,39 +1793,27 @@ input[type='checkbox'] {
 	/* Layout: width: 1170px; height: 811px; */
 
 	.advantages-container {
-		position: relative;
-		display: flex;
-	}
-
-	.advantages-list-images {
-		display: flex;
-		flex-wrap: nowrap;
-		column-gap: 19px;
 		height: 668px;
 	}
 
-	.advantages-list-img-item-first {
-		display: flex;
-		align-self: flex-start;
+	.advantages-list-images {
+		column-gap: 20px;
+	}
+
+	.advantages-list-images .advantages-list-img-item-first {
 		width: 377px;
 		height: 588px;
+		margin-right: 0;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 			url('../images/advantages/mountains-left-desktop.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	.advantages-list-img-item-second {
-		display: flex;
 		align-self: center;
 		width: 377px;
 		height: 507px;
 		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
 			url('../images/advantages/mountains-center-desktop.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
 	}
 
 	.advantages-list-img-item-third {
@@ -1837,30 +1825,18 @@ input[type='checkbox'] {
 			url('../images/advantages/mountains-right-desktop.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 	}
 
 	.advantages-list-container {
-		position: absolute;
 		width: 630px;
-		display: flex;
-		flex-direction: column;
 		row-gap: 24px;
-		top: 50%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
 	}
 
 	.advantages-list-cont-item {
-		display: flex;
-		align-items: center;
-		padding-left: 126px;
-		height: 64px;
-		font-weight: 400;
+		width: 504px;
 		font-size: 24px;
-		color: #f7fbfb;
-		background: #5b86a1;
+		padding-left: 126px;
 	}
 
 	.advantages-list-cont-item:nth-child(3) {
@@ -1868,6 +1844,7 @@ input[type='checkbox'] {
 	}
 
 	.advantages-container-star {
+		margin-left: 0;
 		margin-right: 12px;
 	}
 
