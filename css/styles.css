@@ -464,7 +464,6 @@ ol {
 	font-size: 16px;
 	padding: 0 35px;
 	width: 241px;
-	height: 160px;
 	color: #202321;
 }
 
@@ -1172,14 +1171,15 @@ input[type='checkbox'] {
 
 	.tours-list {
 		display: flex;
+		column-gap: 20px;
 	}
 
 	.tours-list-item {
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	}
 
-	.tours-list-item:not(:last-child) {
-		margin-right: 20px;
+	.tours-list-item-bukovel {
+		display: block;
 	}
 
 	.tours-card-image {
@@ -1199,9 +1199,6 @@ input[type='checkbox'] {
 				rgba(32, 35, 33, 0.3)
 			),
 			url('../images/tours/hoverla-tablet.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
 	}
 
 	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -1275,14 +1272,6 @@ input[type='checkbox'] {
 		width: 314px;
 		height: 56px;
 		font-size: 20px;
-	}
-
-	.upcoming-tours-btn:hover,
-	.upcoming-tours-btn:focus {
-		transition: 250ms linear;
-		background-color: #1b1d1b;
-		border: solid 1px #5b86a1;
-		outline-color: #5b86a1;
 	}
 
 	/* ----- TABLET (SECTION REVIEWS) STYLES ----- */
@@ -1846,6 +1835,120 @@ input[type='checkbox'] {
 	.advantages-container-star {
 		margin-left: 0;
 		margin-right: 12px;
+	}
+
+	/* ----- DESKTOP (SECTION UPCOMING TOURS) STYLES ----- */
+	/* Layout: width: 1170px; height: 861px; */
+
+	.tours-list {
+		display: flex;
+		column-gap: 19px;
+	}
+
+	.tours-list-item-carpathians {
+		display: block;
+	}
+
+	.tours-card-image {
+		border: 1px solid #5b86a1;
+		width: 377px;
+		height: 438px;
+	}
+
+	.hoverla-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/hoverla-desktop.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.hoverla-card {
+			background-image: url('../images/RETINA/tours/hoverla-desktop@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.hoverla-card {
+			background-image: url('../images/RETINA/tours/hoverla-desktop@3x.jpg');
+		}
+	}
+
+	.bukovel-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/bukovel-desktop.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.bukovel-card {
+			background-image: url('../images/RETINA/tours/bukovel-desktop@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.bukovel-card {
+			background-image: url('../images/RETINA/tours/bukovel-desktop@3x.jpg');
+		}
+	}
+
+	.carpathians-card {
+		background-image: linear-gradient(
+				rgba(32, 35, 33, 0.3),
+				rgba(32, 35, 33, 0.3)
+			),
+			url('../images/tours/carpathians-desktop.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.carpathians-card {
+			background-image: url('../images/RETINA/tours/carpathians-desktop@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.carpathians-card {
+			background-image: url('../images/RETINA/tours/carpathians-desktop@3x.jpg');
+		}
+	}
+
+	.tours-card-content {
+		padding: 44px 20px 48px;
+	}
+
+	.tours-card-title {
+		font-size: 28px;
+		line-height: 1.2145;
+	}
+
+	.tours-card-price {
+		font-size: 24px;
+		line-height: 1.2085;
+		margin-bottom: 36px;
+	}
+
+	.upcoming-tours-btn {
+		width: 337px;
+		height: 69px;
+		font-size: 24px;
 	}
 
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
