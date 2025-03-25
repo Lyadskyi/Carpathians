@@ -254,16 +254,16 @@ ol {
 	/* ===== SECTION ABOUT US STYLES ===== */
 	/* Layout: width: 1170px; height: 358px; =DONE= */
 
-	.about-us-description {
+	/* .about-us-description {
 		height: 215px;
 		font-size: 24px;
 		color: #202321;
-	}
+	} */
 
 	/* ===== SECTION OUR ADVANTAGES STYLES ===== */
 	/* Layout: width: 1170px; height: 811px; =DONE= */
 
-	.advantages-container {
+	/* .advantages-container {
 		position: relative;
 		display: flex;
 	}
@@ -340,12 +340,12 @@ ol {
 
 	.advantages-container-star {
 		margin-right: 12px;
-	}
+	} */
 
 	/* ===== SECTION UPCOMING TOURS STYLES ===== */
 	/* Layout: width: 1170px; height: 861px; =DONE= */
 
-	.tours-list {
+	/* .tours-list {
 		display: flex;
 		column-gap: 19px;
 	}
@@ -429,7 +429,7 @@ ol {
 		background-color: #1b1d1b;
 		border: solid 1px #5b86a1;
 		outline-color: #5b86a1;
-	}
+	} */
 
 	/* ===== SECTION REVIEWS STYLES ===== */
 	/* Layout: width: 1170px; height: 723px; */
