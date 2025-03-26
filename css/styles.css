@@ -609,6 +609,10 @@ ol {
 	color: #202321;
 }
 
+.contact-form-input:focus {
+	outline-color: #5b86a1;
+}
+
 .contact-form-btn {
 	display: block;
 	width: 271px;
@@ -628,7 +632,6 @@ ol {
 .contact-form-btn:focus {
 	transition: 250ms linear;
 	background-color: #1b1d1b;
-	border: solid 1px #5b86a1;
 	outline-color: #5b86a1;
 }
 
@@ -1393,9 +1396,6 @@ input[type='checkbox'] {
 		margin-left: auto;
 		margin-right: auto;
 		background-image: url('../images/questions/questions-background-tablet.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: contain;
 	}
 
 	@media screen and (min-resolution: 192dpi) and (min-width: 768px),
@@ -1403,9 +1403,6 @@ input[type='checkbox'] {
 		screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
 		.sec-questions {
 			background-image: url('../images/RETINA/questions/questions-background-tablet@2x.jpg');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
 		}
 	}
 
@@ -1414,9 +1411,6 @@ input[type='checkbox'] {
 		screen and (min-device-pixel-ratio: 3) and (min-width: 768px) {
 		.sec-questions {
 			background-image: url('../images/RETINA/questions/questions-background-tablet@3x.jpg');
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: contain;
 		}
 	}
 
@@ -1455,7 +1449,6 @@ input[type='checkbox'] {
 
 	.contact-form-input::placeholder {
 		font-size: 20px;
-		color: #202321;
 	}
 
 	.contact-form-btn {
@@ -1955,7 +1948,7 @@ input[type='checkbox'] {
 	}
 
 	.reviews-list {
-		column-gap: 19px;
+		column-gap: 17px;
 	}
 
 	.reviews-list-item-anita {
@@ -1964,7 +1957,23 @@ input[type='checkbox'] {
 
 	.reviews-image-wrapper {
 		width: 377px;
-		background-image: url('../images/reviews/reviews-bg-desk.jpg');
+		background-image: url('../images/reviews/reviews-background-desktop.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.reviews-image-wrapper {
+			background-image: url('../images/RETINA/reviews/reviews-background@2x-desktop.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.reviews-image-wrapper {
+			background-image: url('../images/RETINA/reviews/reviews-background@3x-desktop.jpg');
+		}
 	}
 
 	.reviews-content {
@@ -2004,6 +2013,88 @@ input[type='checkbox'] {
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
+	}
+
+	/* ----- DESKTOP (SECTION QUESTIONS) STYLES ----- */
+	/* Layout: width: (1920)/1440px; height: 1074px; */
+
+	.sec-questions {
+		width: 100%;
+		height: 1074px; /* 1024px */
+		background-image: url('../images/questions/questions-background-desktop.jpg');
+	}
+
+	@media screen and (min-resolution: 192dpi) and (min-width: 1440px),
+		screen and (min-resolution: 2ddpx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 2) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions-background-desktop@2x.jpg');
+		}
+	}
+
+	@media screen and (min-resolution: 288dpi) and (min-width: 1440px),
+		screen and (min-resolution: 3dppx) and (min-width: 1440px),
+		screen and (min-device-pixel-ratio: 3) and (min-width: 1440px) {
+		.sec-questions {
+			background-image: url('../images/RETINA/questions/questions-background-desktop@3x.jpg');
+		}
+	}
+
+	.contact-form {
+		width: 774px;
+		height: 583px;
+		padding: 60px 47px 60px 46px;
+		margin-top: 244px;
+	}
+
+	.questions-form-title {
+		font-size: 48px;
+		line-height: 1.2292;
+		margin-bottom: 32px;
+	}
+
+	.questions-form-description {
+		width: 502px;
+		height: 48px;
+		font-size: 20px;
+		margin-bottom: 44px;
+	}
+
+	.input-wrapper {
+		position: relative;
+		display: block;
+		width: 575px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.input-wrapper::after {
+		left: 0;
+		bottom: 0;
+		width: 575px;
+	}
+
+	.contact-form-input {
+		width: 575px;
+		height: 37px;
+		font-size: 24px;
+		margin-bottom: 28px;
+		padding-left: 7px;
+	}
+
+	.contact-form-input::placeholder {
+		font-size: 24px;
+	}
+
+	.last-contact-form-input {
+		margin-bottom: 0;
+	}
+
+	.contact-form-btn {
+		width: 575px;
+		height: 69px;
+		font-size: 24px;
+		margin-top: 44px;
 	}
 
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
