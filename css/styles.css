@@ -50,9 +50,9 @@ ol {
 	padding-left: 0;
 }
 
-* {
+/* * {
 	outline: 1px solid palevioletred;
-}
+} */
 
 /* ----- COMMON STYLES for MOBILE { CLASSES } ----- */
 
@@ -106,7 +106,7 @@ ol {
 /* ! ========== MOBILE ========== ! */
 /* Layout: width: 375px(content-311px); height: 5396px; */
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
 	.container {
 		width: 311px;
 		margin-left: auto;
@@ -213,8 +213,6 @@ ol {
 .hero-btn:focus {
 	transition: 250ms linear;
 	background-color: #1b1d1b;
-	border: solid 1px #5b86a1;
-	/* outline-color: #5b86a1; */
 }
 
 .hero-soc-net {
@@ -376,8 +374,6 @@ ol {
 .upcoming-tours-btn:focus {
 	transition: 250ms linear;
 	background-color: #1b1d1b;
-	border: solid 1px #5b86a1;
-	outline-color: #5b86a1;
 }
 
 /* ----- MOBILE (SECTION REVIEWS) STYLES ----- */
@@ -385,7 +381,7 @@ ol {
 
 .reviews-list {
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	row-gap: 32px;
 }
 
@@ -1958,6 +1954,10 @@ input[type='checkbox'] {
 		margin-bottom: 70px;
 	}
 
+	.reviews-list {
+		column-gap: 19px;
+	}
+
 	.reviews-list-item-anita {
 		display: block;
 	}
@@ -1970,68 +1970,41 @@ input[type='checkbox'] {
 	.reviews-content {
 		position: relative;
 		width: 377px;
-		height: 436px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		height: 570px;
 		border: 1px solid #5b86a1;
-		background: #f7fbfb;
 	}
 
-	/* .reviews-avatar {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	} */
-
 	.reviews-card-title {
-		font-weight: 600;
 		font-size: 28px;
-		text-align: center;
-		margin-top: 83px;
-		margin-bottom: 24px;
-		color: #5b86a1;
+		margin: 83px 0 24px;
 	}
 
 	.reviews-card-description {
+		width: 321px;
 		font-size: 20px;
 		padding: 0 28px;
-		width: 321px;
-		height: 192px;
-		color: #202321;
 	}
 
-	/* .reviews-back {
-		position: absolute;
-		width: 377px;
-		height: 570px;
-		top: 0;
-		left: 0;
-		transform: rotateY(-180deg);
+	.reviews-back {
 		width: 377px;
 		height: 570px;
 		border: solid 1px #5b86a1;
-	} */
+	}
 
-	/* .maria-back {
-		background-image: url('../images/reviews/maria-back-desk.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
+	.maria-back {
+		background-image: url('../images/reviews/maria-back-desktop.jpg');
 	}
 
 	.ostap-back {
-		background-image: url('../images/reviews/ostap-back-desk.jpg');
+		background-image: url('../images/reviews/ostap-back-desktop.jpg');
+	}
+
+	.anita-back {
+		background-image: url('../images/reviews/anita-back-desktop.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
-
-	.anita-back {
-		background-image: url('../images/reviews/anita-back-desk.jpg');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	} */
 
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
 
