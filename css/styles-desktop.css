@@ -578,9 +578,9 @@ ol {
 	/* ===== SECTION QUESTIONS STYLES ===== */
 	/* Layout: width: (1920)/1440px; height: 1074px; */
 
-	.sec-questions {
+	/* .sec-questions {
 		width: 100%;
-		height: 1074px; /* 1024px */
+		height: 1074px; 1024px
 		background-image: url('../images/questions/questions-desk.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
@@ -699,7 +699,7 @@ ol {
 		background-color: #1b1d1b;
 		border: solid 1px #5b86a1;
 		outline-color: #5b86a1;
-	}
+	} */
 
 	/* ===== FOOTER STYLES ===== */
 	/* Layout: width: 1440px; height: 491px; */
