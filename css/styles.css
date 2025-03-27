@@ -50,9 +50,9 @@ ol {
 	padding-left: 0;
 }
 
-* {
+/* * {
 	outline: 1px solid palevioletred;
-}
+} */
 
 /* ----- COMMON STYLES for MOBILE { CLASSES } ----- */
 
@@ -1742,15 +1742,10 @@ input[type='checkbox'] {
 		line-height: 0;
 	}
 
-	.hero-soc-net-link {
-		display: block;
-		fill: #f7fbfb;
-	}
-
 	.hero-soc-net-link:hover,
 	.hero-soc-net-link:focus {
-		transform: rotate(360deg);
-		transition: 350ms linear;
+		filter: drop-shadow(0 0 1px rgba(247, 251, 251, 0.8));
+		transition: 150ms linear;
 		fill: #5b86a1;
 	}
 
@@ -2175,6 +2170,27 @@ input[type='checkbox'] {
 		font-family: 'Manrope', sans-serif;
 		font-size: 16px;
 		color: #a3a5a3;
+	}
+
+	/* todo Button UP */
+
+	.back-to-top {
+		position: fixed;
+		z-index: 10;
+		bottom: -40px;
+		right: 40px;
+		width: 40px;
+		height: 40px;
+		transition: 0.5s linear;
+		cursor: pointer;
+		background: url('/images/arrowUp/arrow-up.png') no-repeat center center;
+		background-size: contain;
+		border: none;
+	}
+
+	.back-to-top.active {
+		bottom: 40px;
+		transition: 0.5s linear;
 	}
 
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
