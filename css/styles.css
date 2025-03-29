@@ -2193,6 +2193,71 @@ input[type='checkbox'] {
 		transition: 0.5s linear;
 	}
 
+	/* ! ========== BACKDROP - MODAL WINDOW "BOOK A TOUR" ========== */
+
+	.modal-window {
+		width: 774px;
+		height: 745px;
+	}
+
+	.modal-close-btn:hover,
+	.modal-close-btn:focus {
+		stroke: #5b86a1;
+	}
+
+	.modal-window-form {
+		padding: 116px 99px 60px 100px;
+	}
+
+	.modal-window-form-title {
+		font-size: 60px;
+		line-height: 1.2168;
+		margin-bottom: 28px;
+	}
+
+	.modal-window-form-description {
+		width: 100%;
+		font-size: 24px;
+	}
+
+	.modal-window-form-input {
+		height: 37px;
+		margin-bottom: 28px;
+	}
+
+	.modal-window-form-input::placeholder {
+		font-size: 24px;
+	}
+
+	.modal-window-form-input:focus {
+		outline-color: #5b86a1;
+	}
+
+	.checkbox-fieldset-wrapper {
+		margin-bottom: 44px;
+	}
+
+	.checkbox-label {
+		font-size: 24px;
+	}
+
+	.modal-window-checkbox:checked
+		+ .checkbox-fieldset-own-checkmark
+		.checkbox-fieldset-own-checkmark-icon {
+		stroke: #202321;
+	}
+
+	.modal-window-checkbox:focus + .checkbox-fieldset-own-checkmark {
+		border: solid 1px #5b86a1;
+	}
+
+	/* .contact-form-btn:hover,
+	.contact-form-btn:focus {
+		transition: 250ms linear;
+		background-color: #1b1d1b;
+		outline-color: #5b86a1;
+	} */
+
 	/* ! ========== BACKDROP - MODAL WINDOW "TOUR'S DETAILS" ========== */
 
 	/* ----- DESKTOP STYLES - MODAL WINDOW "TOUR'S DETAILS" ----- */
