@@ -541,6 +541,8 @@ ol {
 	}
 }
 
+/* Layout: width: 311px; height: 399px; */
+
 .contact-form {
 	box-sizing: border-box;
 	width: 311px;
@@ -592,12 +594,12 @@ ol {
 	box-sizing: border-box;
 	width: 271px;
 	height: 28px;
+	font-size: 16px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 20px;
 	padding-left: 4px;
 	border: none;
-	font-size: 16px;
 	background: #f7fbfb;
 }
 
@@ -610,16 +612,21 @@ ol {
 	outline-color: #5b86a1;
 }
 
+.last-contact-form-input {
+	margin-bottom: 0;
+}
+
 .contact-form-btn {
 	display: block;
 	width: 271px;
 	height: 52px;
-	padding: 10px;
+	font-size: 16px;
+	font-weight: 500;
+	text-transform: uppercase;
 	margin-left: auto;
 	margin-right: auto;
-	font-weight: 500;
-	font-size: 16px;
-	text-transform: uppercase;
+	margin-top: 24px;
+	padding: 10px;
 	color: #f7fbfb;
 	background: #5b86a1;
 }
@@ -1416,6 +1423,8 @@ input[type='checkbox'] {
 		}
 	}
 
+	/* Layout: width: 478px; height: 512px; */
+
 	.contact-form {
 		width: 478px;
 		height: 512px;
@@ -1453,10 +1462,15 @@ input[type='checkbox'] {
 		font-size: 20px;
 	}
 
+	.last-contact-form-input {
+		margin-bottom: 0;
+	}
+
 	.contact-form-btn {
 		width: 394px;
 		height: 56px;
 		font-size: 20px;
+		margin-top: 32px;
 	}
 
 	/* ----- TABLET (FOOTER) STYLES ----- */
@@ -2038,6 +2052,8 @@ input[type='checkbox'] {
 		}
 	}
 
+	/* Layout: width: 774px; height: 583px; */
+
 	.contact-form {
 		width: 774px;
 		height: 583px;
@@ -2092,6 +2108,7 @@ input[type='checkbox'] {
 		width: 575px;
 		height: 69px;
 		font-size: 24px;
+		margin-top: 44px;
 	}
 
 	/* ----- DESKTOP (FOOTER) STYLES ----- */
