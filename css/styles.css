@@ -2103,11 +2103,9 @@ input[type='checkbox'] {
 	}
 
 	.main-footer-container {
-		display: flex;
 		justify-content: center;
 		column-gap: 128px;
-		margin-bottom: 64px;
-		padding-top: 60px;
+		padding: 49px 0 64px;
 	}
 
 	.footer-title {
@@ -2116,60 +2114,16 @@ input[type='checkbox'] {
 	}
 
 	.contacts-container {
-		display: flex;
-		flex-direction: column;
-		row-gap: 40px;
-	}
-
-	.footer-address {
 		padding-top: 17px;
-	}
-
-	.contacts-menu-item {
-		display: flex;
-		align-items: center;
-		gap: 8px;
 	}
 
 	.contacts-menu-item a {
 		font-size: 24px;
-		color: #f7fbfb;
-	}
-
-	.contacts-menu-item:not(:last-child) {
-		margin-bottom: 40px;
-	}
-
-	.footer-soc-net {
-		display: flex;
-		column-gap: 32px;
-		line-height: 0;
-	}
-
-	.footer-soc-net-link {
-		display: block;
-		fill: #f7fbfb;
-	}
-
-	.footer-soc-net-link:hover,
-	.footer-soc-net-link:focus {
-		/* transform: scale(1.1); */
-		transition: 250ms linear;
-		fill: #5b86a1;
+		line-height: 1.2085;
 	}
 
 	.footer-copyright {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		column-gap: 8px;
 		padding-bottom: 48px;
-	}
-
-	.footer-description {
-		font-family: 'Manrope', sans-serif;
-		font-size: 16px;
-		color: #a3a5a3;
 	}
 
 	/* todo Button UP */
