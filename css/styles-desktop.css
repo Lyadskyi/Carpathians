@@ -802,7 +802,7 @@ ol {
 
 	/* ! BACKDROP - MODAL WINDOW "BOOK A TOUR" */
 
-	.backdrop-book-a-tour {
+	/* .backdrop-book-a-tour {
 		display: block;
 		position: fixed;
 		top: 0;
@@ -823,11 +823,11 @@ ol {
 		opacity: 1;
 		visibility: visible;
 		pointer-events: auto;
-	}
+	} */
 
 	/* ===== STYLES - MODAL WINDOW "BOOK A TOUR" ===== */
 
-	.modal-window {
+	/* .modal-window {
 		position: absolute;
 		top: 50%;
 		left: 50%;
@@ -908,7 +908,7 @@ ol {
 	}
 
 	.modal-window-form-input:focus {
-		/* transition: outline-color 0.1s linear; */
+		transition: outline-color 0.1s linear;
 		outline-color: #5b86a1;
 	}
 
@@ -964,7 +964,7 @@ ol {
 		transition: 250ms linear;
 		background-color: #1b1d1b;
 		outline-color: #5b86a1;
-	}
+	} */
 
 	/* ! BACKDROP - MODAL WINDOW "TOUR'S DETAILS" */
 
